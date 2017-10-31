@@ -22,6 +22,8 @@ $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 
 Hexo 目录结构
 
+<!-- more -->
+
 ![Hexo 目录结构](/images/site-tree.png)
 
 - `_config.yml`是整体的配置文件，很多基础配置、插件配置等都需要在里面进行。要注意的是，该文件格式要求极为严格，缺少一个空格都会导致运行错误。小提示：不要用 Tab 缩进，用两个空格符。

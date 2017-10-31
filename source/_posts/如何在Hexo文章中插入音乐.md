@@ -22,6 +22,8 @@ hexo添加音乐目前接触到的有两种方案：
 
 经过使用总结，其实方案二还是很不错的！甚至胜过方案一！！
 
+<!-- more -->
+
 下面我就隆重介绍一款html5音乐播放器：[Aplayer](https://github.com/DIYgod/APlayer)。把Aplayer加入hexo需要用到[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)插件。
 
 切换到hexo目录，运行：

@@ -24,6 +24,8 @@ $ git push origin master:Hexo
 
 进行备份，然后
 
+<!-- more -->
+
 {% codeblock %}
 $ hexo d -g
 {% endcodeblock %}
