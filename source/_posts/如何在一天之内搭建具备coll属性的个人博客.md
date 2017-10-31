@@ -14,7 +14,7 @@ tags:
 对程序员而言，最好的简历就是个人博客和 GitHub
 {% endblockquote %}
 
-###零、安装
+### 零、安装
 
 {% codeblock %}
 $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
@@ -32,7 +32,7 @@ Hexo 目录结构
 
 更多信息请查看：[如何在一天之内搭建以你自己名字为域名且具备 cool 属性的个人博客](http://www.jianshu.com/p/99665608d295)
 
-###一、配置博客根目录
+### 一、配置博客根目录
 
 更改博客根目录（注：非主题根目录）下面的 `_config.yml` 里面的 `theme: landscape` 为`theme: yilia`
 
@@ -171,7 +171,7 @@ jsonContent:
 #   order_by: -date
 ```
 
-###二、配置主题根目录
+### 二、配置主题根目录
 
 {% blockquote %}
 主题的配置文件在 `themes/yilia/_config.yml`文件里面
@@ -310,7 +310,7 @@ friends:
 aboutme: 一枚前端开发技术狗 <br><br> 正在寻找工作中...<br> 如有工作机会，请联络我 <br> 谢谢老板 <br><br> 邮箱：muikinghk@yahoo.com.hk
 ```
 
-###三、使用 yilia 主题遇到的一些问题的解决方案
+### 三、使用 yilia 主题遇到的一些问题的解决方案
 
 - 点击所有文章提示模块缺失
 
@@ -347,7 +347,7 @@ jsonContent:
 
   - 出现该问题是因为使用了记事本编辑并保存了 `_config.yml` 文件，记事本默认使用 `ANSI` 编码格式对文件进行保存，而网站的编码格式为 `UTF-8`，解决办法是使用记事本打开`_config.yml` 文件并另存为，此时选择编码格式为`UTF-8`。
 
-###四、中英文自动添加空格
+### 四、中英文自动添加空格
 
 不少有追求的开发者在写博客时追求格式优雅，比如中英文间隔。为了达到这个目的，很多时候就不得不在写文时反复调整英文单词与中文的空格。
 

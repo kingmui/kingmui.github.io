@@ -1,8 +1,7 @@
 ---
 title: 如何在Hexo文章中插入音乐
-date: 2017-10-31 15:32:37
+date: 2017-5-22 15:32:37
 reward: true
-toc: true
 tags:
   - Hexo
   - cool things
@@ -34,16 +33,16 @@ npm install --save hexo-tag-aplayer
 
 安装完成后，在需要添加音乐的地方加上：
 
-{% codeblock %}
+```basic
 {% aplayer "歌曲名称" "作者" "音乐_url" "封面图片_url" "autoplay" %}
-{% endcodeblock %}
+```
 
 `hexo d --g`之后就会出现你想要的音乐啦！
 
 如果你想加入歌单，把上面的代码换成下面代码就行，参数的用法可以参照插件的使用说明。
 
-{% codeblock %}
+```basic
 {% aplayerlist %}{"narrow": false,"autoplay": true,"showlrc": 3,"mode": "random","music": [{"title": "平凡之路","author": "朴树","url": "http://og9ocpmwk.bkt.clouddn.com/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF.mp3","pic": "https://ogd99kckh.qnssl.com/1.jpg","lrc": "http://og9ocpmwk.bkt.clouddn.com/%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF.txt"},{"title": "野子","author": "苏运莹","url": "http://og9ocpmwk.bkt.clouddn.com/01%20%E9%87%8E%E5%AD%90.m4a","pic": "http://og9ocpmwk.bkt.clouddn.com/%E9%87%8E%E5%AD%90.jpg","lrc":"https://ogd99kckh.qnssl.com/%E9%87%8E%E5%AD%90.txt"}]}{% endaplayerlist %}
-{% endcodeblock %}
+```
 
 当然，Aplayer的作者还有一款html5的视频播放器，叫[Dplayer](https://github.com/DIYgod/DPlayer)，对应有一款hexo的插件，叫[hexo-tag-dplayer](https://github.com/NextMoe/hexo-tag-dplayer)，有需求的可以去看看，用法都差不多。
