@@ -13,7 +13,7 @@ tags:
 太阳系行星运转模拟
 {% endblockquote %}
 [查看动画效果](https://kingmui.github.io/CodeDemo/solarSystem/solarsystem.html)<!-- more -->
-{% codeblock 源代码 https://github.com/kingmui/CodeDemo/blob/master/solarSystem/solarsystem.html solarsystem.html %}
+{% codeblock 源代码 lang:html https://github.com/kingmui/CodeDemo/blob/master/solarSystem/solarsystem.html solarsystem.html %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
