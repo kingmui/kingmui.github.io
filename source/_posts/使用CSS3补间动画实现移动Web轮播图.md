@@ -1,8 +1,10 @@
 ---
-title: 使用C3补间动画实现移动Web轮播图
+title: 使用CSS3补间动画实现移动Web轮播图
 date: 2017-10-22 21:48:13
 reward: true
 tags:
+  - CSS3
+  - animation
 ---
 
 {% img http://oytx6hj82.bkt.clouddn.com/CarouselFigureView.png CarouselFigureView %}
