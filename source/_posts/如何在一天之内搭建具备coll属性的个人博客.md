@@ -21,23 +21,16 @@ $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 {% endcodeblock %}
 
 Hexo 目录结构
-
 <!-- more -->
-
 ![Hexo 目录结构](/images/site-tree.png)
-
 - `_config.yml`是整体的配置文件，很多基础配置、插件配置等都需要在里面进行。要注意的是，该文件格式要求极为严格，缺少一个空格都会导致运行错误。小提示：不要用 Tab 缩进，用两个空格符。
-
 - `public`这个文件夹是最终会发布到网站上的真实内容。怎么理解呢？我们可以把 public 文件夹当作是真正的被用户看到的，而其他的 source、themes 等都是为 public 服务的。Hexo 里有一个很重要的指令 hexo generate，这个指令就是利用所有代码里的配置信息、source 里写的文章、themes 里的样式，共同生成最终的静态 html 文件，存入 public 文件夹内。在我们执行了发布指令 hexo deploy 后，就会把 public 的内容部署到 GitHub Pages 上。当用户在访问我们的博客时，他们会看到 public 里生成的 html 文件。这个概念非常重要，即代码和真实静态页面是独立的。
-
 更多信息请查看：[如何在一天之内搭建以你自己名字为域名且具备 cool 属性的个人博客](http://www.jianshu.com/p/99665608d295)
 
 ### 一、配置博客根目录
 
 更改博客根目录（注：非主题根目录）下面的 `_config.yml` 里面的 `theme: landscape` 为`theme: yilia`
-
 我的配置如下：
-
 ```basic _config.yml
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
@@ -176,30 +169,22 @@ jsonContent:
 {% blockquote %}
 主题的配置文件在 `themes/yilia/_config.yml`文件里面
 {% endblockquote %}
-
 - 头像
-
 {% codeblock %}
 // 可以给 GitHub 头像的链接地址
 avatar: "https://avatars2.githubusercontent.com/u/24365000?s=460&v=4"
 {% endcodeblock %}
-
 - 站点图标
-
 {% codeblock %}
 // 将 favicon 放在 Hexo 博客根目录 source 文件夹下
 favicon: /favicon.png
 {% endcodeblock %}
-
 - 打赏
-
 {% codeblock %}
 // 打赏功能默认开启，可以设置 reward_type 的值改变初始状态，可接受的值为 0（关闭打赏）、1（文章对应的 MD 文件里有 reward:true 属性时，才有打赏）、2（所有文章均有打赏）
 reward_type: 2
 {% endcodeblock %}
-
 我的配置如下：
-
 ```basic _config.yml
 # Header
 menu:
@@ -311,13 +296,10 @@ aboutme: 一枚前端开发技术狗 <br><br> 正在寻找工作中...<br> 如�
 ```
 
 ### 三、使用 yilia 主题遇到的一些问题的解决方案
-
 - 点击所有文章提示模块缺失
-
   - 确保 node 版本大于 6.2
   - 在博客根目录（注：非主题根目录）执行如下命令：`npm i hexo-generator-json-content --save`
   - 在博客根目录 `_config.yml` 里添加配置（保持格式，不要改动任何空格缩进），执行 `hexo clean && hexo g` 之后执行 `hexo g` 重新生成博客
-
 {% codeblock %}
 jsonContent:
     meta: false
@@ -338,33 +320,23 @@ jsonContent:
         categories: false
         tags: true
 {% endcodeblock %}
-
 - 发布的文章在主页会全部显示出来，这样会非常不协调
-
   - 可以使用 `<!-- more -->` 标签来隐藏其下面的内容。
-
 - 网站出现中文乱码
-
   - 出现该问题是因为使用了记事本编辑并保存了 `_config.yml` 文件，记事本默认使用 `ANSI` 编码格式对文件进行保存，而网站的编码格式为 `UTF-8`，解决办法是使用记事本打开`_config.yml` 文件并另存为，此时选择编码格式为`UTF-8`。
 
 ### 四、中英文自动添加空格
 
 不少有追求的开发者在写博客时追求格式优雅，比如中英文间隔。为了达到这个目的，很多时候就不得不在写文时反复调整英文单词与中文的空格。
-
 这里介绍一个小巧的插件：[Auto-Spacing](https://github.com/hexojs/hexo-filter-auto-spacing)，它会在 markdown 文章转化成 html 时，自动为中英文添加空格。
-
 安装方法：
 在项目根目录下，执行
-
 {% codeblock %}
 npm install hexo-filter-auto-spacing --save
 {% endcodeblock %}
-
 执行完后可以在根目录的 package.json 里找到一行
-
 {% codeblock %}
 denpendency`:`"hexo-filter-auto-spacing": "^0.2.1"
 {% endcodeblock %}
-
 **提醒**
 使用这个工具要留意一点：如果你在文章里使用了中英文混合的 url，该插件也会将中英文分隔开，此时路径将无效，因此，这里推荐所有图片等资源的 url 都使用英文。
