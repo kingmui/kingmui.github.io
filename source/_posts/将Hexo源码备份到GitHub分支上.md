@@ -20,8 +20,7 @@ $ git add .
 $ git commit -m "backup"
 $ git push origin master:Hexo
 {% endcodeblock %}
-进行备份，然后
-<!-- more -->
+进行备份，然后<!-- more -->
 {% codeblock %}
 $ hexo d -g
 {% endcodeblock %}
