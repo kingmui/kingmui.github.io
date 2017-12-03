@@ -8,7 +8,7 @@ tags:
   - animation
 ---
 
-{% img http://oytx6hj82.bkt.clouddn.com/CarouselFigureView.png CarouselFigureView %}
+{% img http://oytx6hj82.bkt.clouddn.com/CarouselFigureView.png 600 CarouselFigureView %}
 {% blockquote %}
 tweenAnimationsVersion
 {% endblockquote %}

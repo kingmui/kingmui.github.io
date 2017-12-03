@@ -1,7 +1,6 @@
 ---
 title: 将Hexo源码备份到GitHub分支上
 date: 2017-5-20 16:36:25
-reward: true
 tags:
   - Hexo
   - Tips

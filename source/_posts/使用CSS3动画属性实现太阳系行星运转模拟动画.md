@@ -8,7 +8,7 @@ tags:
   - animation
 ---
 
-{% img http://oytx6hj82.bkt.clouddn.com/solarsystem.png 400 400 solarsystem %}
+{% img http://oytx6hj82.bkt.clouddn.com/solarsystem.png 400 solarsystem %}
 {% blockquote %}
 太阳系行星运转模拟
 {% endblockquote %}
