@@ -45,9 +45,9 @@ We’re here to put a dent in the universe. Otherwise why else even be here?
 16. 了解 CommonJS、AMD/CMD 模块化开发规范
 
 #### 后端
-1. 掌握并有过 PHP + MySQL 开发后台管理系统经验
+1. 了解 PHP 工作原理及基本语法，并有过 PHP + MySQL 开发后台管理系统经验
 2. 了解 Node 的使用并参与过使用 Nodejs+Express+MongoDB 进行项目开发的经验
-3. 熟悉 MySQL 数据库的基础操作
+3. 熟悉 MySQL、MongoDB 等数据库的基础操作
 
 #### 其他属性
 轻微强迫症，注意[代码规范](https://github.com/ecomfe/spec)
