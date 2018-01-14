@@ -1,18 +1,21 @@
 ---
 title: 使用CSS3补间动画实现移动Web轮播图
 date: 2017-10-22 21:48:13
-reward: true
 tags:
   - CSS3
-  - javascript
-  - animation
+  - JavaScript
+copyright: true
 ---
 
-{% img http://oytx6hj82.bkt.clouddn.com/CarouselFigureView.png 600 CarouselFigureView %}
-{% blockquote %}
+{% fullimage http://cdn.kingmui.cn/CarouselFigureView.png, CarouselFigureView %}
+
+{% note primary %}
 tweenAnimationsVersion
-{% endblockquote %}
-[查看效果](https://kingmui.github.io/CodeDemo/CarouselFigureView/tweenAnimationsVersion/)<!-- more -->
+{% endnote %}
+[查看效果](https://kingmui.github.io/CodeDemo/CarouselFigureView/tweenAnimationsVersion/)
+
+<!-- more -->
+
 {% codeblock 源代码 lang:javascript https://github.com/kingmui/CodeDemo/blob/master/CarouselFigureView/tweenAnimationsVersion/js/index.js index.js %}
 ;(function(){
 	var banner = document.querySelector('.banner');
