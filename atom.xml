@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>梦里有诗和远方</title>
+  <icon>https://www.gravatar.com/avatar/03805faced39ddbf2e6978062b1700e7</icon>
+  <subtitle>用艺术的眼光发现技术的美</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.kingmui.cn/"/>
+  <updated>2018-11-20T13:07:02.000Z</updated>
+  <id>http://www.kingmui.cn/</id>
+  
+  <author>
+    <name>King Mui</name>
+    <email>muikinghk@yahoo.com.hk</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript执行机制</title>
+    <link href="http://www.kingmui.cn/2018/11/15/Javascript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
+    <id>http://www.kingmui.cn/2018/11/15/Javascript执行机制/</id>
+    <published>2018-11-15T07:35:49.000Z</published>
+    <updated>2018-11-20T13:07:02.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;关于-Javascript&quot;&gt;&lt;a href=&quot;#关于-Javascript&quot; class=&quot;headerlink&quot; title=&quot;关于 Javascript&quot;&gt;&lt;/a&gt;关于 Javascript&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Javascript&lt;/code&gt;是一门&lt;strong&gt;单线程&lt;/strong&gt;语言，在最新的&lt;code&gt;HTML5&lt;/code&gt;中提出了&lt;code&gt;Web-Worker&lt;/code&gt;，但&lt;code&gt;Javascript&lt;/code&gt;是单线程这一核心仍未改变。所以一切的&lt;code&gt;Javascript&lt;/code&gt;版”多线程”都是用单线程模拟出来的！&lt;/p&gt;
+&lt;h3 id=&quot;Javascript-事件循环&quot;&gt;&lt;a href=&quot;#Javascript-事件循环&quot; class=&quot;headerlink&quot; title=&quot;Javascript 事件循环&quot;&gt;&lt;/a&gt;Javascript 事件循环&lt;/h3&gt;&lt;p&gt;既然 &lt;code&gt;js&lt;/code&gt; 是单线程，那就像只有一个窗口的银行，客户需要排队一个一个办理业务，同理 &lt;code&gt;js&lt;/code&gt; 任务也要一个一个顺序执行。如果一个任务耗时过长，那么后一个任务也必须等着。那么问题来了，假如我们想浏览新闻，但是新闻包含的超清图片加载很慢，难道我们的网页要一直卡着直到图片完全显示出来？因此聪明的程序员将任务分为两类：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中文简繁体切换功能的实现</title>
+    <link href="http://www.kingmui.cn/2018/09/15/%E4%B8%AD%E6%96%87%E7%AE%80%E7%B9%81%E4%BD%93%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://www.kingmui.cn/2018/09/15/中文简繁体切换功能的实现/</id>
+    <published>2018-09-15T07:53:53.000Z</published>
+    <updated>2018-09-16T12:33:36.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为了能够更好地照顾不同的用户，一些网站会提供简繁两种版本切换，提高用户的体验。&lt;/p&gt;
+&lt;h3 id=&quot;思路&quot;&gt;&lt;a href=&quot;#思路&quot; class=&quot;headerlink&quot; title=&quot;思路&quot;&gt;&lt;/a&gt;思路&lt;/h3&gt;&lt;p&gt;一般而言，网站要实现简繁字体的切换，需要先准备两套字体库。而基本的思路是：找到当前文字在字体库中的索引，然后根据索引值去另一套字体库中取出对应的文字，从而实现字体的替换。具体逻辑如下：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Js判断鼠标移入元素的方向</title>
+    <link href="http://www.kingmui.cn/2018/07/01/%E4%BD%BF%E7%94%A8Js%E5%88%A4%E6%96%AD%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E5%90%91/"/>
+    <id>http://www.kingmui.cn/2018/07/01/使用Js判断鼠标移入元素的方向/</id>
+    <published>2018-07-01T10:45:34.000Z</published>
+    <updated>2018-11-20T14:25:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;判断鼠标从元素矩形区域的哪个方向进入的标准为：&lt;br&gt;当鼠标从元素矩形区域外移入元素矩形区域，和鼠标行动轨迹发生交叉的那条边就认为是鼠标进入的方向，例如鼠标从上方往下和上边有交叉，就认为是从上方进入。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;本文要介绍几种方法来判断当鼠标滑入元素时，是从哪个方向进入；滑出元素时，从哪个方向滑出，以此对元素做一些交互效果。&lt;/p&gt;
+&lt;h3 id=&quot;求最小值&quot;&gt;&lt;a href=&quot;#求最小值&quot; class=&quot;headerlink&quot; title=&quot;求最小值&quot;&gt;&lt;/a&gt;求最小值&lt;/h3&gt;&lt;span itemprop=&quot;image&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/minimumValue.jpg&quot; class=&quot;full-image&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;p&gt;该方法是当鼠标滑入元素的时，从事件对象 &lt;code&gt;e&lt;/code&gt; 中获取其位于文档中的坐标 &lt;code&gt;(e.pageX, e.pageY)&lt;/code&gt;，再计算出 x 轴方向坐标减去元素左侧距离文档左侧的距离和 x 轴方向坐标减去元素右侧距离文档左侧的距离，y 轴方向坐标减去元素顶部距离文档顶部的距离和 y 轴方向坐标减去元素底部距离文档顶部的距离，求出这四个数字的绝对值的最小值，即为鼠标进入元素的方向。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//kingmui.github.io/CodeDemo/judgeTheDirectionOfTheMouseSlip/minimumValue/&quot;&gt;在线演示&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//github.com/kingmui/CodeDemo/tree/master/judgeTheDirectionOfTheMouseSlip/minimumValue&quot;&gt;涉及代码&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数防抖(debounce)与函数节流(throttle)</title>
+    <link href="http://www.kingmui.cn/2018/06/20/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96(debounce)%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81(throttle)/"/>
+    <id>http://www.kingmui.cn/2018/06/20/函数防抖(debounce)与函数节流(throttle)/</id>
+    <published>2018-06-20T03:03:39.000Z</published>
+    <updated>2018-06-20T08:34:26.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;在前端开发中有一部分的用户行为会频繁的触发事件执行，而对于 DOM 操作、资源加载等耗费性能的处理，很可能导致界面卡顿，甚至浏览器的崩溃。函数节流(throttle)和函数防抖(debounce)就是为了解决类似需求应运而生的。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;浏览器的 &lt;code&gt;resize&lt;/code&gt;、&lt;code&gt;scroll&lt;/code&gt;、&lt;code&gt;keypress&lt;/code&gt;、&lt;code&gt;mousemove&lt;/code&gt; 等事件在触发时，会不断地调用绑定在事件上的回调函数，极大地浪费资源，降低前端性能。为了优化体验，需要对这类事件进行调用次数的限制。&lt;/p&gt;
+&lt;p&gt;在开发的过程中，你可能会遇到下面的情况：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;监听 &lt;code&gt;Window&lt;/code&gt; 对象的 &lt;code&gt;resize&lt;/code&gt;，&lt;code&gt;scroll&lt;/code&gt; 事件&lt;/li&gt;
+&lt;li&gt;拖拽时监听 &lt;code&gt;mousemove&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;文字输入时，对输入字符串进行处理，比如要把 markdwon 转换成 html&lt;/li&gt;
+&lt;li&gt;监听文件变化，重启服务&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="性能优化" scheme="http://www.kingmui.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript如何使用变量设置对象的键名</title>
+    <link href="http://www.kingmui.cn/2018/06/19/JavaScript%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%94%AE%E5%90%8D/"/>
+    <id>http://www.kingmui.cn/2018/06/19/JavaScript如何使用变量设置对象的键名/</id>
+    <published>2018-06-19T07:28:03.000Z</published>
+    <updated>2018-06-20T08:31:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;{thetop: 10}&lt;/code&gt; 是一个有效的对象字面量。代码将创建一个属性名为 &lt;code&gt;thetop&lt;/code&gt; 且值为 &lt;code&gt;10&lt;/code&gt; 的对象。与以下内容相同：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;obj = &amp;#123;&lt;span class=&quot;attr&quot;&gt;thetop&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = &amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;thetop&quot;&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在 ES5 及更早版本中，你&lt;font color=&quot;red&quot;&gt;不能直接在对象字面量中使用变量作为属性名称&lt;/font&gt;。唯一的选择是执行以下操作：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自定义浏览器横向滚动条</title>
+    <link href="http://www.kingmui.cn/2018/06/03/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
+    <id>http://www.kingmui.cn/2018/06/03/自定义浏览器横向滚动条/</id>
+    <published>2018-06-03T03:07:20.000Z</published>
+    <updated>2018-11-20T14:26:58.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;最近在做项目的过程中，遇到了滚动条需要横向滚动的需求，特在此记录下相关的知识点！&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;关于项目需求&quot;&gt;&lt;a href=&quot;#关于项目需求&quot; class=&quot;headerlink&quot; title=&quot;关于项目需求&quot;&gt;&lt;/a&gt;关于项目需求&lt;/h3&gt;&lt;p&gt;横向显示信息流，超出新闻容器宽度的部分隐藏，当鼠标在新闻容器位置滚动时可自动横向滚动。&lt;/p&gt;
+&lt;h3 id=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;a href=&quot;#自定义浏览器滚动条样式&quot; class=&quot;headerlink&quot; title=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;/a&gt;自定义浏览器滚动条样式&lt;/h3&gt;&lt;h4 id=&quot;IE浏览器&quot;&gt;&lt;a href=&quot;#IE浏览器&quot; class=&quot;headerlink&quot; title=&quot;IE浏览器&quot;&gt;&lt;/a&gt;IE浏览器&lt;/h4&gt;&lt;p&gt;追溯浏览器对滚动条的自定义，恐怕最早的就是IE浏览器了（好像最开始支持的版本是IE5.5）。下面列出了多个版本的支持性：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>filepond API 翻译</title>
+    <link href="http://www.kingmui.cn/2018/05/29/filepond%20API%E7%BF%BB%E8%AF%91/"/>
+    <id>http://www.kingmui.cn/2018/05/29/filepond API翻译/</id>
+    <published>2018-05-29T05:30:45.000Z</published>
+    <updated>2018-05-29T14:49:28.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;FilePond 文档翻译之API&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;Style&quot;&gt;&lt;a href=&quot;#Style&quot; class=&quot;headerlink&quot; title=&quot;Style&quot;&gt;&lt;/a&gt;Style&lt;/h3&gt;&lt;h4 id=&quot;字体和颜色&quot;&gt;&lt;a href=&quot;#字体和颜色&quot; class=&quot;headerlink&quot; title=&quot;字体和颜色&quot;&gt;&lt;/a&gt;字体和颜色&lt;/h4&gt;&lt;p&gt;FilePond对其布局非常敏感，但字体，颜色，边框半径和填充可以毫无问题地进行微调。&lt;br&gt;FilePond的默认字体被设置为系统字体。这使得它尽可能轻便并且对用户来说更熟悉。&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.filepond--root&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;font-family&lt;/span&gt;: -apple-system, BlinkMacSystemFont, &lt;span class=&quot;string&quot;&gt;&#39;Segoe UI&#39;&lt;/span&gt;, Roboto,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Helvetica, Arial, sans-serif, &lt;span class=&quot;string&quot;&gt;&#39;Apple Color Emoji&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Segoe UI Emoji&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&#39;Segoe UI Symbol&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;要覆盖FilePond样式，最好通过预先加入 &lt;code&gt;.filepond--root&lt;/code&gt; 根选择器来使样式更加具体。 FilePond选择器尽可能保持非特定性，以使覆盖更容易。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>filepond简介</title>
+    <link href="http://www.kingmui.cn/2018/05/29/filepond%E7%AE%80%E4%BB%8B/"/>
+    <id>http://www.kingmui.cn/2018/05/29/filepond简介/</id>
+    <published>2018-05-29T02:22:15.000Z</published>
+    <updated>2018-05-29T14:49:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;Upload anything, from anywhere.&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;关于-filepond&quot;&gt;&lt;a href=&quot;#关于-filepond&quot; class=&quot;headerlink&quot; title=&quot;关于 filepond&quot;&gt;&lt;/a&gt;关于 &lt;a href=&quot;https://pqina.nl/filepond/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;filepond&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;filepond是一个灵活有趣的JavaScript文件上传库，压缩后仅21KB。可以上传任何内容，不仅优化了图像以获得更快的上传速度，还提供一个出色的，简洁流畅的用户体验。&lt;/p&gt;
+&lt;h4 id=&quot;框架适配&quot;&gt;&lt;a href=&quot;#框架适配&quot; class=&quot;headerlink&quot; title=&quot;框架适配&quot;&gt;&lt;/a&gt;框架适配&lt;/h4&gt;&lt;p&gt;由于filepond的核心库是用vanilla JavaScript编写的，因此它可以在任何地方使用。您可以在下方的列表中找到合适的适配器，使您可以更轻松地将FilePond用于您最喜爱的框架。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/react-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;React&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/vue-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Vue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/ngx-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnyasantoss/angularjs-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Angular 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/jquery-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue-cli脚手架中webpack配置基础文件详解</title>
+    <link href="http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://www.kingmui.cn/2018/05/27/vue-cli脚手架中webpack配置基础文件详解/</id>
+    <published>2018-05-27T06:06:34.000Z</published>
+    <updated>2018-05-29T14:32:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;vue-cli是构建vue单页应用的脚手架，输入一串指定的命令行从而自动生成vue.js+wepack的项目模板。这其中webpack发挥了很大的作用，它使得我们的代码模块化，引入一些插件帮我们完善功能，例如可以将文件打包压缩，图片转base64等。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;主体结构&quot;&gt;&lt;a href=&quot;#主体结构&quot; class=&quot;headerlink&quot; title=&quot;主体结构&quot;&gt;&lt;/a&gt;主体结构&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── build/                      &lt;span class=&quot;comment&quot;&gt;# webpack 配置文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   └── ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── config/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   ├── index.js                &lt;span class=&quot;comment&quot;&gt;# 项目配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   └── ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── src/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   ├── main.js                 &lt;span class=&quot;comment&quot;&gt;# 应用入口文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   ├── App.vue                 &lt;span class=&quot;comment&quot;&gt;# 主应用程序组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   ├── components/             &lt;span class=&quot;comment&quot;&gt;# ui 组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   │   └── ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│   └── assets/                 &lt;span class=&quot;comment&quot;&gt;# 模块资源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;│       └── ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── static/                     &lt;span class=&quot;comment&quot;&gt;# 静态资源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── .babelrc                    &lt;span class=&quot;comment&quot;&gt;# babel 配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── .editorconfig               &lt;span class=&quot;comment&quot;&gt;# 缩进，空格/制表符和编辑器的设置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── .eslintrc.js                &lt;span class=&quot;comment&quot;&gt;# eslint 配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── .eslintignore               &lt;span class=&quot;comment&quot;&gt;# eslint 忽略规则&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── .gitignore                  &lt;span class=&quot;comment&quot;&gt;# gitignore&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── .postcssrc.js               &lt;span class=&quot;comment&quot;&gt;# postcss 配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── index.html                  &lt;span class=&quot;comment&quot;&gt;# index.html 模板&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── package.json                &lt;span class=&quot;comment&quot;&gt;# 构建脚本和依赖关系&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└── README.md                   &lt;span class=&quot;comment&quot;&gt;# README file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://www.kingmui.cn/tags/Vue/"/>
+    
+      <category term="webpack" scheme="http://www.kingmui.cn/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>起风了</title>
+    <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
+    <id>http://www.kingmui.cn/2018/03/31/起风了/</id>
+    <published>2018-03-31T07:32:37.000Z</published>
+    <updated>2018-11-20T14:23:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;aplayer-SlWYTWtl&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
+[00:25.53]君が前に付き合っていた人のこと 当你向我坦白
+[00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
+[00:37.83]素直に聴いてあげられずに 我不肯好好听下去
+[00:43.21]寂しい思いをさせてしまったね 让你觉得难过了吧
+[00:48.12]
+[00:48.78]すぐにヤキモチ焼くのが僕の悪い癖だって 我明明知道动不动就会吃醋
+[00:56.59]分かっていた筈なのに 是自己的坏习惯
+[01:01.20]自分勝手な想いが残酷な言葉になって 但还是会胡思乱想
+[01:09.06]君を傷付けてた 说出过分的话来，令你伤心
+[01:13.97]
+[01:14.54]一緒に居られるだけで 只要让我和你在一起就好啊
+[01:18.79]手と手を重ね合えるだけで良かったね 只要可以牵着你的手就好啊
+[01:26.87]大切な事ほど見慣れた場所で輝くのかもしれない 最珍贵的东西，也许正闪耀在那些习以为常的地方
+[01:39.08]君を強く抱きしめたい 我好想紧紧拥抱你
+[01:46.00]
+[01:55.80]自分のためだけに生きている人が 在这个城市里
+[02:01.84]集められたようなこの街で 每个人都好像只为自己而活
+[02:08.39]誰かを心から想える幸せをいつまでも忘れたくない 能有人牵挂着我 这种幸福永难忘怀
+[02:18.73]
+[02:19.25]すぐにヤキモチ焼くとこも好きだよって 你嘲笑说“我也中意你爱吃醋这点呀”
+[02:25.28]からかって笑う君に甘えていた 我对你撒娇抗议
+[02:31.64]愛していることを言葉以外の方法で 好想现在就用语言之外的方式
+[02:39.02]今すぐに伝えたい 表达我对你的爱恋
+[02:44.29]
+[02:44.95]微笑んでくれた顔も 怒った顔も 无论微笑也好，生气也好
+[02:51.47]愛しくて仕方なかったよ 你可爱的脸庞都令我着迷
+[02:57.40]打ち明けてくれた過去も 你告诉我的往事也好
+[03:01.56]二人が見た青空も忘れない 一起看过的天空也好，我怎么会忘掉
+[03:09.98]
+[03:34.99]一緒に居られるだけで 只要让我和你在一起就好啊
+[03:39.00]手と手を重ね合えるだけで良かったね 只要可以牵着你的手就好啊
+[03:47.15]大切な事ほど見慣れた場所で輝くのかもしれない 最珍贵的东西，也许正闪耀在那些习以为常的地方
+[03:59.35]
+[03:59.88]微笑んでくれた顔も 怒った顔も 无论微笑也好，生气也好
+[04:06.31]愛しくて仕方なかったよ 你可爱的脸庞都令我着迷
+[04:12.06]君の事が好きだよ 我喜欢你
+[04:15.99]これからもずっと君を抱きしめたい 从今往后也想一直拥抱着你
+[04:24.51]君を強く抱きしめたい 我好想紧紧拥抱你&lt;/pre&gt;
+			&lt;/div&gt;
+			&lt;script&gt;
+				var ap = new APlayer({
+					element: document.getElementById(&quot;aplayer-SlWYTWtl&quot;),
+					narrow: false,
+					autoplay: false,
+					showlrc: 2,
+					music: {
+						title: &quot;ヤキモチ&quot;,
+						author: &quot;たかはし ゆう&quot;,
+						url: &quot;http://cdn.kingmui.cn/%E3%83%A4%E3%82%AD%E3%83%A2%E3%83%81.mp3&quot;,
+						pic: &quot;http://cdn.kingmui.cn/takahashiyuu.jpg&quot;,
+					}
+				});
+				window.aplayers || (window.aplayers = []);
+				window.aplayers.push(ap);
+			&lt;/script&gt;
+&lt;p&gt;君が前に付き合っていた人のこと&lt;br&gt;当你向我坦白&lt;/p&gt;
+&lt;p&gt;僕に打ち明けてくれたとき&lt;br&gt;你与前任的往事时&lt;/p&gt;
+&lt;p&gt;素直に聴いてあげられずに&lt;br&gt;我不肯好好听下去&lt;/p&gt;
+&lt;p&gt;寂しい思いをさせてしまったね&lt;br&gt;让你觉得难过了吧
+    
+    </summary>
+    
+    
+      <category term="Music" scheme="http://www.kingmui.cn/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Git Hook 自动部署 Hexo 到个人 VPS</title>
+    <link href="http://www.kingmui.cn/2018/03/24/%E4%BD%BF%E7%94%A8%20Git%20Hook%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo%20%E5%88%B0%E4%B8%AA%E4%BA%BA%20VPS/"/>
+    <id>http://www.kingmui.cn/2018/03/24/使用 Git Hook 自动部署 Hexo 到个人 VPS/</id>
+    <published>2018-03-24T07:27:03.000Z</published>
+    <updated>2018-05-13T09:38:40.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;2017年年尾（临近农历新年），在同事的“怂恿”下，我从阿里云购买了一台服务器，用以构建个人网站。前后忙碌了一阵，今天终于搭建好服务器。现将搭建过程做个简要记录，方便日后回顾！&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;CentOS-升级-Git-到最新版本&quot;&gt;&lt;a href=&quot;#CentOS-升级-Git-到最新版本&quot; class=&quot;headerlink&quot; title=&quot;CentOS 升级 Git 到最新版本&quot;&gt;&lt;/a&gt;CentOS 升级 Git 到最新版本&lt;/h3&gt;&lt;p&gt;CentOS 上的 Git 最新版本只有1.8.3，因此我们需要自己重新安装一遍 。&lt;/p&gt;
+&lt;h4 id=&quot;卸载旧版本-Git&quot;&gt;&lt;a href=&quot;#卸载旧版本-Git&quot; class=&quot;headerlink&quot; title=&quot;卸载旧版本 Git&quot;&gt;&lt;/a&gt;卸载旧版本 Git&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装 Development tools&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum -y groupinstall Development tools&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# GCC 用于编译安装包&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum install gcc perl-ExtUtils-MakeMaker&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# *卸载 CentOS 自带的老版本 Git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum -y remove git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装前环境配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum install -y curl-devel expat-devel gettext-devel openssl-devel zlib-devel asciidoc xmlto perl-devel perl-CPAN autoconf*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 系统检测(CentOS 7.4 64位)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cat /etc/centos-release&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CentOS Linux release 7.4.1708 (Core)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ uname -a&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux rmhost 3.10.0-693.2.2.el7.x86_64 &lt;span class=&quot;comment&quot;&gt;#1 SMP Tue Sep 12 22:26:13 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
+    
+      <category term="Git" scheme="http://www.kingmui.cn/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS页面渲染优化属性will-change</title>
+    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
+    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2018-05-13T09:38:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
+&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
+&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
+&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5 Web 存储</title>
+    <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
+    <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2018-05-13T09:38:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;随着互联网的快速发展，基于网页的应用越来越普遍，同时也变的越来越复杂，为了满足各式各样的需求，会经常性地在本地存储大量的数据。传统方式我们是以document.cookie来进行存储的，但是由于cookie的存储大小只有4k左右，并且解析也相当的复杂，每一次发送请求还会携带上cookie，这不仅会造成带宽的浪费，还会给开发者带来诸多不便。在此窘境下，HTML5规范提出了新的解决方案——Web存储。Web存储是将数据存储到用户的电脑上，这样不仅可以缓解服务器压力，同时也提高了用户体验。在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;cookie概念&quot;&gt;&lt;a href=&quot;#cookie概念&quot; class=&quot;headerlink&quot; title=&quot;cookie概念&quot;&gt;&lt;/a&gt;cookie概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;cookie是客户端保持状态的解决方案。cookie存储了服务端发送给客户端的一些特殊信息，这些信息以文本的方式存储在客户端。每当客户端向服务端发送请求时，&lt;strong&gt;cookie数据始终会在同源的http请求中携带（即使不需要）&lt;/strong&gt;，即cookie会在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发送给服务器，仅会在本地存储。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="Web存储" scheme="http://www.kingmui.cn/tags/Web%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用CSS3动画属性实现太阳系行星运转模拟动画</title>
+    <link href="http://www.kingmui.cn/2017/10/28/%E4%BD%BF%E7%94%A8CSS3%E5%8A%A8%E7%94%BB%E5%B1%9E%E6%80%A7%E5%AE%9E%E7%8E%B0%E5%A4%AA%E9%98%B3%E7%B3%BB%E8%A1%8C%E6%98%9F%E8%BF%90%E8%BD%AC%E6%A8%A1%E6%8B%9F%E5%8A%A8%E7%94%BB/"/>
+    <id>http://www.kingmui.cn/2017/10/28/使用CSS3动画属性实现太阳系行星运转模拟动画/</id>
+    <published>2017-10-28T15:25:14.000Z</published>
+    <updated>2018-11-20T14:24:12.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;http://cdn.kingmui.cn/solarsystem.png&quot; width=&quot;400&quot;&gt;
+&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;太阳系行星运转模拟&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/CodeDemo/solarSystem/solarsystem.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;查看动画效果&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用CSS3补间动画实现移动Web轮播图</title>
+    <link href="http://www.kingmui.cn/2017/10/22/%E4%BD%BF%E7%94%A8CSS3%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8Web%E8%BD%AE%E6%92%AD%E5%9B%BE/"/>
+    <id>http://www.kingmui.cn/2017/10/22/使用CSS3补间动画实现移动Web轮播图/</id>
+    <published>2017-10-22T13:48:13.000Z</published>
+    <updated>2018-11-20T14:24:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;span itemprop=&quot;image&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/CarouselFigureView.png&quot; class=&quot;full-image&quot; alt=&quot;CarouselFigureView&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;tweenAnimationsVersion&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/CodeDemo/CarouselFigureView/tweenAnimationsVersion/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;查看效果&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端开发学习笔记</title>
+    <link href="http://www.kingmui.cn/2017/02/09/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://www.kingmui.cn/2017/02/09/前端开发学习笔记/</id>
+    <published>2017-02-09T08:26:34.000Z</published>
+    <updated>2018-05-29T14:48:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;&lt;iframe style=&quot;margin-bottom: -5px;&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;91px&quot; height=&quot;20px&quot; src=&quot;https://ghbtns.com/github-btn.html?user=kingmui&amp;repo=HelloFrontEnd&amp;type=star&amp;count=true&quot;&gt;&lt;br&gt;&lt;/iframe&gt;HelloFrontEnd – Irregularly updated&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/01.H5C3.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;01.H5C3&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/02.JavaScript基础.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;02.JavaScript基础&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/03.WebAPI.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;03.WebAPI&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/04.JS动画.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;04.JS动画&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/05.JavaScript高级.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;05.JavaScript高级&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="PHP" scheme="http://www.kingmui.cn/tags/PHP/"/>
+    
+      <category term="Node" scheme="http://www.kingmui.cn/tags/Node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo个性化配置</title>
+    <link href="http://www.kingmui.cn/2016/11/24/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.kingmui.cn/2016/11/24/Hexo个性化配置/</id>
+    <published>2016-11-24T11:17:46.000Z</published>
+    <updated>2018-11-28T07:27:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
