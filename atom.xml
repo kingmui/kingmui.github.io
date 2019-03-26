@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2018-11-20T13:07:02.000Z</updated>
+  <updated>2019-03-26T15:26:42.178Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法的复杂度</title>
+    <link href="http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <id>http://www.kingmui.cn/2019/03/26/算法的复杂度/</id>
+    <published>2019-03-26T14:15:44.000Z</published>
+    <updated>2019-03-26T15:26:42.178Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;算法（algorithm）的定义&quot;&gt;&lt;a href=&quot;#算法（algorithm）的定义&quot; class=&quot;headerlink&quot; title=&quot;算法（algorithm）的定义&quot;&gt;&lt;/a&gt;算法（algorithm）的定义&lt;/h3&gt;&lt;p&gt;算法是解题方案的准确而完善的描述，是一系列解决问题的清晰指令。其实就是&lt;strong&gt;解决一个问题的完整性描述&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;算法的效率&quot;&gt;&lt;a href=&quot;#算法的效率&quot; class=&quot;headerlink&quot; title=&quot;算法的效率&quot;&gt;&lt;/a&gt;算法的效率&lt;/h3&gt;&lt;p&gt;既然算法是解决问题的描述，而解决同一问题的方法也是多种多样的，只是在这过程中我们所使用的时间或时间以外的代价（计算机消耗的则为内存）不一样。为了更快、更好、更强的提高算法的效率，很多时候一个优秀的算法就在于它与其他实现同一问题的算法相比，在时间和空间（内存）上得到明显的降低。&lt;/p&gt;
+&lt;p&gt;算法的效率主要由以下两个复杂度来评估：&lt;/p&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;&lt;strong&gt;时间复杂度&lt;/strong&gt;：评估执行程序所需的&lt;strong&gt;时间&lt;/strong&gt;。可以估算出程序对&lt;strong&gt;处理器&lt;/strong&gt;的使用程度。&lt;br&gt;&lt;strong&gt;空间复杂度&lt;/strong&gt;：评估执行程序所需的&lt;strong&gt;存储空间&lt;/strong&gt;。可以估算出程序对&lt;strong&gt;计算机内存&lt;/strong&gt;的使用程度。&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://www.kingmui.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Javascript执行机制</title>
@@ -140,11 +161,11 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
   </entry>
   
@@ -165,9 +186,9 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -196,9 +217,9 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -235,7 +256,7 @@
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-bXMMhtqj&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-EWqgPinZ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -278,7 +299,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-bXMMhtqj&quot;),
+					element: document.getElementById(&quot;aplayer-EWqgPinZ&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -386,9 +407,9 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
   </entry>
   
@@ -429,11 +450,11 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="PHP" scheme="http://www.kingmui.cn/tags/PHP/"/>
     
