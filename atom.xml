@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2019-03-26T15:26:42.178Z</updated>
+  <updated>2019-03-27T14:02:18.820Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScript设计模式</title>
+    <link href="http://www.kingmui.cn/2019/03/27/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://www.kingmui.cn/2019/03/27/JavaScript设计模式/</id>
+    <published>2019-03-27T13:55:32.000Z</published>
+    <updated>2019-03-27T14:02:18.820Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;设计模式的定义：在面向对象软件设计过程中针对特定问题的简洁而优雅的解决方案&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;当然我们可以用一个通俗的说法：设计模式是&lt;strong&gt;解决某个特定场景下对某种问题的解决方案&lt;/strong&gt;。因此，当我们遇到合适的场景时，我们可能会条件反射一样自然而然想到符合这种场景的设计模式。&lt;/p&gt;
+&lt;h3 id=&quot;单例模式&quot;&gt;&lt;a href=&quot;#单例模式&quot; class=&quot;headerlink&quot; title=&quot;单例模式&quot;&gt;&lt;/a&gt;单例模式&lt;/h3&gt;&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;单例模式的定义：&lt;strong&gt;保证一个类仅有一个实例&lt;/strong&gt;，并提供一个访问它的全局访问点。实现的方法为先判断实例存在与否，如果存在则直接返回，如果不存在就创建了再返回，这就确保了一个类只有一个实例对象。&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="设计模式" scheme="http://www.kingmui.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>算法的复杂度</title>
     <link href="http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     <id>http://www.kingmui.cn/2019/03/26/算法的复杂度/</id>
     <published>2019-03-26T14:15:44.000Z</published>
-    <updated>2019-03-26T15:26:42.178Z</updated>
+    <updated>2019-03-27T13:45:18.129Z</updated>
     
     <summary type="html">
     
@@ -86,7 +108,7 @@
     
       &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;判断鼠标从元素矩形区域的哪个方向进入的标准为：&lt;br&gt;当鼠标从元素矩形区域外移入元素矩形区域，和鼠标行动轨迹发生交叉的那条边就认为是鼠标进入的方向，例如鼠标从上方往下和上边有交叉，就认为是从上方进入。&lt;/p&gt;&lt;/div&gt;
 &lt;p&gt;本文要介绍几种方法来判断当鼠标滑入元素时，是从哪个方向进入；滑出元素时，从哪个方向滑出，以此对元素做一些交互效果。&lt;/p&gt;
-&lt;h3 id=&quot;求最小值&quot;&gt;&lt;a href=&quot;#求最小值&quot; class=&quot;headerlink&quot; title=&quot;求最小值&quot;&gt;&lt;/a&gt;求最小值&lt;/h3&gt;&lt;span itemprop=&quot;image&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/minimumValue.jpg&quot; class=&quot;full-image&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;h3 id=&quot;求最小值&quot;&gt;&lt;a href=&quot;#求最小值&quot; class=&quot;headerlink&quot; title=&quot;求最小值&quot;&gt;&lt;/a&gt;求最小值&lt;/h3&gt;&lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/minimumValue.jpg&quot; class=&quot;full-image&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
 &lt;p&gt;该方法是当鼠标滑入元素的时，从事件对象 &lt;code&gt;e&lt;/code&gt; 中获取其位于文档中的坐标 &lt;code&gt;(e.pageX, e.pageY)&lt;/code&gt;，再计算出 x 轴方向坐标减去元素左侧距离文档左侧的距离和 x 轴方向坐标减去元素右侧距离文档左侧的距离，y 轴方向坐标减去元素顶部距离文档顶部的距离和 y 轴方向坐标减去元素底部距离文档顶部的距离，求出这四个数字的绝对值的最小值，即为鼠标进入元素的方向。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;//kingmui.github.io/CodeDemo/judgeTheDirectionOfTheMouseSlip/minimumValue/&quot;&gt;在线演示&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//github.com/kingmui/CodeDemo/tree/master/judgeTheDirectionOfTheMouseSlip/minimumValue&quot;&gt;涉及代码&lt;/a&gt;&lt;/p&gt;
     
@@ -161,11 +183,11 @@
     </summary>
     
     
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
   </entry>
   
@@ -256,7 +278,7 @@
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-EWqgPinZ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-kxACVOuU&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -299,7 +321,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-EWqgPinZ&quot;),
+					element: document.getElementById(&quot;aplayer-kxACVOuU&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -348,27 +370,6 @@
   </entry>
   
   <entry>
-    <title>CSS页面渲染优化属性will-change</title>
-    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
-    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
-    <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2018-05-13T09:38:20.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
-&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
-&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
-&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTML5 Web 存储</title>
     <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
     <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
@@ -392,6 +393,27 @@
   </entry>
   
   <entry>
+    <title>CSS页面渲染优化属性will-change</title>
+    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
+    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2018-05-13T09:38:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
+&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
+&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
+&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用CSS3动画属性实现太阳系行星运转模拟动画</title>
     <link href="http://www.kingmui.cn/2017/10/28/%E4%BD%BF%E7%94%A8CSS3%E5%8A%A8%E7%94%BB%E5%B1%9E%E6%80%A7%E5%AE%9E%E7%8E%B0%E5%A4%AA%E9%98%B3%E7%B3%BB%E8%A1%8C%E6%98%9F%E8%BF%90%E8%BD%AC%E6%A8%A1%E6%8B%9F%E5%8A%A8%E7%94%BB/"/>
     <id>http://www.kingmui.cn/2017/10/28/使用CSS3动画属性实现太阳系行星运转模拟动画/</id>
@@ -407,9 +429,9 @@
     </summary>
     
     
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
   </entry>
   
@@ -422,16 +444,16 @@
     
     <summary type="html">
     
-      &lt;span itemprop=&quot;image&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/CarouselFigureView.png&quot; class=&quot;full-image&quot; alt=&quot;CarouselFigureView&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+      &lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/CarouselFigureView.png&quot; class=&quot;full-image&quot; alt=&quot;CarouselFigureView&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
 &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;tweenAnimationsVersion&lt;/p&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/CodeDemo/CarouselFigureView/tweenAnimationsVersion/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;查看效果&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
     
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
   </entry>
   
@@ -450,11 +472,11 @@
     </summary>
     
     
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="PHP" scheme="http://www.kingmui.cn/tags/PHP/"/>
     
