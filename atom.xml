@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2019-03-27T14:02:18.820Z</updated>
+  <updated>2019-04-05T11:24:56.843Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScript 的 Async/Await</title>
+    <link href="http://www.kingmui.cn/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/"/>
+    <id>http://www.kingmui.cn/2019/04/05/JavaScript 的 Async和Await/</id>
+    <published>2019-04-05T09:01:33.000Z</published>
+    <updated>2019-04-05T11:24:56.843Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在过去很长的时间里，JavaScript 开发人员在处理异步代码时不得不依赖回调函数来解决。结果，我们中的很多人都经历过回调地域。&lt;/p&gt;
+&lt;p&gt;然后我们迎来了 Promise。他们为回调提供了更有组织的替代方案，并且大多数社区很快也都转而使用它们。&lt;/p&gt;
+&lt;p&gt;现在，随着最新添加的 Async / Await，我们终于可以编写更高质量的 JavaScript 代码！&lt;/p&gt;
+&lt;h3 id=&quot;什么是-Async-Await？&quot;&gt;&lt;a href=&quot;#什么是-Async-Await？&quot; class=&quot;headerlink&quot; title=&quot;什么是 Async/Await？&quot;&gt;&lt;/a&gt;什么是 Async/Await？&lt;/h3&gt;&lt;p&gt;Async / Await 是一个备受期待的 JavaScript 功能，它使异步函数的使用更加愉快和易于理解。它构建在 Promise 之上，并与所有现有的基于 Promise 的 API 兼容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Async - 定义异步函数&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;someName&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;...&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;自动把函数转换为 &lt;code&gt;Promise&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当调用异步函数时，函数返回值会被 &lt;code&gt;resolve&lt;/code&gt; 处理&lt;/li&gt;
+&lt;li&gt;异步函数内部可以使用 &lt;code&gt;await&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>认识和使用 Promise</title>
+    <link href="http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/"/>
+    <id>http://www.kingmui.cn/2019/04/05/认识和使用 Promise/</id>
+    <published>2019-04-05T05:35:53.000Z</published>
+    <updated>2019-04-05T11:24:17.266Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt; 对象用于表示一个异步操作的最终状态（完成或失败），以及该异步操作的结果值。&lt;/p&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Promise&lt;/span&gt;( &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;resolve, reject&lt;/span&gt;) &lt;/span&gt;&amp;#123;...&amp;#125; &lt;span class=&quot;comment&quot;&gt;/* executor */&lt;/span&gt;  );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt; 构造函数执行时立即调用“处理器函数”（executor function）， &lt;code&gt;resolve&lt;/code&gt; 和 &lt;code&gt;reject&lt;/code&gt; 两个函数作为参数传递给“处理器函数”。“处理器函数”内部通常会执行一些异步操作，一旦异步操作执行完毕(可能成功/失败)，要么调用 &lt;code&gt;resolve&lt;/code&gt; 函数来将 &lt;code&gt;promise&lt;/code&gt; 状态改成 &lt;code&gt;fulfilled&lt;/code&gt;，要么调用 &lt;code&gt;reject&lt;/code&gt; 函数将 &lt;code&gt;promise&lt;/code&gt; 的状态改为 &lt;code&gt;rejected&lt;/code&gt;。如果在“处理器函数”中抛出一个错误，那么该 &lt;code&gt;promise&lt;/code&gt; 状态为 &lt;code&gt;rejected&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个 Promise 有以下几种状态&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pending&lt;/code&gt;: 初始状态，既不是成功，也不是失败状态。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fulfilled&lt;/code&gt;: 意味着操作成功完成。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rejected&lt;/code&gt;: 意味着操作失败。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;settled&lt;/code&gt;: 处在 &lt;code&gt;fulfilled&lt;/code&gt; 或 &lt;code&gt;rejected&lt;/code&gt; 状态而不是 &lt;code&gt;pending&lt;/code&gt; 状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为 &lt;code&gt;Promise.prototype.then&lt;/code&gt; 和 &lt;code&gt;Promise.prototype.catch&lt;/code&gt; 方法返回 &lt;code&gt;promise&lt;/code&gt; 对象， 所以它们&lt;strong&gt;可以被链式调用&lt;/strong&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript设计模式</title>
     <link href="http://www.kingmui.cn/2019/03/27/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     <id>http://www.kingmui.cn/2019/03/27/JavaScript设计模式/</id>
     <published>2019-03-27T13:55:32.000Z</published>
-    <updated>2019-03-27T14:02:18.820Z</updated>
+    <updated>2019-04-05T11:06:59.520Z</updated>
     
     <summary type="html">
     
@@ -43,7 +99,7 @@
     <link href="http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     <id>http://www.kingmui.cn/2019/03/26/算法的复杂度/</id>
     <published>2019-03-26T14:15:44.000Z</published>
-    <updated>2019-03-27T13:45:18.129Z</updated>
+    <updated>2019-04-05T11:06:59.718Z</updated>
     
     <summary type="html">
     
@@ -64,7 +120,7 @@
     <link href="http://www.kingmui.cn/2018/11/15/Javascript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
     <id>http://www.kingmui.cn/2018/11/15/Javascript执行机制/</id>
     <published>2018-11-15T07:35:49.000Z</published>
-    <updated>2018-11-20T13:07:02.000Z</updated>
+    <updated>2019-04-05T11:06:59.535Z</updated>
     
     <summary type="html">
     
@@ -83,7 +139,7 @@
     <link href="http://www.kingmui.cn/2018/09/15/%E4%B8%AD%E6%96%87%E7%AE%80%E7%B9%81%E4%BD%93%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
     <id>http://www.kingmui.cn/2018/09/15/中文简繁体切换功能的实现/</id>
     <published>2018-09-15T07:53:53.000Z</published>
-    <updated>2018-09-16T12:33:36.000Z</updated>
+    <updated>2019-04-05T11:06:59.592Z</updated>
     
     <summary type="html">
     
@@ -102,7 +158,7 @@
     <link href="http://www.kingmui.cn/2018/07/01/%E4%BD%BF%E7%94%A8Js%E5%88%A4%E6%96%AD%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E5%90%91/"/>
     <id>http://www.kingmui.cn/2018/07/01/使用Js判断鼠标移入元素的方向/</id>
     <published>2018-07-01T10:45:34.000Z</published>
-    <updated>2018-11-20T14:25:50.000Z</updated>
+    <updated>2019-04-05T11:06:59.693Z</updated>
     
     <summary type="html">
     
@@ -124,7 +180,7 @@
     <link href="http://www.kingmui.cn/2018/06/20/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96(debounce)%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81(throttle)/"/>
     <id>http://www.kingmui.cn/2018/06/20/函数防抖(debounce)与函数节流(throttle)/</id>
     <published>2018-06-20T03:03:39.000Z</published>
-    <updated>2018-06-20T08:34:26.000Z</updated>
+    <updated>2019-04-05T11:06:59.708Z</updated>
     
     <summary type="html">
     
@@ -152,7 +208,7 @@
     <link href="http://www.kingmui.cn/2018/06/19/JavaScript%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%94%AE%E5%90%8D/"/>
     <id>http://www.kingmui.cn/2018/06/19/JavaScript如何使用变量设置对象的键名/</id>
     <published>2018-06-19T07:28:03.000Z</published>
-    <updated>2018-06-20T08:31:32.000Z</updated>
+    <updated>2019-04-05T11:06:59.513Z</updated>
     
     <summary type="html">
     
@@ -172,7 +228,7 @@
     <link href="http://www.kingmui.cn/2018/06/03/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
     <id>http://www.kingmui.cn/2018/06/03/自定义浏览器横向滚动条/</id>
     <published>2018-06-03T03:07:20.000Z</published>
-    <updated>2018-11-20T14:26:58.000Z</updated>
+    <updated>2019-04-05T11:06:59.722Z</updated>
     
     <summary type="html">
     
@@ -196,7 +252,7 @@
     <link href="http://www.kingmui.cn/2018/05/29/filepond%20API%E7%BF%BB%E8%AF%91/"/>
     <id>http://www.kingmui.cn/2018/05/29/filepond API翻译/</id>
     <published>2018-05-29T05:30:45.000Z</published>
-    <updated>2018-05-29T14:49:28.000Z</updated>
+    <updated>2019-04-05T11:06:59.544Z</updated>
     
     <summary type="html">
     
@@ -221,7 +277,7 @@
     <link href="http://www.kingmui.cn/2018/05/29/filepond%E7%AE%80%E4%BB%8B/"/>
     <id>http://www.kingmui.cn/2018/05/29/filepond简介/</id>
     <published>2018-05-29T02:22:15.000Z</published>
-    <updated>2018-05-29T14:49:30.000Z</updated>
+    <updated>2019-04-05T11:06:59.561Z</updated>
     
     <summary type="html">
     
@@ -252,7 +308,7 @@
     <link href="http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/"/>
     <id>http://www.kingmui.cn/2018/05/27/vue-cli脚手架中webpack配置基础文件详解/</id>
     <published>2018-05-27T06:06:34.000Z</published>
-    <updated>2018-05-29T14:32:14.000Z</updated>
+    <updated>2019-04-05T11:06:59.575Z</updated>
     
     <summary type="html">
     
@@ -269,16 +325,39 @@
   </entry>
   
   <entry>
+    <title>什么是闭包？</title>
+    <link href="http://www.kingmui.cn/2018/05/05/%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85/"/>
+    <id>http://www.kingmui.cn/2018/05/05/什么是闭包/</id>
+    <published>2018-05-05T07:52:28.000Z</published>
+    <updated>2019-04-05T11:08:53.570Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;闭包（closure）是由函数引用其周边状态（&lt;strong&gt;词法环境&lt;/strong&gt;）绑在一起形成的（封装）组合结构。在 JavaScript 中，闭包在&lt;strong&gt;每个函数被创建时&lt;/strong&gt;形成。&lt;br&gt;说白了就是函数的嵌套，内层的函数可以使用外层函数的所有变量，即使外层函数已经执行完毕。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;这是基本原理，但为什么我们关心这些？实际上，由于闭包与它的词法环境绑在一起，因此&lt;strong&gt;闭包让我们能够从一个函数内部访问其外部函数的作用域&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;要使用闭包，只需要简单地将一个函数定义在另一个函数内部，并将它暴露出来。要暴露一个函数，可以将它返回或者传给其他函数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内部函数将能够访问到外部函数作用域中的变量&lt;/strong&gt;，即使外部函数已经执行完毕。&lt;/p&gt;
+&lt;h3 id=&quot;闭包使用的例子&quot;&gt;&lt;a href=&quot;#闭包使用的例子&quot; class=&quot;headerlink&quot; title=&quot;闭包使用的例子&quot;&gt;&lt;/a&gt;闭包使用的例子&lt;/h3&gt;&lt;p&gt;闭包的用途之一是&lt;strong&gt;实现对象的私有数据&lt;/strong&gt;。数据私有是让我们能够面向接口编程而不是面向实现编程的基础。而面向接口编程是一个重要的概念，有助于我们创建更加健壮的软件，因为实现细节比接口约定相对来说更加容易被改变。&lt;/p&gt;
+&lt;p&gt;在 JavaScript 中，闭包是用来实现数据私有的原生机制。当你使用闭包来实现数据私有时，被封装的变量只能在闭包容器函数作用域中使用。你无法绕过对象被授权的方法在外部访问这些数据。在 JavaScript 中，任何定义在闭包作用域下的公开方法才可以访问这些数据。例如：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>起风了</title>
     <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
     <id>http://www.kingmui.cn/2018/03/31/起风了/</id>
     <published>2018-03-31T07:32:37.000Z</published>
-    <updated>2018-11-20T14:23:20.000Z</updated>
+    <updated>2019-04-05T11:06:59.736Z</updated>
     
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-oxOBRWIB&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-FkdriFVK&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -321,7 +400,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-oxOBRWIB&quot;),
+					element: document.getElementById(&quot;aplayer-FkdriFVK&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -352,7 +431,7 @@
     <link href="http://www.kingmui.cn/2018/03/24/%E4%BD%BF%E7%94%A8%20Git%20Hook%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo%20%E5%88%B0%E4%B8%AA%E4%BA%BA%20VPS/"/>
     <id>http://www.kingmui.cn/2018/03/24/使用 Git Hook 自动部署 Hexo 到个人 VPS/</id>
     <published>2018-03-24T07:27:03.000Z</published>
-    <updated>2018-05-13T09:38:40.000Z</updated>
+    <updated>2019-04-05T11:06:59.613Z</updated>
     
     <summary type="html">
     
@@ -370,11 +449,38 @@
   </entry>
   
   <entry>
+    <title>JavaScript并非所有的东西都是对象</title>
+    <link href="http://www.kingmui.cn/2018/01/19/JavaScript%E5%B9%B6%E9%9D%9E%E6%89%80%E6%9C%89%E7%9A%84%E4%B8%9C%E8%A5%BF%E9%83%BD%E6%98%AF%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://www.kingmui.cn/2018/01/19/JavaScript并非所有的东西都是对象/</id>
+    <published>2018-01-19T02:14:12.000Z</published>
+    <updated>2019-04-05T11:08:53.568Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;虽然很多语言宣称：“一切皆是对象”，但在 javascript 中，并不是所有的值都是对象。这篇博文解释了 javascript 中的两种值类型：原始值（primitive）和对象（object），以及混合使用两种类型时的注意事项。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;原始值-vs-对象&quot;&gt;&lt;a href=&quot;#原始值-vs-对象&quot; class=&quot;headerlink&quot; title=&quot;原始值 vs 对象&quot;&gt;&lt;/a&gt;原始值 vs 对象&lt;/h3&gt;&lt;p&gt;javascript 中的值可以被划分为两大类：原始值（primitive）和对象（object）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下面的值是原始值。&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;字符串&lt;/li&gt;
+&lt;li&gt;数字：在 JavaScript 中所有的数字都是浮点数&lt;/li&gt;
+&lt;li&gt;布尔值&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;null&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;undefined&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML5 Web 存储</title>
     <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
     <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
     <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2018-05-13T09:38:32.000Z</updated>
+    <updated>2019-04-05T11:06:59.457Z</updated>
     
     <summary type="html">
     
@@ -397,7 +503,7 @@
     <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
     <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
     <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2018-05-13T09:38:20.000Z</updated>
+    <updated>2019-04-05T11:06:59.443Z</updated>
     
     <summary type="html">
     
@@ -418,7 +524,7 @@
     <link href="http://www.kingmui.cn/2017/10/28/%E4%BD%BF%E7%94%A8CSS3%E5%8A%A8%E7%94%BB%E5%B1%9E%E6%80%A7%E5%AE%9E%E7%8E%B0%E5%A4%AA%E9%98%B3%E7%B3%BB%E8%A1%8C%E6%98%9F%E8%BF%90%E8%BD%AC%E6%A8%A1%E6%8B%9F%E5%8A%A8%E7%94%BB/"/>
     <id>http://www.kingmui.cn/2017/10/28/使用CSS3动画属性实现太阳系行星运转模拟动画/</id>
     <published>2017-10-28T15:25:14.000Z</published>
-    <updated>2018-11-20T14:24:12.000Z</updated>
+    <updated>2019-04-05T11:06:59.629Z</updated>
     
     <summary type="html">
     
@@ -432,86 +538,6 @@
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用CSS3补间动画实现移动Web轮播图</title>
-    <link href="http://www.kingmui.cn/2017/10/22/%E4%BD%BF%E7%94%A8CSS3%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8Web%E8%BD%AE%E6%92%AD%E5%9B%BE/"/>
-    <id>http://www.kingmui.cn/2017/10/22/使用CSS3补间动画实现移动Web轮播图/</id>
-    <published>2017-10-22T13:48:13.000Z</published>
-    <updated>2018-11-20T14:24:42.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/CarouselFigureView.png&quot; class=&quot;full-image&quot; alt=&quot;CarouselFigureView&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
-&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;tweenAnimationsVersion&lt;/p&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/CodeDemo/CarouselFigureView/tweenAnimationsVersion/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;查看效果&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端开发学习笔记</title>
-    <link href="http://www.kingmui.cn/2017/02/09/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://www.kingmui.cn/2017/02/09/前端开发学习笔记/</id>
-    <published>2017-02-09T08:26:34.000Z</published>
-    <updated>2018-05-29T14:48:18.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;&lt;iframe style=&quot;margin-bottom: -5px;&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;91px&quot; height=&quot;20px&quot; src=&quot;https://ghbtns.com/github-btn.html?user=kingmui&amp;repo=HelloFrontEnd&amp;type=star&amp;count=true&quot;&gt;&lt;br&gt;&lt;/iframe&gt;HelloFrontEnd – Irregularly updated&lt;/p&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/01.H5C3.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;01.H5C3&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/02.JavaScript基础.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;02.JavaScript基础&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/03.WebAPI.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;03.WebAPI&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/04.JS动画.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;04.JS动画&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://kingmui.github.io/HelloFrontEnd/05.JavaScript高级.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;05.JavaScript高级&lt;/a&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
-      <category term="PHP" scheme="http://www.kingmui.cn/tags/PHP/"/>
-    
-      <category term="Node" scheme="http://www.kingmui.cn/tags/Node/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo个性化配置</title>
-    <link href="http://www.kingmui.cn/2016/11/24/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/"/>
-    <id>http://www.kingmui.cn/2016/11/24/Hexo个性化配置/</id>
-    <published>2016-11-24T11:17:46.000Z</published>
-    <updated>2018-11-29T13:17:34.441Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;SEO-优化&quot;&gt;&lt;a href=&quot;#SEO-优化&quot; class=&quot;headerlink&quot; title=&quot;SEO 优化&quot;&gt;&lt;/a&gt;SEO 优化&lt;/h3&gt;&lt;h4 id=&quot;给你的-hexo-站点添加-sitemap-网站地图&quot;&gt;&lt;a href=&quot;#给你的-hexo-站点添加-sitemap-网站地图&quot; class=&quot;headerlink&quot; title=&quot;给你的 hexo 站点添加 sitemap 网站地图&quot;&gt;&lt;/a&gt;给你的 hexo 站点添加 sitemap 网站地图&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;安装 hexo 的 sitemap 网站地图生成插件&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-baidu-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;在你的 hexo 站点的 &lt;code&gt;_config.yml&lt;/code&gt; 文件中添加以下代码&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# hexo sitemap网站地图&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sitemap:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: sitemap.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;baidusitemap:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: baidusitemap.xml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;p&gt;配置成功后，hexo 编译时会在 hexo 站点根目录生成 &lt;code&gt;sitemap.xml&lt;/code&gt; 和 &lt;code&gt;baidusitemap.xml&lt;/code&gt;。&lt;br&gt;其中 &lt;code&gt;sitemap.xml&lt;/code&gt; 适合提交给谷歌搜素引擎，&lt;code&gt;baidusitemap.xml&lt;/code&gt; 适合提交百度搜索引擎。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;给你的 hexo 网站添加蜘蛛协议 &lt;code&gt;robots.txt&lt;/code&gt;。把 &lt;code&gt;robots.txt&lt;/code&gt; 放在你的 hexo 站点的 &lt;code&gt;source&lt;/code&gt; 文件下即可。代码如下：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
     
   </entry>
   
