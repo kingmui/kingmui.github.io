@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2019-04-07T04:17:32.284Z</updated>
+  <updated>2019-04-07T04:26:43.367Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/"/>
     <id>http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/</id>
     <published>2019-04-07T03:31:26.000Z</published>
-    <updated>2019-04-07T04:17:32.284Z</updated>
+    <updated>2019-04-07T04:26:43.367Z</updated>
     
     <summary type="html">
     
-      &lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;loop&quot;:true,&quot;lang&quot;:&quot;zh-cn&quot;,&quot;video&quot;:{&quot;url&quot;:&quot;//cdn.kingmui.cn/gucunparkvlog.mp4&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;
+      &lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;loop&quot;:true,&quot;lang&quot;:&quot;zh-cn&quot;,&quot;video&quot;:{&quot;url&quot;:&quot;http://cdn.kingmui.cn/gucunparkvlog.mp4&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;
 &lt;p&gt;不是要和你玩捉迷藏&lt;/p&gt;
 &lt;p&gt;大朵的云可以作证&lt;/p&gt;
 &lt;p&gt;这黄金的花园里&lt;/p&gt;
@@ -263,11 +263,11 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
   </entry>
   
@@ -288,9 +288,9 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -319,9 +319,9 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -381,7 +381,7 @@
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-tiFDeBLz&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-dFoElrEz&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -424,7 +424,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-tiFDeBLz&quot;),
+					element: document.getElementById(&quot;aplayer-dFoElrEz&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -500,27 +500,6 @@
   </entry>
   
   <entry>
-    <title>CSS页面渲染优化属性will-change</title>
-    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
-    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
-    <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2019-04-05T11:06:59.443Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
-&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
-&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
-&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTML5 Web 存储</title>
     <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
     <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
@@ -540,6 +519,27 @@
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="Web存储" scheme="http://www.kingmui.cn/tags/Web%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS页面渲染优化属性will-change</title>
+    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
+    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2019-04-05T11:06:59.443Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
+&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
+&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
+&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
   </entry>
   
