@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2019-04-05T11:24:56.843Z</updated>
+  <updated>2019-04-07T04:17:32.284Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>申城四月花争艳，最美樱花绽顾村</title>
+    <link href="http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/"/>
+    <id>http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/</id>
+    <published>2019-04-07T03:31:26.000Z</published>
+    <updated>2019-04-07T04:17:32.284Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;loop&quot;:true,&quot;lang&quot;:&quot;zh-cn&quot;,&quot;video&quot;:{&quot;url&quot;:&quot;//cdn.kingmui.cn/gucunparkvlog.mp4&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;
+&lt;p&gt;不是要和你玩捉迷藏&lt;/p&gt;
+&lt;p&gt;大朵的云可以作证&lt;/p&gt;
+&lt;p&gt;这黄金的花园里&lt;/p&gt;
+&lt;p&gt;一条光影斑驳的小路伸向了远方&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://www.kingmui.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="旅游" scheme="http://www.kingmui.cn/tags/%E6%97%85%E6%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript 的 Async/Await</title>
     <link href="http://www.kingmui.cn/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/"/>
     <id>http://www.kingmui.cn/2019/04/05/JavaScript 的 Async和Await/</id>
     <published>2019-04-05T09:01:33.000Z</published>
-    <updated>2019-04-05T11:24:56.843Z</updated>
+    <updated>2019-04-05T11:34:39.689Z</updated>
     
     <summary type="html">
     
@@ -49,7 +73,7 @@
     <link href="http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/"/>
     <id>http://www.kingmui.cn/2019/04/05/认识和使用 Promise/</id>
     <published>2019-04-05T05:35:53.000Z</published>
-    <updated>2019-04-05T11:24:17.266Z</updated>
+    <updated>2019-04-05T11:35:02.274Z</updated>
     
     <summary type="html">
     
@@ -239,11 +263,11 @@
     </summary>
     
     
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
   </entry>
   
@@ -264,9 +288,9 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -295,9 +319,9 @@
     </summary>
     
     
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -352,12 +376,12 @@
     <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
     <id>http://www.kingmui.cn/2018/03/31/起风了/</id>
     <published>2018-03-31T07:32:37.000Z</published>
-    <updated>2019-04-05T11:06:59.736Z</updated>
+    <updated>2019-04-07T03:37:01.536Z</updated>
     
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-FkdriFVK&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-tiFDeBLz&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -400,7 +424,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-FkdriFVK&quot;),
+					element: document.getElementById(&quot;aplayer-tiFDeBLz&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -476,29 +500,6 @@
   </entry>
   
   <entry>
-    <title>HTML5 Web 存储</title>
-    <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
-    <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
-    <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2019-04-05T11:06:59.457Z</updated>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;随着互联网的快速发展，基于网页的应用越来越普遍，同时也变的越来越复杂，为了满足各式各样的需求，会经常性地在本地存储大量的数据。传统方式我们是以document.cookie来进行存储的，但是由于cookie的存储大小只有4k左右，并且解析也相当的复杂，每一次发送请求还会携带上cookie，这不仅会造成带宽的浪费，还会给开发者带来诸多不便。在此窘境下，HTML5规范提出了新的解决方案——Web存储。Web存储是将数据存储到用户的电脑上，这样不仅可以缓解服务器压力，同时也提高了用户体验。在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。&lt;/p&gt;&lt;/div&gt;
-&lt;h3 id=&quot;cookie概念&quot;&gt;&lt;a href=&quot;#cookie概念&quot; class=&quot;headerlink&quot; title=&quot;cookie概念&quot;&gt;&lt;/a&gt;cookie概念&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;cookie是客户端保持状态的解决方案。cookie存储了服务端发送给客户端的一些特殊信息，这些信息以文本的方式存储在客户端。每当客户端向服务端发送请求时，&lt;strong&gt;cookie数据始终会在同源的http请求中携带（即使不需要）&lt;/strong&gt;，即cookie会在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发送给服务器，仅会在本地存储。&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-      <category term="Web存储" scheme="http://www.kingmui.cn/tags/Web%E5%AD%98%E5%82%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CSS页面渲染优化属性will-change</title>
     <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
     <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
@@ -520,24 +521,25 @@
   </entry>
   
   <entry>
-    <title>使用CSS3动画属性实现太阳系行星运转模拟动画</title>
-    <link href="http://www.kingmui.cn/2017/10/28/%E4%BD%BF%E7%94%A8CSS3%E5%8A%A8%E7%94%BB%E5%B1%9E%E6%80%A7%E5%AE%9E%E7%8E%B0%E5%A4%AA%E9%98%B3%E7%B3%BB%E8%A1%8C%E6%98%9F%E8%BF%90%E8%BD%AC%E6%A8%A1%E6%8B%9F%E5%8A%A8%E7%94%BB/"/>
-    <id>http://www.kingmui.cn/2017/10/28/使用CSS3动画属性实现太阳系行星运转模拟动画/</id>
-    <published>2017-10-28T15:25:14.000Z</published>
-    <updated>2019-04-05T11:06:59.629Z</updated>
+    <title>HTML5 Web 存储</title>
+    <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
+    <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2019-04-05T11:06:59.457Z</updated>
     
     <summary type="html">
     
-      &lt;img src=&quot;http://cdn.kingmui.cn/solarsystem.png&quot; width=&quot;400&quot;&gt;
-&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;太阳系行星运转模拟&lt;/p&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://kingmui.github.io/CodeDemo/solarSystem/solarsystem.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;查看动画效果&lt;/a&gt;&lt;/p&gt;
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;随着互联网的快速发展，基于网页的应用越来越普遍，同时也变的越来越复杂，为了满足各式各样的需求，会经常性地在本地存储大量的数据。传统方式我们是以document.cookie来进行存储的，但是由于cookie的存储大小只有4k左右，并且解析也相当的复杂，每一次发送请求还会携带上cookie，这不仅会造成带宽的浪费，还会给开发者带来诸多不便。在此窘境下，HTML5规范提出了新的解决方案——Web存储。Web存储是将数据存储到用户的电脑上，这样不仅可以缓解服务器压力，同时也提高了用户体验。在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;cookie概念&quot;&gt;&lt;a href=&quot;#cookie概念&quot; class=&quot;headerlink&quot; title=&quot;cookie概念&quot;&gt;&lt;/a&gt;cookie概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;cookie是客户端保持状态的解决方案。cookie存储了服务端发送给客户端的一些特殊信息，这些信息以文本的方式存储在客户端。每当客户端向服务端发送请求时，&lt;strong&gt;cookie数据始终会在同源的http请求中携带（即使不需要）&lt;/strong&gt;，即cookie会在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发送给服务器，仅会在本地存储。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
     
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="Web存储" scheme="http://www.kingmui.cn/tags/Web%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
