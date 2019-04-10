@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2019-04-07T04:26:43.367Z</updated>
+  <updated>2019-04-10T13:00:55.049Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ECMAScript 5的严格模式</title>
+    <link href="http://www.kingmui.cn/2019/04/10/ECMAScript%205%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://www.kingmui.cn/2019/04/10/ECMAScript 5的严格模式/</id>
+    <published>2019-04-10T08:48:09.000Z</published>
+    <updated>2019-04-10T13:00:55.049Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;ECMAScript 5 引入了 &lt;code&gt;strict mode&lt;/code&gt;，现在已经被大多浏览器实现(包括 IE10)。会使 web 浏览器更容易的解析代码(只需要添加 &lt;code&gt;&amp;quot;use strict&amp;quot;;&lt;/code&gt; 在源码的最上面)。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;严格模式不仅仅是一个子集：它的产生是为了形成与正常代码不同的语义。不支持严格模式与支持严格模式的浏览器在执行严格模式代码时会采用不同行为。所以在没有对运行环境展开&lt;strong&gt;特性测试&lt;/strong&gt;来验证对于严格模式相关方面支持的情况下，就算采用了严格模式也不一定会取得预期效果。严格模式代码和非严格模式代码可以共存，因此项目脚本可以渐进式地采用严格模式。&lt;/p&gt;
+&lt;p&gt;严格模式对正常的 JavaScript 语义做了一些更改。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;严格模式通过&lt;strong&gt;抛出错误&lt;/strong&gt;来消除了一些原有&lt;strong&gt;静默错误&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;严格模式修复了一些导致 JavaScript 引擎难以执行优化的缺陷：有时候，相同的代码，严格模式可以比非严格模式下&lt;strong&gt;运行得更快&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;严格模式&lt;strong&gt;禁用了&lt;/strong&gt;在 ECMAScript 的未来版本中可能会定义的一些语法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;非严格模式到严格模式的区别&quot;&gt;&lt;a href=&quot;#非严格模式到严格模式的区别&quot; class=&quot;headerlink&quot; title=&quot;非严格模式到严格模式的区别&quot;&gt;&lt;/a&gt;非严格模式到严格模式的区别&lt;/h3&gt;&lt;p&gt;严格模式同时改变了语法及运行时行为。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>申城四月花争艳，最美樱花绽顾村</title>
     <link href="http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/"/>
     <id>http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/</id>
     <published>2019-04-07T03:31:26.000Z</published>
-    <updated>2019-04-07T04:26:43.367Z</updated>
+    <updated>2019-04-10T12:48:02.968Z</updated>
     
     <summary type="html">
     
@@ -349,20 +375,25 @@
   </entry>
   
   <entry>
-    <title>什么是闭包？</title>
-    <link href="http://www.kingmui.cn/2018/05/05/%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85/"/>
-    <id>http://www.kingmui.cn/2018/05/05/什么是闭包/</id>
+    <title>学习Javascript闭包（Closure）</title>
+    <link href="http://www.kingmui.cn/2018/05/05/learning_javascript_closures/"/>
+    <id>http://www.kingmui.cn/2018/05/05/learning_javascript_closures/</id>
     <published>2018-05-05T07:52:28.000Z</published>
-    <updated>2019-04-05T11:08:53.570Z</updated>
+    <updated>2019-04-10T13:00:55.051Z</updated>
     
     <summary type="html">
     
-      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;闭包（closure）是由函数引用其周边状态（&lt;strong&gt;词法环境&lt;/strong&gt;）绑在一起形成的（封装）组合结构。在 JavaScript 中，闭包在&lt;strong&gt;每个函数被创建时&lt;/strong&gt;形成。&lt;br&gt;说白了就是函数的嵌套，内层的函数可以使用外层函数的所有变量，即使外层函数已经执行完毕。&lt;/p&gt;&lt;/div&gt;
-&lt;p&gt;这是基本原理，但为什么我们关心这些？实际上，由于闭包与它的词法环境绑在一起，因此&lt;strong&gt;闭包让我们能够从一个函数内部访问其外部函数的作用域&lt;/strong&gt;。&lt;/p&gt;
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包是由&lt;strong&gt;函数&lt;/strong&gt;以及&lt;strong&gt;创建该函数的词法环境&lt;/strong&gt;组合而成。&lt;strong&gt;这个环境包含了这个闭包创建时所能访问的所有局部变量&lt;/strong&gt;。 – MDN&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包是有权访问另一个函数作用域的函数。 – 《JavaScript 高级程序设计(第 3 版)》&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;函数对象可以通过作用域链相互关联起来，函数体内部的变量都可以保存在函数作用域内，这种特性在计算机科学文献中称为闭包。 – 《JavaScript 权威指南(第 6 版)》&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;当函数可以&lt;strong&gt;记住并访问所在的词法作用域&lt;/strong&gt;时，就产生了闭包，即使函数是在当前词法作用域之外执行。 – 《你不知道的 JavaScript(上卷)》&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包是个函数，而它「记住了周围发生了什么」。表现为由「一个函数」体中定义了「另个函数」。 – &lt;a href=&quot;https://www.gracecode.com/posts/2385.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;闭包的秘密&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包就是能够读取其他函数内部变量的函数。 – &lt;a href=&quot;http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;阮一峰&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;p&gt;要使用闭包，只需要简单地将一个函数定义在另一个函数内部，并将它暴露出来。要暴露一个函数，可以将它返回或者传给其他函数。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;内部函数将能够访问到外部函数作用域中的变量&lt;/strong&gt;，即使外部函数已经执行完毕。&lt;/p&gt;
-&lt;h3 id=&quot;闭包使用的例子&quot;&gt;&lt;a href=&quot;#闭包使用的例子&quot; class=&quot;headerlink&quot; title=&quot;闭包使用的例子&quot;&gt;&lt;/a&gt;闭包使用的例子&lt;/h3&gt;&lt;p&gt;闭包的用途之一是&lt;strong&gt;实现对象的私有数据&lt;/strong&gt;。数据私有是让我们能够面向接口编程而不是面向实现编程的基础。而面向接口编程是一个重要的概念，有助于我们创建更加健壮的软件，因为实现细节比接口约定相对来说更加容易被改变。&lt;/p&gt;
-&lt;p&gt;在 JavaScript 中，闭包是用来实现数据私有的原生机制。当你使用闭包来实现数据私有时，被封装的变量只能在闭包容器函数作用域中使用。你无法绕过对象被授权的方法在外部访问这些数据。在 JavaScript 中，任何定义在闭包作用域下的公开方法才可以访问这些数据。例如：&lt;/p&gt;
+&lt;p&gt;由于在 Javascript 语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成&lt;strong&gt;定义在一个函数内部的函数&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;所以，在本质上，闭包就是&lt;strong&gt;将函数内部和函数外部连接起来的一座桥梁&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;闭包很有用，因为它允许将函数与其所操作的某些数据（环境）关联起来。这显然类似于面向对象编程。在面向对象编程中，对象允许我们将某些数据（对象的属性）与一个或者多个方法相关联。&lt;/p&gt;
     
     </summary>
     
@@ -376,12 +407,12 @@
     <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
     <id>http://www.kingmui.cn/2018/03/31/起风了/</id>
     <published>2018-03-31T07:32:37.000Z</published>
-    <updated>2019-04-07T03:37:01.536Z</updated>
+    <updated>2019-04-10T12:48:02.984Z</updated>
     
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-dFoElrEz&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-NzbhILAQ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -424,7 +455,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-dFoElrEz&quot;),
+					element: document.getElementById(&quot;aplayer-NzbhILAQ&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -519,27 +550,6 @@
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
       <category term="Web存储" scheme="http://www.kingmui.cn/tags/Web%E5%AD%98%E5%82%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS页面渲染优化属性will-change</title>
-    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
-    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
-    <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2019-04-05T11:06:59.443Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
-&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
-&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
-&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
   </entry>
   

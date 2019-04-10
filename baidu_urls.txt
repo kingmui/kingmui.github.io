@@ -1,3 +1,4 @@
+http://www.kingmui.cn/2019/04/10/ECMAScript 5的严格模式/
 http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/
 http://www.kingmui.cn/2019/04/05/JavaScript 的 Async和Await/
 http://www.kingmui.cn/2019/04/05/认识和使用 Promise/
@@ -12,7 +13,7 @@ http://www.kingmui.cn/2018/06/03/自定义浏览器横向滚动条/
 http://www.kingmui.cn/2018/05/29/filepond API翻译/
 http://www.kingmui.cn/2018/05/29/filepond简介/
 http://www.kingmui.cn/2018/05/27/vue-cli脚手架中webpack配置基础文件详解/
-http://www.kingmui.cn/2018/05/05/什么是闭包/
+http://www.kingmui.cn/2018/05/05/learning_javascript_closures/
 http://www.kingmui.cn/2018/03/31/起风了/
 http://www.kingmui.cn/2018/03/24/使用 Git Hook 自动部署 Hexo 到个人 VPS/
 http://www.kingmui.cn/2018/01/19/JavaScript并非所有的东西都是对象/
