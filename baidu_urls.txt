@@ -21,5 +21,4 @@ http://www.kingmui.cn/2017/11/03/HTML5Web存储/
 http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/
 http://www.kingmui.cn/2017/10/28/使用CSS3动画属性实现太阳系行星运转模拟动画/
 http://www.kingmui.cn/2017/10/22/使用CSS3补间动画实现移动Web轮播图/
-http://www.kingmui.cn/2017/02/09/前端开发学习笔记/
 http://www.kingmui.cn/2016/11/24/Hexo个性化配置/
