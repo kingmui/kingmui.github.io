@@ -1,3 +1,4 @@
+http://www.kingmui.cn/2019/06/02/JavaScript-Functional-Programming/
 http://www.kingmui.cn/2019/04/10/ECMAScript 5的严格模式/
 http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/
 http://www.kingmui.cn/2019/04/05/JavaScript 的 Async和Await/
@@ -17,8 +18,8 @@ http://www.kingmui.cn/2018/05/05/learning_javascript_closures/
 http://www.kingmui.cn/2018/03/31/起风了/
 http://www.kingmui.cn/2018/03/24/使用 Git Hook 自动部署 Hexo 到个人 VPS/
 http://www.kingmui.cn/2018/01/19/JavaScript并非所有的东西都是对象/
-http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/
 http://www.kingmui.cn/2017/11/03/HTML5Web存储/
+http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/
 http://www.kingmui.cn/2017/10/28/使用CSS3动画属性实现太阳系行星运转模拟动画/
 http://www.kingmui.cn/2017/10/22/使用CSS3补间动画实现移动Web轮播图/
 http://www.kingmui.cn/2016/11/24/Hexo个性化配置/
