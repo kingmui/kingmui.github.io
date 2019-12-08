@@ -41,7 +41,7 @@
     <link href="http://www.kingmui.cn/2019/04/10/ECMAScript%205%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
     <id>http://www.kingmui.cn/2019/04/10/ECMAScript 5的严格模式/</id>
     <published>2019-04-10T08:48:09.000Z</published>
-    <updated>2019-04-10T13:00:55.049Z</updated>
+    <updated>2019-04-10T13:00:55.050Z</updated>
     
     <summary type="html">
     
@@ -67,7 +67,7 @@
     <link href="http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/"/>
     <id>http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/</id>
     <published>2019-04-07T03:31:26.000Z</published>
-    <updated>2019-04-10T12:48:02.968Z</updated>
+    <updated>2019-04-10T12:48:02.969Z</updated>
     
     <summary type="html">
     
@@ -119,7 +119,7 @@
     <link href="http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/"/>
     <id>http://www.kingmui.cn/2019/04/05/认识和使用 Promise/</id>
     <published>2019-04-05T05:35:53.000Z</published>
-    <updated>2019-04-05T11:35:02.274Z</updated>
+    <updated>2019-04-05T11:35:02.275Z</updated>
     
     <summary type="html">
     
@@ -190,7 +190,7 @@
     <link href="http://www.kingmui.cn/2018/11/15/Javascript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
     <id>http://www.kingmui.cn/2018/11/15/Javascript执行机制/</id>
     <published>2018-11-15T07:35:49.000Z</published>
-    <updated>2019-04-05T11:06:59.535Z</updated>
+    <updated>2019-04-05T11:06:59.536Z</updated>
     
     <summary type="html">
     
@@ -209,7 +209,7 @@
     <link href="http://www.kingmui.cn/2018/09/15/%E4%B8%AD%E6%96%87%E7%AE%80%E7%B9%81%E4%BD%93%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
     <id>http://www.kingmui.cn/2018/09/15/中文简繁体切换功能的实现/</id>
     <published>2018-09-15T07:53:53.000Z</published>
-    <updated>2019-04-05T11:06:59.592Z</updated>
+    <updated>2019-04-05T11:06:59.593Z</updated>
     
     <summary type="html">
     
@@ -311,9 +311,9 @@
     
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
   </entry>
   
@@ -322,7 +322,7 @@
     <link href="http://www.kingmui.cn/2018/05/29/filepond%20API%E7%BF%BB%E8%AF%91/"/>
     <id>http://www.kingmui.cn/2018/05/29/filepond API翻译/</id>
     <published>2018-05-29T05:30:45.000Z</published>
-    <updated>2019-04-05T11:06:59.544Z</updated>
+    <updated>2019-04-05T11:06:59.545Z</updated>
     
     <summary type="html">
     
@@ -334,9 +334,9 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -347,7 +347,7 @@
     <link href="http://www.kingmui.cn/2018/05/29/filepond%E7%AE%80%E4%BB%8B/"/>
     <id>http://www.kingmui.cn/2018/05/29/filepond简介/</id>
     <published>2018-05-29T02:22:15.000Z</published>
-    <updated>2019-04-05T11:06:59.561Z</updated>
+    <updated>2019-04-05T11:06:59.562Z</updated>
     
     <summary type="html">
     
@@ -365,9 +365,9 @@
     </summary>
     
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
@@ -378,7 +378,7 @@
     <link href="http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/"/>
     <id>http://www.kingmui.cn/2018/05/27/vue-cli脚手架中webpack配置基础文件详解/</id>
     <published>2018-05-27T06:06:34.000Z</published>
-    <updated>2019-04-05T11:06:59.575Z</updated>
+    <updated>2019-04-05T11:06:59.576Z</updated>
     
     <summary type="html">
     
@@ -399,7 +399,7 @@
     <link href="http://www.kingmui.cn/2018/05/05/learning_javascript_closures/"/>
     <id>http://www.kingmui.cn/2018/05/05/learning_javascript_closures/</id>
     <published>2018-05-05T07:52:28.000Z</published>
-    <updated>2019-04-10T13:00:55.051Z</updated>
+    <updated>2019-04-10T13:00:55.052Z</updated>
     
     <summary type="html">
     
@@ -432,7 +432,7 @@
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-ZifxGcaZ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-eEYVpFRF&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -475,7 +475,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-ZifxGcaZ&quot;),
+					element: document.getElementById(&quot;aplayer-eEYVpFRF&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -506,7 +506,7 @@
     <link href="http://www.kingmui.cn/2018/03/24/%E4%BD%BF%E7%94%A8%20Git%20Hook%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo%20%E5%88%B0%E4%B8%AA%E4%BA%BA%20VPS/"/>
     <id>http://www.kingmui.cn/2018/03/24/使用 Git Hook 自动部署 Hexo 到个人 VPS/</id>
     <published>2018-03-24T07:27:03.000Z</published>
-    <updated>2019-04-05T11:06:59.613Z</updated>
+    <updated>2019-04-05T11:06:59.614Z</updated>
     
     <summary type="html">
     
@@ -517,9 +517,9 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
-    
       <category term="Git" scheme="http://www.kingmui.cn/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
     
   </entry>
   
