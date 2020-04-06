@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2019-06-02T06:09:13.699Z</updated>
+  <updated>2019-06-02T06:09:14.000Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.kingmui.cn/2019/06/02/JavaScript-Functional-Programming/"/>
     <id>http://www.kingmui.cn/2019/06/02/JavaScript-Functional-Programming/</id>
     <published>2019-06-02T05:44:00.000Z</published>
-    <updated>2019-06-02T06:09:13.699Z</updated>
+    <updated>2019-06-02T06:09:14.000Z</updated>
     
     <summary type="html">
     
@@ -41,7 +41,7 @@
     <link href="http://www.kingmui.cn/2019/04/10/ECMAScript%205%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
     <id>http://www.kingmui.cn/2019/04/10/ECMAScript 5的严格模式/</id>
     <published>2019-04-10T08:48:09.000Z</published>
-    <updated>2019-04-10T13:00:55.049Z</updated>
+    <updated>2019-04-10T13:00:56.000Z</updated>
     
     <summary type="html">
     
@@ -67,7 +67,7 @@
     <link href="http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/"/>
     <id>http://www.kingmui.cn/2019/04/07/申城四月花争艳-最美樱花绽顾村/</id>
     <published>2019-04-07T03:31:26.000Z</published>
-    <updated>2019-04-10T12:48:02.968Z</updated>
+    <updated>2019-04-10T12:48:04.000Z</updated>
     
     <summary type="html">
     
@@ -91,7 +91,7 @@
     <link href="http://www.kingmui.cn/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/"/>
     <id>http://www.kingmui.cn/2019/04/05/JavaScript 的 Async和Await/</id>
     <published>2019-04-05T09:01:33.000Z</published>
-    <updated>2019-04-05T11:34:39.689Z</updated>
+    <updated>2019-04-05T11:34:40.000Z</updated>
     
     <summary type="html">
     
@@ -119,7 +119,7 @@
     <link href="http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/"/>
     <id>http://www.kingmui.cn/2019/04/05/认识和使用 Promise/</id>
     <published>2019-04-05T05:35:53.000Z</published>
-    <updated>2019-04-05T11:35:02.274Z</updated>
+    <updated>2019-04-05T11:35:04.000Z</updated>
     
     <summary type="html">
     
@@ -147,7 +147,7 @@
     <link href="http://www.kingmui.cn/2019/03/27/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     <id>http://www.kingmui.cn/2019/03/27/JavaScript设计模式/</id>
     <published>2019-03-27T13:55:32.000Z</published>
-    <updated>2019-04-05T11:06:59.520Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -169,7 +169,7 @@
     <link href="http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     <id>http://www.kingmui.cn/2019/03/26/算法的复杂度/</id>
     <published>2019-03-26T14:15:44.000Z</published>
-    <updated>2019-04-05T11:06:59.718Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -190,7 +190,7 @@
     <link href="http://www.kingmui.cn/2018/11/15/Javascript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
     <id>http://www.kingmui.cn/2018/11/15/Javascript执行机制/</id>
     <published>2018-11-15T07:35:49.000Z</published>
-    <updated>2019-04-05T11:06:59.535Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -209,7 +209,7 @@
     <link href="http://www.kingmui.cn/2018/09/15/%E4%B8%AD%E6%96%87%E7%AE%80%E7%B9%81%E4%BD%93%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
     <id>http://www.kingmui.cn/2018/09/15/中文简繁体切换功能的实现/</id>
     <published>2018-09-15T07:53:53.000Z</published>
-    <updated>2019-04-05T11:06:59.592Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -228,7 +228,7 @@
     <link href="http://www.kingmui.cn/2018/07/01/%E4%BD%BF%E7%94%A8Js%E5%88%A4%E6%96%AD%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E5%90%91/"/>
     <id>http://www.kingmui.cn/2018/07/01/使用Js判断鼠标移入元素的方向/</id>
     <published>2018-07-01T10:45:34.000Z</published>
-    <updated>2019-04-05T11:06:59.693Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -250,7 +250,7 @@
     <link href="http://www.kingmui.cn/2018/06/20/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96(debounce)%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81(throttle)/"/>
     <id>http://www.kingmui.cn/2018/06/20/函数防抖(debounce)与函数节流(throttle)/</id>
     <published>2018-06-20T03:03:39.000Z</published>
-    <updated>2019-04-05T11:06:59.708Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -278,7 +278,7 @@
     <link href="http://www.kingmui.cn/2018/06/19/JavaScript%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%94%AE%E5%90%8D/"/>
     <id>http://www.kingmui.cn/2018/06/19/JavaScript如何使用变量设置对象的键名/</id>
     <published>2018-06-19T07:28:03.000Z</published>
-    <updated>2019-04-05T11:06:59.513Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -298,78 +298,20 @@
     <link href="http://www.kingmui.cn/2018/06/03/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
     <id>http://www.kingmui.cn/2018/06/03/自定义浏览器横向滚动条/</id>
     <published>2018-06-03T03:07:20.000Z</published>
-    <updated>2019-04-05T11:06:59.722Z</updated>
+    <updated>2020-04-06T07:29:33.970Z</updated>
     
     <summary type="html">
     
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;最近在做项目的过程中，遇到了滚动条需要横向滚动的需求，特在此记录下相关的知识点！&lt;/p&gt;&lt;/div&gt;
-&lt;h3 id=&quot;关于项目需求&quot;&gt;&lt;a href=&quot;#关于项目需求&quot; class=&quot;headerlink&quot; title=&quot;关于项目需求&quot;&gt;&lt;/a&gt;关于项目需求&lt;/h3&gt;&lt;p&gt;横向显示信息流，超出新闻容器宽度的部分隐藏，当鼠标在新闻容器位置滚动时可自动横向滚动。&lt;/p&gt;
-&lt;h3 id=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;a href=&quot;#自定义浏览器滚动条样式&quot; class=&quot;headerlink&quot; title=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;/a&gt;自定义浏览器滚动条样式&lt;/h3&gt;&lt;h4 id=&quot;IE浏览器&quot;&gt;&lt;a href=&quot;#IE浏览器&quot; class=&quot;headerlink&quot; title=&quot;IE浏览器&quot;&gt;&lt;/a&gt;IE浏览器&lt;/h4&gt;&lt;p&gt;追溯浏览器对滚动条的自定义，恐怕最早的就是IE浏览器了（好像最开始支持的版本是IE5.5）。下面列出了多个版本的支持性：&lt;/p&gt;
+      &lt;h3 id=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;a href=&quot;#自定义浏览器滚动条样式&quot; class=&quot;headerlink&quot; title=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;/a&gt;自定义浏览器滚动条样式&lt;/h3&gt;&lt;h4 id=&quot;IE浏览器&quot;&gt;&lt;a href=&quot;#IE浏览器&quot; class=&quot;headerlink&quot; title=&quot;IE浏览器&quot;&gt;&lt;/a&gt;IE浏览器&lt;/h4&gt;&lt;p&gt;追溯浏览器对滚动条的自定义，恐怕最早的就是IE浏览器了（好像最开始支持的版本是IE5.5）。下面列出了多个版本的支持性：&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
     
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
       <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>filepond API 翻译</title>
-    <link href="http://www.kingmui.cn/2018/05/29/filepond%20API%E7%BF%BB%E8%AF%91/"/>
-    <id>http://www.kingmui.cn/2018/05/29/filepond API翻译/</id>
-    <published>2018-05-29T05:30:45.000Z</published>
-    <updated>2019-04-05T11:06:59.544Z</updated>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;FilePond 文档翻译之API&lt;/p&gt;&lt;/div&gt;
-&lt;h3 id=&quot;Style&quot;&gt;&lt;a href=&quot;#Style&quot; class=&quot;headerlink&quot; title=&quot;Style&quot;&gt;&lt;/a&gt;Style&lt;/h3&gt;&lt;h4 id=&quot;字体和颜色&quot;&gt;&lt;a href=&quot;#字体和颜色&quot; class=&quot;headerlink&quot; title=&quot;字体和颜色&quot;&gt;&lt;/a&gt;字体和颜色&lt;/h4&gt;&lt;p&gt;FilePond对其布局非常敏感，但字体，颜色，边框半径和填充可以毫无问题地进行微调。&lt;br&gt;FilePond的默认字体被设置为系统字体。这使得它尽可能轻便并且对用户来说更熟悉。&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.filepond--root&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;attribute&quot;&gt;font-family&lt;/span&gt;: -apple-system, BlinkMacSystemFont, &lt;span class=&quot;string&quot;&gt;&#39;Segoe UI&#39;&lt;/span&gt;, Roboto,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Helvetica, Arial, sans-serif, &lt;span class=&quot;string&quot;&gt;&#39;Apple Color Emoji&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Segoe UI Emoji&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&#39;Segoe UI Symbol&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;要覆盖FilePond样式，最好通过预先加入 &lt;code&gt;.filepond--root&lt;/code&gt; 根选择器来使样式更加具体。 FilePond选择器尽可能保持非特定性，以使覆盖更容易。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-      <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>filepond简介</title>
-    <link href="http://www.kingmui.cn/2018/05/29/filepond%E7%AE%80%E4%BB%8B/"/>
-    <id>http://www.kingmui.cn/2018/05/29/filepond简介/</id>
-    <published>2018-05-29T02:22:15.000Z</published>
-    <updated>2019-04-05T11:06:59.561Z</updated>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;Upload anything, from anywhere.&lt;/p&gt;&lt;/div&gt;
-&lt;h3 id=&quot;关于-filepond&quot;&gt;&lt;a href=&quot;#关于-filepond&quot; class=&quot;headerlink&quot; title=&quot;关于 filepond&quot;&gt;&lt;/a&gt;关于 &lt;a href=&quot;https://pqina.nl/filepond/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;filepond&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;filepond是一个灵活有趣的JavaScript文件上传库，压缩后仅21KB。可以上传任何内容，不仅优化了图像以获得更快的上传速度，还提供一个出色的，简洁流畅的用户体验。&lt;/p&gt;
-&lt;h4 id=&quot;框架适配&quot;&gt;&lt;a href=&quot;#框架适配&quot; class=&quot;headerlink&quot; title=&quot;框架适配&quot;&gt;&lt;/a&gt;框架适配&lt;/h4&gt;&lt;p&gt;由于filepond的核心库是用vanilla JavaScript编写的，因此它可以在任何地方使用。您可以在下方的列表中找到合适的适配器，使您可以更轻松地将FilePond用于您最喜爱的框架。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/react-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;React&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/vue-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Vue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/ngx-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Angular&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/johnnyasantoss/angularjs-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Angular 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/pqina/jquery-filepond&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
-    
-      <category term="FilePond" scheme="http://www.kingmui.cn/tags/FilePond/"/>
     
   </entry>
   
@@ -378,7 +320,7 @@
     <link href="http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/"/>
     <id>http://www.kingmui.cn/2018/05/27/vue-cli脚手架中webpack配置基础文件详解/</id>
     <published>2018-05-27T06:06:34.000Z</published>
-    <updated>2019-04-05T11:06:59.575Z</updated>
+    <updated>2019-04-05T11:07:00.000Z</updated>
     
     <summary type="html">
     
@@ -399,7 +341,7 @@
     <link href="http://www.kingmui.cn/2018/05/05/learning_javascript_closures/"/>
     <id>http://www.kingmui.cn/2018/05/05/learning_javascript_closures/</id>
     <published>2018-05-05T07:52:28.000Z</published>
-    <updated>2019-04-10T13:00:55.051Z</updated>
+    <updated>2019-04-10T13:00:56.000Z</updated>
     
     <summary type="html">
     
@@ -427,12 +369,12 @@
     <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
     <id>http://www.kingmui.cn/2018/03/31/起风了/</id>
     <published>2018-03-31T07:32:37.000Z</published>
-    <updated>2019-04-10T12:48:02.984Z</updated>
+    <updated>2019-04-10T12:48:04.000Z</updated>
     
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-ZifxGcaZ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-DSJvONJX&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -475,7 +417,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-ZifxGcaZ&quot;),
+					element: document.getElementById(&quot;aplayer-DSJvONJX&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -506,12 +448,11 @@
     <link href="http://www.kingmui.cn/2018/03/24/%E4%BD%BF%E7%94%A8%20Git%20Hook%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo%20%E5%88%B0%E4%B8%AA%E4%BA%BA%20VPS/"/>
     <id>http://www.kingmui.cn/2018/03/24/使用 Git Hook 自动部署 Hexo 到个人 VPS/</id>
     <published>2018-03-24T07:27:03.000Z</published>
-    <updated>2019-04-05T11:06:59.613Z</updated>
+    <updated>2020-04-06T07:32:57.123Z</updated>
     
     <summary type="html">
     
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;2017年年尾（临近农历新年），在同事的“怂恿”下，我从阿里云购买了一台服务器，用以构建个人网站。前后忙碌了一阵，今天终于搭建好服务器。现将搭建过程做个简要记录，方便日后回顾！&lt;/p&gt;&lt;/div&gt;
-&lt;h3 id=&quot;CentOS-升级-Git-到最新版本&quot;&gt;&lt;a href=&quot;#CentOS-升级-Git-到最新版本&quot; class=&quot;headerlink&quot; title=&quot;CentOS 升级 Git 到最新版本&quot;&gt;&lt;/a&gt;CentOS 升级 Git 到最新版本&lt;/h3&gt;&lt;p&gt;CentOS 上的 Git 最新版本只有1.8.3，因此我们需要自己重新安装一遍 。&lt;/p&gt;
+      &lt;h3 id=&quot;CentOS-升级-Git-到最新版本&quot;&gt;&lt;a href=&quot;#CentOS-升级-Git-到最新版本&quot; class=&quot;headerlink&quot; title=&quot;CentOS 升级 Git 到最新版本&quot;&gt;&lt;/a&gt;CentOS 升级 Git 到最新版本&lt;/h3&gt;&lt;p&gt;CentOS 上的 Git 最新版本只有1.8.3，因此我们需要自己重新安装一遍 。&lt;/p&gt;
 &lt;h4 id=&quot;卸载旧版本-Git&quot;&gt;&lt;a href=&quot;#卸载旧版本-Git&quot; class=&quot;headerlink&quot; title=&quot;卸载旧版本 Git&quot;&gt;&lt;/a&gt;卸载旧版本 Git&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装 Development tools&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum -y groupinstall Development tools&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# GCC 用于编译安装包&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum install gcc perl-ExtUtils-MakeMaker&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# *卸载 CentOS 自带的老版本 Git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum -y remove git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装前环境配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum install -y curl-devel expat-devel gettext-devel openssl-devel zlib-devel asciidoc xmlto perl-devel perl-CPAN autoconf*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 系统检测(CentOS 7.4 64位)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cat /etc/centos-release&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CentOS Linux release 7.4.1708 (Core)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ uname -a&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux rmhost 3.10.0-693.2.2.el7.x86_64 &lt;span class=&quot;comment&quot;&gt;#1 SMP Tue Sep 12 22:26:13 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
@@ -528,7 +469,7 @@
     <link href="http://www.kingmui.cn/2018/01/19/JavaScript%E5%B9%B6%E9%9D%9E%E6%89%80%E6%9C%89%E7%9A%84%E4%B8%9C%E8%A5%BF%E9%83%BD%E6%98%AF%E5%AF%B9%E8%B1%A1/"/>
     <id>http://www.kingmui.cn/2018/01/19/JavaScript并非所有的东西都是对象/</id>
     <published>2018-01-19T02:14:12.000Z</published>
-    <updated>2019-04-05T11:08:53.568Z</updated>
+    <updated>2019-04-05T11:08:54.000Z</updated>
     
     <summary type="html">
     
@@ -547,6 +488,50 @@
     
     
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS页面渲染优化属性will-change</title>
+    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
+    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2019-04-05T11:07:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
+&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
+&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
+&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5 Web 存储</title>
+    <link href="http://www.kingmui.cn/2017/11/03/HTML5Web%E5%AD%98%E5%82%A8/"/>
+    <id>http://www.kingmui.cn/2017/11/03/HTML5Web存储/</id>
+    <published>2017-11-03T03:02:55.000Z</published>
+    <updated>2019-04-05T11:07:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;随着互联网的快速发展，基于网页的应用越来越普遍，同时也变的越来越复杂，为了满足各式各样的需求，会经常性地在本地存储大量的数据。传统方式我们是以document.cookie来进行存储的，但是由于cookie的存储大小只有4k左右，并且解析也相当的复杂，每一次发送请求还会携带上cookie，这不仅会造成带宽的浪费，还会给开发者带来诸多不便。在此窘境下，HTML5规范提出了新的解决方案——Web存储。Web存储是将数据存储到用户的电脑上，这样不仅可以缓解服务器压力，同时也提高了用户体验。在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;cookie概念&quot;&gt;&lt;a href=&quot;#cookie概念&quot; class=&quot;headerlink&quot; title=&quot;cookie概念&quot;&gt;&lt;/a&gt;cookie概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;cookie是客户端保持状态的解决方案。cookie存储了服务端发送给客户端的一些特殊信息，这些信息以文本的方式存储在客户端。每当客户端向服务端发送请求时，&lt;strong&gt;cookie数据始终会在同源的http请求中携带（即使不需要）&lt;/strong&gt;，即cookie会在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发送给服务器，仅会在本地存储。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+      <category term="Web存储" scheme="http://www.kingmui.cn/tags/Web%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
