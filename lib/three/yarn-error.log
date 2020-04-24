@@ -2,7 +2,7 @@ Arguments:
   /Users/meijing/.nvm/versions/node/v12.13.1/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js audit --json
 
 PATH: 
-  /Users/meijing/.nvm/versions/node/v12.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/meijing/development/flutter/bin:/Users/meijing/development/flutter/bin/cache/dart-sdk/bin
+  /Users/meijing/.nvm/versions/node/v12.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/meijing/development/flutter/bin:/Users/meijing/development/flutter/bin/cache/dart-sdk/bin
 
 Yarn version: 
   1.21.1
@@ -14,8 +14,14 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/-/npm/v1/security/audits: ETIMEDOUT
-      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:141325:19)
+  Error: https://registry.yarnpkg.com/-/npm/v1/security/audits: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:141292:19)
+      at Object.onceWrapper (events.js:299:28)
+      at ClientRequest.emit (events.js:210:5)
+      at TLSSocket.emitRequestTimeout (_http_client.js:690:9)
+      at Object.onceWrapper (events.js:299:28)
+      at TLSSocket.emit (events.js:210:5)
+      at TLSSocket.Socket._onTimeout (net.js:469:8)
       at listOnTimeout (internal/timers.js:531:17)
       at processTimers (internal/timers.js:475:7)
 
