@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>梦里有诗和远方</title>
+  <title>King Mui</title>
   <icon>https://www.gravatar.com/avatar/03805faced39ddbf2e6978062b1700e7</icon>
   <subtitle>用艺术的眼光发现技术的美</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.kingmui.cn/"/>
-  <updated>2020-05-15T14:17:41.090Z</updated>
+  <updated>2020-05-24T15:03:10.586Z</updated>
   <id>http://www.kingmui.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Deno 1.0：你需要了解的</title>
+    <link href="http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/"/>
+    <id>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</id>
+    <published>2020-05-24T06:03:24.000Z</published>
+    <updated>2020-05-24T15:03:10.586Z</updated>
+    
+    <summary type="html">
+    
+      &lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;http://cdn.kingmui.cn/deno1-0.jpg&quot; class=&quot;full-image&quot; alt=&quot;CarouselFigureView&quot;&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;Deno 是使用 V8 引擎并用 Rust 语言编写的 JavaScript 和 TypeScript 的简单，现代且安全的运行时。它汇集了许多最佳的开源技术，并在一个小的可执行文件中提供了全面的解决方案。它还解决了 Ryan 在&lt;a href=&quot;https://www.youtube.com/watch?v=M3BM9TB-8yA&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;我对Node.js感到遗憾的十件事&lt;/a&gt;演讲中谈到的设计缺陷。&lt;/p&gt;&lt;/div&gt;
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;不知道大家还记不记得两年前在 Github 发生的「学不动」事件。那次事件的起因便是著名的 Node 之父 &lt;a href=&quot;https://github.com/ry&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Ryan Dahl&lt;/a&gt; 宣布新开一个叫 Deno 的项目，于是就有国人以一种类似于贴吧灌水的形式在 Deno 的 &lt;a href=&quot;https://github.com/ry/deno/issues/25&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;issiue&lt;/a&gt; 区里用中文大量发“学不动啦”，“求别更新”等帖子，顿时引起一片&lt;a href=&quot;https://www.zhihu.com/question/279356207&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;争论&lt;/a&gt;。如今两年时间过去了，ry 也带着他的 Deno 1.0 正式与我们会面。不论我们学的动还是学不动，技术就在那里，不以人的意志为转移。在这篇文章中，我们将会涵盖所有令人激动的 Deno 特性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="deno" scheme="http://www.kingmui.cn/tags/deno/"/>
+    
+      <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+      <category term="TypeScript" scheme="http://www.kingmui.cn/tags/TypeScript/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS下使用国内镜像安装Homebrew</title>
@@ -396,7 +420,7 @@
     <summary type="html">
     
       &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-gYzaDSAj&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+&lt;div id=&quot;aplayer-rTZQYKem&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
 				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -439,7 +463,7 @@
 			&lt;/div&gt;
 			&lt;script&gt;
 				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-gYzaDSAj&quot;),
+					element: document.getElementById(&quot;aplayer-rTZQYKem&quot;),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -480,9 +504,9 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
-    
       <category term="Git" scheme="http://www.kingmui.cn/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://www.kingmui.cn/tags/Hexo/"/>
     
   </entry>
   
@@ -510,27 +534,6 @@
     
     
       <category term="javascript" scheme="http://www.kingmui.cn/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS页面渲染优化属性will-change</title>
-    <link href="http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/"/>
-    <id>http://www.kingmui.cn/2017/11/03/CSS页面渲染优化属性will-change/</id>
-    <published>2017-11-03T03:02:55.000Z</published>
-    <updated>2020-04-24T14:33:16.108Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前面的话&quot;&gt;&lt;a href=&quot;#前面的话&quot; class=&quot;headerlink&quot; title=&quot;前面的话&quot;&gt;&lt;/a&gt;前面的话&lt;/h3&gt;&lt;p&gt;当我们通过某些行为（点击、移动或滚动）触发页面进行大面积绘制的时候，浏览器往往是没有准备的，只能被动使用CPU去计算与重绘，由于没有事先准备，应付渲染够呛，于是掉帧、卡顿。而 &lt;code&gt;will-change&lt;/code&gt; 则是真正的行为触发之前告诉浏览器：“浏览器同学，我待会儿就要变形了，你心理和生理上都准备准备”。于是乎，浏览器同学把GPU给拉上了，从容应对即将到来的变形。而CSS属性 will-change 为web开发者提供了一种告知浏览器该元素会有哪些变化的方法，这样浏览器可以在元素属性真正发生变化之前提前做好对应的优化准备工作。 这种优化可以将一部分复杂的计算工作提前准备好，使页面的反应更为快速灵敏。本文将介绍CSS属性 will-change 。&lt;/p&gt;
-&lt;h3 id=&quot;准备知识&quot;&gt;&lt;a href=&quot;#准备知识&quot; class=&quot;headerlink&quot; title=&quot;准备知识&quot;&gt;&lt;/a&gt;准备知识&lt;/h3&gt;&lt;p&gt;GPU是图形处理器，专门处理和绘制图形相关的硬件。GPU是专为执行复杂的数学和几何计算而设计的，使得CPU从图形处理的任务中解放出来，可以执行其他更多的系统任务。&lt;/p&gt;
-&lt;p&gt;所谓硬件加速，就是在计算机中把计算量非常大的工作分配给专门的硬件来处理，减轻CPU的工作量。&lt;/p&gt;
-&lt;p&gt;CSS的动画、变形、渐变并不会自动触发GPU加速，而是使用浏览器稍慢的软件渲染引擎。在 &lt;code&gt;transition&lt;/code&gt; 、 &lt;code&gt;transform&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; 的世界里，应该卸载进程到GPU以加速速度。只有3D变形会有自己的layer，而2D变形则不会。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
   </entry>
   
