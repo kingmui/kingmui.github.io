@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/meijing/.nvm/versions/node/v12.13.1/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js audit --json
+  /Users/meijing/.nvm/versions/node/v12.13.1/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js outdated --json
 
 PATH: 
-  /Users/meijing/.nvm/versions/node/v12.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/meijing/development/flutter/bin:/Users/meijing/development/flutter/bin/cache/dart-sdk/bin
+  /Users/meijing/.deno/bin:/Users/meijing/.nvm/versions/node/v12.13.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/meijing/development/flutter/bin:/Users/meijing/development/flutter/bin/cache/dart-sdk/bin
 
 Yarn version: 
   1.21.1
@@ -14,10 +14,12 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/-/npm/v1/security/audits: ETIMEDOUT
-      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:141325:19)
-      at listOnTimeout (internal/timers.js:531:17)
-      at processTimers (internal/timers.js:475:7)
+  SyntaxError: /Users/meijing/github/kingmui.github.io/themes/next/package.json: Unexpected token < in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:321:13
 
 npm manifest: 
   {
