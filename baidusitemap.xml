@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.kingmui.cn/2020/03/21/front-end-security-summary/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <loc>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</loc>
+    <lastmod>2020-09-14</lastmod>
   </url>  <url>
     <loc>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</loc>
+    <lastmod>2020-09-14</lastmod>
+  </url>  <url>
+    <loc>http://www.kingmui.cn/2020/03/21/front-end-security-summary/</loc>
     <lastmod>2020-09-13</lastmod>
   </url>  <url>
     <loc>http://www.kingmui.cn/2018/05/05/learning_javascript_closures/</loc>
@@ -74,9 +77,6 @@
     <lastmod>2020-09-13</lastmod>
   </url>  <url>
     <loc>http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2020-09-13</lastmod>
-  </url>  <url>
-    <loc>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</loc>
     <lastmod>2020-09-13</lastmod>
   </url>  <url>
     <loc>http://www.kingmui.cn/2017/11/03/CSS%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96%E5%B1%9E%E6%80%A7will-change/</loc>
