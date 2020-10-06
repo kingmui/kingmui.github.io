@@ -41,6 +41,30 @@
   </entry>
   
   <entry>
+    <title>CommonJS 模块和 ES6 模块的区别</title>
+    <link href="http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/"/>
+    <id>http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/</id>
+    <published>2020-08-04T15:00:03.000Z</published>
+    <updated>2020-10-04T15:28:56.750Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;历史上，JS 一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如 Ruby 的 &lt;code&gt;require&lt;/code&gt;、Python 的 &lt;code&gt;import&lt;/code&gt;，甚至就连 CSS 都有 &lt;code&gt;@import&lt;/code&gt;，但是 JS 任何这方面的支持都没有，这对开发大型复杂的项目形成了巨大障碍。&lt;/p&gt;
+&lt;p&gt;在 ES6 出来之前，社区制定了一些模块加载方案，最主要的有 &lt;strong&gt;CommonJS&lt;/strong&gt; 和 &lt;strong&gt;AMD&lt;/strong&gt; 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。&lt;/p&gt;
+&lt;p&gt;ES6 模块的设计思想是尽量的&lt;strong&gt;静态化&lt;/strong&gt;，使得&lt;font color=&quot;red&quot;&gt;编译时就能确定模块的依赖关系&lt;/font&gt;，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在&lt;strong&gt;运行时&lt;/strong&gt;确定这些东西。比如，CommonJS 模块就是对象，输入时必须查找对象属性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+      <category term="ES6" scheme="http://www.kingmui.cn/tags/ES6/"/>
+    
+      <category term="CommonJS" scheme="http://www.kingmui.cn/tags/CommonJS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Deno 1.0：你需要了解的</title>
     <link href="http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/"/>
     <id>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</id>
@@ -404,11 +428,11 @@
     </summary>
     
     
+      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
       <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
     
       <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
-    
-      <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
     
   </entry>
   
@@ -458,85 +482,6 @@
     
     
       <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>起风了</title>
-    <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
-    <id>http://www.kingmui.cn/2018/03/31/起风了/</id>
-    <published>2018-03-31T07:32:37.000Z</published>
-    <updated>2020-09-13T06:34:05.597Z</updated>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;aplayer-deqaMBKM&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
-				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
-[00:25.53]君が前に付き合っていた人のこと 当你向我坦白
-[00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
-[00:37.83]素直に聴いてあげられずに 我不肯好好听下去
-[00:43.21]寂しい思いをさせてしまったね 让你觉得难过了吧
-[00:48.12]
-[00:48.78]すぐにヤキモチ焼くのが僕の悪い癖だって 我明明知道动不动就会吃醋
-[00:56.59]分かっていた筈なのに 是自己的坏习惯
-[01:01.20]自分勝手な想いが残酷な言葉になって 但还是会胡思乱想
-[01:09.06]君を傷付けてた 说出过分的话来，令你伤心
-[01:13.97]
-[01:14.54]一緒に居られるだけで 只要让我和你在一起就好啊
-[01:18.79]手と手を重ね合えるだけで良かったね 只要可以牵着你的手就好啊
-[01:26.87]大切な事ほど見慣れた場所で輝くのかもしれない 最珍贵的东西，也许正闪耀在那些习以为常的地方
-[01:39.08]君を強く抱きしめたい 我好想紧紧拥抱你
-[01:46.00]
-[01:55.80]自分のためだけに生きている人が 在这个城市里
-[02:01.84]集められたようなこの街で 每个人都好像只为自己而活
-[02:08.39]誰かを心から想える幸せをいつまでも忘れたくない 能有人牵挂着我 这种幸福永难忘怀
-[02:18.73]
-[02:19.25]すぐにヤキモチ焼くとこも好きだよって 你嘲笑说“我也中意你爱吃醋这点呀”
-[02:25.28]からかって笑う君に甘えていた 我对你撒娇抗议
-[02:31.64]愛していることを言葉以外の方法で 好想现在就用语言之外的方式
-[02:39.02]今すぐに伝えたい 表达我对你的爱恋
-[02:44.29]
-[02:44.95]微笑んでくれた顔も 怒った顔も 无论微笑也好，生气也好
-[02:51.47]愛しくて仕方なかったよ 你可爱的脸庞都令我着迷
-[02:57.40]打ち明けてくれた過去も 你告诉我的往事也好
-[03:01.56]二人が見た青空も忘れない 一起看过的天空也好，我怎么会忘掉
-[03:09.98]
-[03:34.99]一緒に居られるだけで 只要让我和你在一起就好啊
-[03:39.00]手と手を重ね合えるだけで良かったね 只要可以牵着你的手就好啊
-[03:47.15]大切な事ほど見慣れた場所で輝くのかもしれない 最珍贵的东西，也许正闪耀在那些习以为常的地方
-[03:59.35]
-[03:59.88]微笑んでくれた顔も 怒った顔も 无论微笑也好，生气也好
-[04:06.31]愛しくて仕方なかったよ 你可爱的脸庞都令我着迷
-[04:12.06]君の事が好きだよ 我喜欢你
-[04:15.99]これからもずっと君を抱きしめたい 从今往后也想一直拥抱着你
-[04:24.51]君を強く抱きしめたい 我好想紧紧拥抱你&lt;/pre&gt;
-			&lt;/div&gt;
-			&lt;script&gt;
-				var ap = new APlayer({
-					element: document.getElementById(&quot;aplayer-deqaMBKM&quot;),
-					narrow: false,
-					autoplay: false,
-					showlrc: 2,
-					music: {
-						title: &quot;ヤキモチ&quot;,
-						author: &quot;たかはし ゆう&quot;,
-						url: &quot;http://cdn.kingmui.cn/%E3%83%A4%E3%82%AD%E3%83%A2%E3%83%81.mp3&quot;,
-						pic: &quot;http://cdn.kingmui.cn/takahashiyuu.jpg&quot;,
-					}
-				});
-				window.aplayers || (window.aplayers = []);
-				window.aplayers.push(ap);
-			&lt;/script&gt;
-&lt;p&gt;君が前に付き合っていた人のこと&lt;br&gt;当你向我坦白&lt;/p&gt;
-&lt;p&gt;僕に打ち明けてくれたとき&lt;br&gt;你与前任的往事时&lt;/p&gt;
-&lt;p&gt;素直に聴いてあげられずに&lt;br&gt;我不肯好好听下去&lt;/p&gt;
-&lt;p&gt;寂しい思いをさせてしまったね&lt;br&gt;让你觉得难过了吧
-    
-    </summary>
-    
-    
-      <category term="Music" scheme="http://www.kingmui.cn/tags/Music/"/>
     
   </entry>
   
