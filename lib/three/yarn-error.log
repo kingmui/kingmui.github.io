@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/meijing/.nvm/versions/node/v12.13.1/bin/node /Users/meijing/.nvm/versions/node/v12.13.1/bin/yarn outdated --json
+  /Users/meijing/.nvm/versions/node/v12.13.1/bin/node /Users/meijing/.nvm/versions/node/v12.13.1/bin/yarn audit --json
 
 PATH: 
   /Users/meijing/.deno/bin:/Users/meijing/.nvm/versions/node/v12.13.1/bin:/Users/meijing/.oh-my-zsh/custom/plugins/git-open:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/meijing/development/flutter/bin:/Users/meijing/development/flutter/bin/cache/dart-sdk/bin
@@ -14,8 +14,16 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.npm.taobao.org
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+  Error: https://registry.yarnpkg.com/-/npm/v1/security/audits: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/Users/meijing/.nvm/versions/node/v12.13.1/lib/node_modules/yarn/lib/cli.js:141289:19)
+      at Object.onceWrapper (events.js:299:28)
+      at ClientRequest.emit (events.js:210:5)
+      at TLSSocket.emitRequestTimeout (_http_client.js:690:9)
+      at Object.onceWrapper (events.js:299:28)
+      at TLSSocket.emit (events.js:210:5)
+      at TLSSocket.Socket._onTimeout (net.js:469:8)
+      at listOnTimeout (internal/timers.js:531:17)
+      at processTimers (internal/timers.js:475:7)
 
 npm manifest: 
   {"name":"theme-next-three","version":"1.0.0","main":"index.js","repository":"git@github.com:theme-next/theme-next-three.git","author":"Raincal <cyj94228@gmail.com>","license":"MIT","scripts":{"build":"gulp"},"dependencies":{"del":"^3.0.0","gulp":"^3.9.1","gulp-concat":"^2.6.1","gulp-uglify":"^3.0.0"}}
