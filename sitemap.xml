@@ -4,7 +4,7 @@
   <url>
     <loc>http://www.kingmui.cn/2017/05/01/interview-test-site-for-senior-front-end-development-engineers/</loc>
     
-    <lastmod>2020-10-11T09:47:52.650Z</lastmod>
+    <lastmod>2020-10-11T09:50:46.943Z</lastmod>
     
   </url>
   
@@ -142,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/2016/11/24/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2020-09-13T06:40:36.495Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.kingmui.cn/404.html</loc>
     
     <lastmod>2020-09-13T06:40:36.495Z</lastmod>
@@ -156,14 +149,21 @@
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/resume/index.html</loc>
+    <loc>http://www.kingmui.cn/2016/11/24/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2020-09-13T06:40:36.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.kingmui.cn/tags/index.html</loc>
     
     <lastmod>2020-09-13T06:34:05.598Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/tags/index.html</loc>
+    <loc>http://www.kingmui.cn/resume/index.html</loc>
     
     <lastmod>2020-09-13T06:34:05.598Z</lastmod>
     
@@ -184,13 +184,6 @@
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/</loc>
-    
-    <lastmod>2020-09-13T06:34:05.596Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/</loc>
     
     <lastmod>2020-09-13T06:34:05.596Z</lastmod>
@@ -198,9 +191,9 @@
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/2018/03/24/%E4%BD%BF%E7%94%A8%20Git%20Hook%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo%20%E5%88%B0%E4%B8%AA%E4%BA%BA%20VPS/</loc>
+    <loc>http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/</loc>
     
-    <lastmod>2020-09-13T06:34:05.595Z</lastmod>
+    <lastmod>2020-09-13T06:34:05.596Z</lastmod>
     
   </url>
   
@@ -212,14 +205,21 @@
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/2019/11/23/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85Homebrew/</loc>
+    <loc>http://www.kingmui.cn/2018/03/24/%E4%BD%BF%E7%94%A8%20Git%20Hook%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%20Hexo%20%E5%88%B0%E4%B8%AA%E4%BA%BA%20VPS/</loc>
+    
+    <lastmod>2020-09-13T06:34:05.595Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2020-09-13T06:34:05.594Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>http://www.kingmui.cn/2019/11/23/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85Homebrew/</loc>
     
     <lastmod>2020-09-13T06:34:05.594Z</lastmod>
     
