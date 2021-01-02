@@ -8,7 +8,7 @@ comments: true
 copyright:: false
 ---
 
-{% fullimage http://cdn.kingmui.cn/macos-install-homebrew.png, CarouselFigureView %}
+{% img http://cdn.kingmui.cn/macos-install-homebrew.png %}
 
 Homebrew 是一款自由及开放源代码的软件包管理系统，用以简化 macOS 系统上的软件安装过程。它拥有安装、卸载、更新、查看、搜索等很多实用的功能，通过简单的一条指令，就可以实现包管理，十分方便快捷。
 

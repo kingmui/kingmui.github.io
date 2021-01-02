@@ -1,5 +1,5 @@
 let gulp = require('gulp'),
-    imageminPngquant = require('imagemin-pngquant'),
+    // imageminPngquant = require('imagemin-pngquant'),
     $ = require('gulp-load-plugins')();
 
 // 压缩 html
@@ -23,23 +23,23 @@ gulp.task('html', function () {
 });
 
 // 压缩图片
-gulp.task('image', () => {
-    return gulp.src('./public/images/*')
-        .pipe($.cache($.imagemin({
-            interlaced: true,
-            progressive: true,
-            optimizationLevel: 5,
-            svgoPlugins: [{ removeViewBox: true }],
-            // 使用pngquant深度压缩png图片的imagemin插件
-            use: [imageminPngquant()]
-        })))
-        .pipe(gulp.dest('./public/images/'))
-});
+// gulp.task('image', () => {
+//     return gulp.src('./public/images/*')
+//         .pipe($.cache($.imagemin({
+//             interlaced: true,
+//             progressive: true,
+//             optimizationLevel: 5,
+//             svgoPlugins: [{ removeViewBox: true }],
+//             // 使用pngquant深度压缩png图片的imagemin插件
+//             use: [imageminPngquant()]
+//         })))
+//         .pipe(gulp.dest('./public/images/'))
+// });
 
 // 清除缓存
-gulp.task('clearCache', () =>
-    $.cache.clearAll()
-);
+// gulp.task('clearCache', () =>
+//     $.cache.clearAll()
+// );
 
 // 压缩 css
 // gulp.task('css', function() {
@@ -60,5 +60,5 @@ gulp.task('clearCache', () =>
 
 // 执行 gulp 命令时执行的任务
 gulp.task('default', [
-    'html', 'image'
+    'html',
 ]);

@@ -13,7 +13,7 @@ copyright: true
 太阳系行星运转模拟
 {% endnote %}
 
-[查看动画效果](https://kingmui.github.io/CodeDemo/solarSystem/solarsystem.html)
+[在线演示](https://kingmui.github.io/CodeDemo/solarSystem/solarsystem.html)
 
 <!-- more -->
 
