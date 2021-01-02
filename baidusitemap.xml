@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.kingmui.cn/2017/10/22/%E4%BD%BF%E7%94%A8CSS3%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8Web%E8%BD%AE%E6%92%AD%E5%9B%BE/</loc>
+    <lastmod>2021-01-02</lastmod>
+  </url>
+  <url>
+    <loc>http://www.kingmui.cn/2019/11/23/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85Homebrew/</loc>
+    <lastmod>2021-01-02</lastmod>
+  </url>
+  <url>
+    <loc>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</loc>
+    <lastmod>2021-01-02</lastmod>
+  </url>
+  <url>
     <loc>http://www.kingmui.cn/2016/11/24/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2021-01-02</lastmod>
   </url>
@@ -11,10 +23,6 @@
   <url>
     <loc>http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/</loc>
     <lastmod>2020-10-04</lastmod>
-  </url>
-  <url>
-    <loc>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</loc>
-    <lastmod>2020-09-14</lastmod>
   </url>
   <url>
     <loc>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</loc>
@@ -73,10 +81,6 @@
     <lastmod>2020-09-13</lastmod>
   </url>
   <url>
-    <loc>http://www.kingmui.cn/2017/10/22/%E4%BD%BF%E7%94%A8CSS3%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8Web%E8%BD%AE%E6%92%AD%E5%9B%BE/</loc>
-    <lastmod>2020-09-13</lastmod>
-  </url>
-  <url>
     <loc>http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/</loc>
     <lastmod>2020-09-13</lastmod>
   </url>
@@ -89,11 +93,11 @@
     <lastmod>2020-09-13</lastmod>
   </url>
   <url>
-    <loc>http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/</loc>
+    <loc>http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/</loc>
     <lastmod>2020-09-13</lastmod>
   </url>
   <url>
-    <loc>http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/</loc>
+    <loc>http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/</loc>
     <lastmod>2020-09-13</lastmod>
   </url>
   <url>
@@ -106,10 +110,6 @@
   </url>
   <url>
     <loc>http://www.kingmui.cn/2018/05/27/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%ADwebpack%E9%85%8D%E7%BD%AE%E5%9F%BA%E7%A1%80%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2020-09-13</lastmod>
-  </url>
-  <url>
-    <loc>http://www.kingmui.cn/2019/11/23/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85Homebrew/</loc>
     <lastmod>2020-09-13</lastmod>
   </url>
   <url>
