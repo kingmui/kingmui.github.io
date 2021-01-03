@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</loc>
+    
+    <lastmod>2021-01-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.kingmui.cn/2017/10/22/%E4%BD%BF%E7%94%A8CSS3%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8Web%E8%BD%AE%E6%92%AD%E5%9B%BE/</loc>
     
     <lastmod>2021-01-02</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/</loc>
     
     <lastmod>2020-10-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</loc>
-    
-    <lastmod>2020-09-14</lastmod>
     
   </url>
   
@@ -235,7 +235,7 @@
 
   <url>
     <loc>http://www.kingmui.cn/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -243,147 +243,147 @@
   
   <url>
     <loc>http://www.kingmui.cn/tags/HTML5/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/CSS3/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/JavaScript/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/Hexo/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/macOS/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/Homebrew/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/Git/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E6%97%85%E6%B8%B8/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/Music/</loc>
-    <lastmod>2021-01-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.kingmui.cn/tags/deno/</loc>
-    <lastmod>2021-01-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.kingmui.cn/tags/TypeScript/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kingmui.cn/tags/deno/</loc>
+    <lastmod>2021-01-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kingmui.cn/tags/TypeScript/</loc>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/ES6/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/CommonJS/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/Vue/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.kingmui.cn/tags/webpack/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

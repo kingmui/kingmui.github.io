@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</loc>
+    <lastmod>2021-01-03</lastmod>
+  </url>
+  <url>
     <loc>http://www.kingmui.cn/2017/10/22/%E4%BD%BF%E7%94%A8CSS3%E8%A1%A5%E9%97%B4%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8Web%E8%BD%AE%E6%92%AD%E5%9B%BE/</loc>
     <lastmod>2021-01-02</lastmod>
   </url>
@@ -23,10 +27,6 @@
   <url>
     <loc>http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/</loc>
     <lastmod>2020-10-04</lastmod>
-  </url>
-  <url>
-    <loc>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</loc>
-    <lastmod>2020-09-14</lastmod>
   </url>
   <url>
     <loc>http://www.kingmui.cn/2020/03/21/front-end-security-summary/</loc>
