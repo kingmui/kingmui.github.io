@@ -119,12 +119,6 @@ nofollow:
   exclude:
     - kingmui.cn
 
-algolia:
-  applicationID: QPWKMZHLRX
-  apiKey: 2e8005a9fbd9bc631168be460716385a
-  indexName: kingmui
-  chunkSize: 5000
-
 # Server
 ## Hexo uses Connect as a server
 ## You can customize the logger format as defined in
@@ -133,3 +127,11 @@ port: 4000
 server_ip: localhost
 logger: false
 logger_format: dev
+
+# 本地搜索
+## https://theme-next.js.org/docs/third-party-services/search-services.html
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
