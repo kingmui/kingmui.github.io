@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "@next-theme/plugins": "^8.11.0",
-    "hexo-theme-next": "^8.11.0"
+    "hexo-theme-next": "^8.12.2"
   }
 }

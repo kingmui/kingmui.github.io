@@ -87,7 +87,7 @@ menu:
   tags: /tags/ || fa fa-tags
   #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  # resume: /resume || fa fa-user-secret
+  # 简历: /resume || fa fa-user-secret
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -144,14 +144,14 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/kingmui || fab fa-github-alt
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  E-Mail: mailto:kingmui.dev@outlook.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
-  Twitter: https://twitter.com/King__Mui || fab fa-twitter
-  FB Page: https://www.facebook.com/kingmui.mei || fab fa-facebook
+  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
   #YouTube: https://youtube.com/yourname || fab fa-youtube
-  Instagram: https://www.instagram.com/king__mui || fab fa-instagram
+  #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
 
 social_icons:
@@ -167,10 +167,10 @@ links_settings:
   layout: block
 
 links:
-  阮一峰: https://www.ruanyifeng.com/
-  冴羽: https://github.com/mqyqingfeng/Blog
   Dan Abramov: https://overreacted.io/
   Jake Archibald: https://jakearchibald.com/
+  阮一峰: https://www.ruanyifeng.com/
+  冴羽: https://github.com/mqyqingfeng/Blog
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
