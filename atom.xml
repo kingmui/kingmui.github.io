@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>King Mui</title>
+  <icon>https://www.gravatar.com/avatar/30757b69b3400fa64cf2967b6d7e1f89</icon>
+  <subtitle>用艺术的眼光发现技术的美</subtitle>
+  <link href="http://www.kingmui.cn/atom.xml" rel="self"/>
+  
+  <link href="http://www.kingmui.cn/"/>
+  <updated>2022-04-15T03:43:21.842Z</updated>
+  <id>http://www.kingmui.cn/</id>
+  
+  <author>
+    <name>King Mui</name>
+    <email>kingmui.dev@outlook.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深入理解 V8 的垃圾回收原理</title>
+    <link href="http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/"/>
+    <id>http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</id>
+    <published>2020-09-13T08:45:15.000Z</published>
+    <updated>2022-04-15T03:43:21.842Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;JS 语言不像 C/C++，让程序员自己去开辟或者释放内存，而是类似 Java，采用自己的一套垃圾回收算法进行自动的内存管理。作为一名资深前端工程师，需要对 JS 的内存回收机制非常清楚，以便在极端的环境下能够分析出系统性能的瓶颈，另一方面，学习这其中的机制，也对我们深入理解 JS 的闭包特性、以及对内存的高效使用，都有很大的帮助。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;垃圾回收机制&quot;&gt;&lt;a href=&quot;#垃圾回收机制&quot; class=&quot;headerlink&quot; title=&quot;垃圾回收机制&quot;&gt;&lt;/a&gt;垃圾回收机制&lt;/h3&gt;&lt;p&gt;V8 的垃圾回收策略基于&lt;strong&gt;分代回收&lt;/strong&gt;机制，该机制又基于&lt;strong&gt;世代假说&lt;/strong&gt;。该假说有两个特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;大部分新生对象倾向于早死&lt;/li&gt;
+&lt;li&gt;不死的对象，会活得更久&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;基于这个理论，现代垃圾回收算法根据&lt;strong&gt;对象的存活时间&lt;/strong&gt;将内存进行了分代，并对不同分代的内存采用不同的高效算法进行垃圾回收。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CommonJS 模块和 ES6 模块的区别</title>
+    <link href="http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/"/>
+    <id>http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/</id>
+    <published>2020-08-04T15:00:03.000Z</published>
+    <updated>2022-04-21T14:16:28.722Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;历史上，JS 一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如 Ruby 的 &lt;code&gt;require&lt;/code&gt;、Python 的 &lt;code&gt;import&lt;/code&gt;，甚至就连 CSS 都有 &lt;code&gt;@import&lt;/code&gt;，但是 JS 任何这方面的支持都没有，这对开发大型复杂的项目形成了巨大障碍。&lt;/p&gt;
+&lt;p&gt;在 ES6 出来之前，社区制定了一些模块加载方案，最主要的有 &lt;strong&gt;CommonJS&lt;/strong&gt; 和 &lt;strong&gt;AMD&lt;/strong&gt; 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。&lt;/p&gt;
+&lt;p&gt;ES6 模块的设计思想是尽量的&lt;strong&gt;静态化&lt;/strong&gt;，使得&lt;mark class=&quot;label info&quot;&gt;编译时就能确定模块的依赖关系&lt;/mark&gt;，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在&lt;strong&gt;运行时&lt;/strong&gt;确定这些东西。比如，CommonJS 模块就是对象，输入时必须查找对象属性。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+    <category term="ES6" scheme="http://www.kingmui.cn/tags/ES6/"/>
+    
+    <category term="CommonJS" scheme="http://www.kingmui.cn/tags/CommonJS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deno 1.0：你需要了解的</title>
+    <link href="http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/"/>
+    <id>http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/</id>
+    <published>2020-05-24T06:03:24.000Z</published>
+    <updated>2022-04-15T03:43:21.843Z</updated>
+    
+    
+    <summary type="html">&lt;img data-src=&quot;https://cdn.kingmui.cn/deno1-0.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;Deno 是使用 V8 引擎并用 Rust 语言编写的 JavaScript 和 TypeScript 的简单，现代且安全的运行时。它汇集了许多最佳的开源技术，并在一个小的可执行文件中提供了全面的解决方案。它还解决了 Ryan 在&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1NM0JNOVRCLTh5QQ==&quot;&gt;我对Node.js感到遗憾的十件事&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;演讲中谈到的设计缺陷。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;不知道大家还记不记得两年前在 Github 发生的「学不动」事件。那次事件的起因便是著名的 Node 之父 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9naXRodWIuY29tL3J5&quot;&gt;Ryan Dahl&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt; 宣布新开一个叫 Deno 的项目，于是就有国人以一种类似于贴吧灌水的形式在 Deno 的 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9naXRodWIuY29tL3J5L2Rlbm8vaXNzdWVzLzI1&quot;&gt;issiue&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt; 区里用中文大量发“学不动啦”，“求别更新”等帖子，顿时引起一片&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzI3OTM1NjIwNw==&quot;&gt;争论&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;。如今两年时间过去了，ry 也带着他的 Deno 1.0 正式与我们会面。不论我们学的动还是学不动，技术就在那里，不以人的意志为转移。在这篇文章中，我们将会涵盖所有令人激动的 Deno 特性。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+    <category term="deno" scheme="http://www.kingmui.cn/tags/deno/"/>
+    
+    <category term="TypeScript" scheme="http://www.kingmui.cn/tags/TypeScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端安全总结</title>
+    <link href="http://www.kingmui.cn/2020/03/21/front-end-security-summary/"/>
+    <id>http://www.kingmui.cn/2020/03/21/front-end-security-summary/</id>
+    <published>2020-03-21T11:56:55.000Z</published>
+    <updated>2022-04-21T14:34:55.527Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;随着互联网的高速发展，网络迅速普及。人们在享受网络带来便捷的同时，也面临着日益严重的网络安全问题。在一些出名的案例中，上百万的密码、邮件地址和信用卡信息被泄露给了公众，导致网站用户面临个人尴尬和财务威胁。在移动互联网时代，前端人员除了传统的 XSS、CSRF 等安全问题之外，又时常遭遇网络劫持等新型安全问题。当然，浏览器自身也在不断地进化和发展，引入内容安全策略（Content Security Policy）、Same-Site Cookies 等新技术来增强安全性，但是仍存在很多潜在的威胁，这需要前端开发人员不断进行“查漏补缺”。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;本文介绍以下几种常见的前端安全问题及其解决方案：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;同源策略&lt;/li&gt;
+&lt;li&gt;XSS&lt;/li&gt;
+&lt;li&gt;CSRF&lt;/li&gt;
+&lt;li&gt;SQL 注入&lt;/li&gt;
+&lt;li&gt;点击劫持&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;window.opener&lt;/code&gt; 安全问题&lt;/li&gt;
+&lt;li&gt;文件上传漏洞&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="安全" scheme="http://www.kingmui.cn/tags/%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>macOS下使用国内镜像安装Homebrew</title>
+    <link href="http://www.kingmui.cn/2019/11/23/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85Homebrew/"/>
+    <id>http://www.kingmui.cn/2019/11/23/macOS%E4%B8%8B%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%AE%89%E8%A3%85Homebrew/</id>
+    <published>2019-11-23T14:58:57.000Z</published>
+    <updated>2022-04-15T03:43:21.845Z</updated>
+    
+    
+    <summary type="html">&lt;img data-src=&quot;http://cdn.kingmui.cn/macos-install-homebrew.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;Homebrew 是一款自由及开放源代码的软件包管理系统，用以简化 macOS 系统上的软件安装过程。它拥有安装、卸载、更新、查看、搜索等很多实用的功能，通过简单的一条指令，就可以实现包管理，十分方便快捷。&lt;/p&gt;
+&lt;h3 id=&quot;获取最新安装脚本到本地编辑&quot;&gt;&lt;a href=&quot;#获取最新安装脚本到本地编辑&quot; class=&quot;headerlink&quot; title=&quot;获取最新安装脚本到本地编辑&quot;&gt;&lt;/a&gt;获取最新安装脚本到本地编辑&lt;/h3&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd ~&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install &amp;gt;&amp;gt; brew_install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="macOS" scheme="http://www.kingmui.cn/tags/macOS/"/>
+    
+    <category term="Homebrew" scheme="http://www.kingmui.cn/tags/Homebrew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 函数式编程</title>
+    <link href="http://www.kingmui.cn/2019/06/02/JavaScript-Functional-Programming/"/>
+    <id>http://www.kingmui.cn/2019/06/02/JavaScript-Functional-Programming/</id>
+    <published>2019-06-02T05:44:00.000Z</published>
+    <updated>2022-04-15T03:43:21.839Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;函数式编程风格起源于 20 世纪 30 年代 &lt;code&gt;lambda&lt;/code&gt; 演算的发明。函数自 17 世纪诞生以来，一直是作为微积分的一部分而存在的。&lt;strong&gt;函数可以作为函数的参数传递，还可以作为函数的执行结果被返回&lt;/strong&gt;。更复杂的函数被称为高阶函数，它可以精确的控制函数，既可以将函数当作参数传递，也可以将函数作为执行结果返回，或者二者兼而有之。在 20 世纪 30 年代，Alonzo Church 在普林斯顿大学用高阶函数做实验时发明了 &lt;code&gt;lambda&lt;/code&gt; 演算。&lt;/p&gt;
+&lt;p&gt;20 世纪 50 年代初，John McCarthy 借鉴了 &lt;code&gt;lambda&lt;/code&gt; 演算的概念，并将它应用到一门新的名为 Lisp 的编程语言上。Lisp 实现了高阶函数的概念，并&lt;strong&gt;将函数作为第一类成员或者第一类公民&lt;/strong&gt;。一个函数被当作第一类成员时，它不仅可以被声明为一个变量，而且可以被当作函数参数传递。这些函数甚至可以作为函数的执行结果被返回。&lt;/p&gt;
+&lt;h2 id=&quot;什么是函数式编程&quot;&gt;&lt;a href=&quot;#什么是函数式编程&quot; class=&quot;headerlink&quot; title=&quot;什么是函数式编程&quot;&gt;&lt;/a&gt;什么是函数式编程&lt;/h2&gt;&lt;p&gt;JavaScript 可以进行函数式编程，因为 JavaScript 中的函数就是第一类公民。这意味着&lt;strong&gt;变量可以做的事情函数同样也可以&lt;/strong&gt;。ES6 标准中还添加了不少语言特性，可以帮助我们更充分地使用函数式编程技术，其中包括箭头函数、Promise 对象和扩展运算符等。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ECMAScript 5的严格模式</title>
+    <link href="http://www.kingmui.cn/2019/04/10/ECMAScript%205%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://www.kingmui.cn/2019/04/10/ECMAScript%205%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</id>
+    <published>2019-04-10T08:48:09.000Z</published>
+    <updated>2022-04-15T03:43:21.836Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;ECMAScript 5 引入了 &lt;code&gt;strict mode&lt;/code&gt;，现在已经被大多浏览器实现(包括 IE10)。会使 web 浏览器更容易的解析代码(只需要添加 &lt;code&gt;&amp;quot;use strict&amp;quot;;&lt;/code&gt; 在源码的最上面)。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;严格模式不仅仅是一个子集：它的产生是为了形成与正常代码不同的语义。不支持严格模式与支持严格模式的浏览器在执行严格模式代码时会采用不同行为。所以在没有对运行环境展开&lt;strong&gt;特性测试&lt;/strong&gt;来验证对于严格模式相关方面支持的情况下，就算采用了严格模式也不一定会取得预期效果。严格模式代码和非严格模式代码可以共存，因此项目脚本可以渐进式地采用严格模式。&lt;/p&gt;
+&lt;p&gt;严格模式对正常的 JavaScript 语义做了一些更改。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;严格模式通过&lt;strong&gt;抛出错误&lt;/strong&gt;来消除了一些原有&lt;strong&gt;静默错误&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;严格模式修复了一些导致 JavaScript 引擎难以执行优化的缺陷：有时候，相同的代码，严格模式可以比非严格模式下&lt;strong&gt;运行得更快&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;严格模式&lt;strong&gt;禁用了&lt;/strong&gt;在 ECMAScript 的未来版本中可能会定义的一些语法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;非严格模式到严格模式的区别&quot;&gt;&lt;a href=&quot;#非严格模式到严格模式的区别&quot; class=&quot;headerlink&quot; title=&quot;非严格模式到严格模式的区别&quot;&gt;&lt;/a&gt;非严格模式到严格模式的区别&lt;/h3&gt;&lt;p&gt;严格模式同时改变了语法及运行时行为。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>申城四月花争艳，最美樱花绽顾村</title>
+    <link href="http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/"/>
+    <id>http://www.kingmui.cn/2019/04/07/%E7%94%B3%E5%9F%8E%E5%9B%9B%E6%9C%88%E8%8A%B1%E4%BA%89%E8%89%B3-%E6%9C%80%E7%BE%8E%E6%A8%B1%E8%8A%B1%E7%BB%BD%E9%A1%BE%E6%9D%91/</id>
+    <published>2019-04-07T03:31:26.000Z</published>
+    <updated>2022-04-15T03:43:21.850Z</updated>
+    
+    
+    <summary type="html">&lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;loop&quot;:true,&quot;lang&quot;:&quot;zh-cn&quot;,&quot;video&quot;:{&quot;url&quot;:&quot;http://cdn.kingmui.cn/gucunparkvlog.mp4&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;
+
+&lt;p&gt;不是要和你玩捉迷藏&lt;/p&gt;
+&lt;p&gt;大朵的云可以作证&lt;/p&gt;
+&lt;p&gt;这黄金的花园里&lt;/p&gt;
+&lt;p&gt;一条光影斑驳的小路伸向了远方&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="http://www.kingmui.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="旅游" scheme="http://www.kingmui.cn/tags/%E6%97%85%E6%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 的 Async/Await</title>
+    <link href="http://www.kingmui.cn/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/"/>
+    <id>http://www.kingmui.cn/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/</id>
+    <published>2019-04-05T09:01:33.000Z</published>
+    <updated>2022-04-15T03:38:25.951Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在过去很长的时间里，JavaScript 开发人员在处理异步代码时不得不依赖回调函数来解决。结果，我们中的很多人都经历过回调地域。&lt;/p&gt;
+&lt;p&gt;然后我们迎来了 Promise。他们为回调提供了更有组织的替代方案，并且大多数社区很快也都转而使用它们。&lt;/p&gt;
+&lt;p&gt;现在，随着最新添加的 Async / Await，我们终于可以编写更高质量的 JavaScript 代码！&lt;/p&gt;
+&lt;h3 id=&quot;什么是-Async-Await？&quot;&gt;&lt;a href=&quot;#什么是-Async-Await？&quot; class=&quot;headerlink&quot; title=&quot;什么是 Async/Await？&quot;&gt;&lt;/a&gt;什么是 Async/Await？&lt;/h3&gt;&lt;p&gt;Async / Await 是一个备受期待的 JavaScript 功能，它使异步函数的使用更加愉快和易于理解。它构建在 Promise 之上，并与所有现有的基于 Promise 的 API 兼容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Async - 定义异步函数&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;someName&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;...&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自动把函数转换为 &lt;code&gt;Promise&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当调用异步函数时，函数返回值会被 &lt;code&gt;resolve&lt;/code&gt; 处理&lt;/li&gt;
+&lt;li&gt;异步函数内部可以使用 &lt;code&gt;await&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>认识和使用 Promise</title>
+    <link href="http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/"/>
+    <id>http://www.kingmui.cn/2019/04/05/%E8%AE%A4%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%20Promise/</id>
+    <published>2019-04-05T05:35:53.000Z</published>
+    <updated>2022-04-15T03:37:57.704Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt; 对象用于表示一个异步操作的最终状态（完成或失败），以及该异步操作的结果值。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Promise&lt;/span&gt;( &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;resolve, reject&lt;/span&gt;) &lt;/span&gt;&amp;#123;...&amp;#125; &lt;span class=&quot;comment&quot;&gt;/* executor */&lt;/span&gt;  );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code&gt;Promise&lt;/code&gt; 构造函数执行时立即调用“处理器函数”（executor function）， &lt;code&gt;resolve&lt;/code&gt; 和 &lt;code&gt;reject&lt;/code&gt; 两个函数作为参数传递给“处理器函数”。“处理器函数”内部通常会执行一些异步操作，一旦异步操作执行完毕(可能成功/失败)，要么调用 &lt;code&gt;resolve&lt;/code&gt; 函数来将 &lt;code&gt;promise&lt;/code&gt; 状态改成 &lt;code&gt;fulfilled&lt;/code&gt;，要么调用 &lt;code&gt;reject&lt;/code&gt; 函数将 &lt;code&gt;promise&lt;/code&gt; 的状态改为 &lt;code&gt;rejected&lt;/code&gt;。如果在“处理器函数”中抛出一个错误，那么该 &lt;code&gt;promise&lt;/code&gt; 状态为 &lt;code&gt;rejected&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个 Promise 有以下几种状态&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pending&lt;/code&gt;: 初始状态，既不是成功，也不是失败状态。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fulfilled&lt;/code&gt;: 意味着操作成功完成。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rejected&lt;/code&gt;: 意味着操作失败。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;settled&lt;/code&gt;: 处在 &lt;code&gt;fulfilled&lt;/code&gt; 或 &lt;code&gt;rejected&lt;/code&gt; 状态而不是 &lt;code&gt;pending&lt;/code&gt; 状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为 &lt;code&gt;Promise.prototype.then&lt;/code&gt; 和 &lt;code&gt;Promise.prototype.catch&lt;/code&gt; 方法返回 &lt;code&gt;promise&lt;/code&gt; 对象， 所以它们&lt;strong&gt;可以被链式调用&lt;/strong&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript设计模式</title>
+    <link href="http://www.kingmui.cn/2019/03/27/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://www.kingmui.cn/2019/03/27/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
+    <published>2019-03-27T13:55:32.000Z</published>
+    <updated>2022-04-15T03:43:21.841Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;设计模式的定义：在面向对象软件设计过程中针对特定问题的简洁而优雅的解决方案&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;当然我们可以用一个通俗的说法：设计模式是&lt;strong&gt;解决某个特定场景下对某种问题的解决方案&lt;/strong&gt;。因此，当我们遇到合适的场景时，我们可能会条件反射一样自然而然想到符合这种场景的设计模式。&lt;/p&gt;
+&lt;h3 id=&quot;单例模式&quot;&gt;&lt;a href=&quot;#单例模式&quot; class=&quot;headerlink&quot; title=&quot;单例模式&quot;&gt;&lt;/a&gt;单例模式&lt;/h3&gt;&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;单例模式的定义：&lt;strong&gt;保证一个类仅有一个实例&lt;/strong&gt;，并提供一个访问它的全局访问点。实现的方法为先判断实例存在与否，如果存在则直接返回，如果不存在就创建了再返回，这就确保了一个类只有一个实例对象。&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+    <category term="设计模式" scheme="http://www.kingmui.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法的复杂度</title>
+    <link href="http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <id>http://www.kingmui.cn/2019/03/26/%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6/</id>
+    <published>2019-03-26T14:15:44.000Z</published>
+    <updated>2022-04-15T03:43:21.850Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;算法（algorithm）的定义&quot;&gt;&lt;a href=&quot;#算法（algorithm）的定义&quot; class=&quot;headerlink&quot; title=&quot;算法（algorithm）的定义&quot;&gt;&lt;/a&gt;算法（algorithm）的定义&lt;/h3&gt;&lt;p&gt;算法是解题方案的准确而完善的描述，是一系列解决问题的清晰指令。其实就是&lt;strong&gt;解决一个问题的完整性描述&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;算法的效率&quot;&gt;&lt;a href=&quot;#算法的效率&quot; class=&quot;headerlink&quot; title=&quot;算法的效率&quot;&gt;&lt;/a&gt;算法的效率&lt;/h3&gt;&lt;p&gt;既然算法是解决问题的描述，而解决同一问题的方法也是多种多样的，只是在这过程中我们所使用的时间或时间以外的代价（计算机消耗的则为内存）不一样。为了更快、更好、更强的提高算法的效率，很多时候一个优秀的算法就在于它与其他实现同一问题的算法相比，在时间和空间（内存）上得到明显的降低。&lt;/p&gt;
+&lt;p&gt;算法的效率主要由以下两个复杂度来评估：&lt;/p&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;&lt;strong&gt;时间复杂度&lt;/strong&gt;：评估执行程序所需的&lt;strong&gt;时间&lt;/strong&gt;。可以估算出程序对&lt;strong&gt;处理器&lt;/strong&gt;的使用程度。&lt;br&gt;&lt;strong&gt;空间复杂度&lt;/strong&gt;：评估执行程序所需的&lt;strong&gt;存储空间&lt;/strong&gt;。可以估算出程序对&lt;strong&gt;计算机内存&lt;/strong&gt;的使用程度。&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    
+    <category term="算法" scheme="http://www.kingmui.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript 执行机制</title>
+    <link href="http://www.kingmui.cn/2018/11/15/Javascript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
+    <id>http://www.kingmui.cn/2018/11/15/Javascript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/</id>
+    <published>2018-11-15T07:35:49.000Z</published>
+    <updated>2022-04-21T15:09:09.873Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;关于-Javascript&quot;&gt;&lt;a href=&quot;#关于-Javascript&quot; class=&quot;headerlink&quot; title=&quot;关于 Javascript&quot;&gt;&lt;/a&gt;关于 Javascript&lt;/h3&gt;&lt;p&gt;Javascript 是一门&lt;strong&gt;单线程&lt;/strong&gt;语言，在最新的 HTML5 中提出了 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTgvMDcvd2ViLXdvcmtlci5odG1s&quot;&gt;Web-Worker&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;，但 Javascript 是单线程这一核心仍未改变。所以一切的 Javascript 版“多线程”都是用单线程模拟出来的！&lt;/p&gt;
+&lt;h3 id=&quot;Javascript-事件循环&quot;&gt;&lt;a href=&quot;#Javascript-事件循环&quot; class=&quot;headerlink&quot; title=&quot;Javascript 事件循环&quot;&gt;&lt;/a&gt;Javascript 事件循环&lt;/h3&gt;&lt;p&gt;既然 JS 是单线程语言，那么就像只有一个窗口的银行，客户需要排队一个一个办理业务，同理 JS 任务也要一个一个的按顺序执行。如果一个任务耗时过长，那么后一个任务就必须等着。那么问题来了，假如我们想浏览新闻，但是新闻包含的超清图片加载很慢，难道我们的网页要一直卡着直到图片完全加载出来吗？因此聪明的程序员将任务分为两类：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中文简繁体切换功能的实现</title>
+    <link href="http://www.kingmui.cn/2018/09/15/%E4%B8%AD%E6%96%87%E7%AE%80%E7%B9%81%E4%BD%93%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://www.kingmui.cn/2018/09/15/%E4%B8%AD%E6%96%87%E7%AE%80%E7%B9%81%E4%BD%93%E5%88%87%E6%8D%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/</id>
+    <published>2018-09-15T07:53:53.000Z</published>
+    <updated>2022-04-15T03:43:21.847Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;为了能够更好地照顾不同的用户，一些网站会提供简繁两种版本切换，提高用户的体验。&lt;/p&gt;
+&lt;h3 id=&quot;思路&quot;&gt;&lt;a href=&quot;#思路&quot; class=&quot;headerlink&quot; title=&quot;思路&quot;&gt;&lt;/a&gt;思路&lt;/h3&gt;&lt;p&gt;一般而言，网站要实现简繁字体的切换，需要先准备两套字体库。而基本的思路是：找到当前文字在字体库中的索引，然后根据索引值去另一套字体库中取出对应的文字，从而实现字体的替换。具体逻辑如下：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Js判断鼠标移入元素的方向</title>
+    <link href="http://www.kingmui.cn/2018/07/01/%E4%BD%BF%E7%94%A8Js%E5%88%A4%E6%96%AD%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E5%90%91/"/>
+    <id>http://www.kingmui.cn/2018/07/01/%E4%BD%BF%E7%94%A8Js%E5%88%A4%E6%96%AD%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E5%90%91/</id>
+    <published>2018-07-01T10:45:34.000Z</published>
+    <updated>2022-04-15T03:43:21.849Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;判断鼠标从元素矩形区域的哪个方向进入的标准为：&lt;br&gt;当鼠标从元素矩形区域外移入元素矩形区域，和鼠标行动轨迹发生交叉的那条边就认为是鼠标进入的方向，例如鼠标从上方往下和上边有交叉，就认为是从上方进入。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;本文要介绍几种方法来判断当鼠标滑入元素时，是从哪个方向进入；滑出元素时，从哪个方向滑出，以此对元素做一些交互效果。&lt;/p&gt;
+&lt;h3 id=&quot;求最小值&quot;&gt;&lt;a href=&quot;#求最小值&quot; class=&quot;headerlink&quot; title=&quot;求最小值&quot;&gt;&lt;/a&gt;求最小值&lt;/h3&gt;&lt;p&gt;该方法是当鼠标滑入元素的时，从事件对象 &lt;code&gt;e&lt;/code&gt; 中获取其位于文档中的坐标 &lt;code&gt;(e.pageX, e.pageY)&lt;/code&gt;，再计算出 x 轴方向坐标减去元素左侧距离文档左侧的距离和 x 轴方向坐标减去元素右侧距离文档左侧的距离，y 轴方向坐标减去元素顶部距离文档顶部的距离和 y 轴方向坐标减去元素底部距离文档顶部的距离，求出这四个数字的绝对值的最小值，即为鼠标进入元素的方向。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//kingmui.github.io/CodeDemo/judgeTheDirectionOfTheMouseSlip/minimumValue/&quot;&gt;在线演示&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数防抖(debounce)与函数节流(throttle)</title>
+    <link href="http://www.kingmui.cn/2018/06/20/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96(debounce)%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81(throttle)/"/>
+    <id>http://www.kingmui.cn/2018/06/20/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96(debounce)%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81(throttle)/</id>
+    <published>2018-06-20T03:03:39.000Z</published>
+    <updated>2022-04-15T03:43:21.849Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;在前端开发中有一部分的用户行为会频繁的触发事件执行，而对于 DOM 操作、资源加载等耗费性能的处理，很可能导致界面卡顿，甚至浏览器的崩溃。函数节流(throttle)和函数防抖(debounce)就是为了解决类似需求应运而生的。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;浏览器的 &lt;code&gt;resize&lt;/code&gt;、&lt;code&gt;scroll&lt;/code&gt;、&lt;code&gt;keypress&lt;/code&gt;、&lt;code&gt;mousemove&lt;/code&gt; 等事件在触发时，会不断地调用绑定在事件上的回调函数，极大地浪费资源，降低前端性能。为了优化体验，需要对这类事件进行调用次数的限制。&lt;/p&gt;
+&lt;p&gt;在开发的过程中，你可能会遇到下面的情况：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;监听 &lt;code&gt;Window&lt;/code&gt; 对象的 &lt;code&gt;resize&lt;/code&gt;，&lt;code&gt;scroll&lt;/code&gt; 事件&lt;/li&gt;
+&lt;li&gt;拖拽时监听 &lt;code&gt;mousemove&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;文字输入时，对输入字符串进行处理，比如要把 markdwon 转换成 html&lt;/li&gt;
+&lt;li&gt;监听文件变化，重启服务&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+    <category term="性能优化" scheme="http://www.kingmui.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript如何使用变量设置对象的键名</title>
+    <link href="http://www.kingmui.cn/2018/06/19/JavaScript%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%94%AE%E5%90%8D/"/>
+    <id>http://www.kingmui.cn/2018/06/19/JavaScript%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%94%AE%E5%90%8D/</id>
+    <published>2018-06-19T07:28:03.000Z</published>
+    <updated>2022-04-15T03:43:21.840Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;code&gt;&amp;#123;thetop: 10&amp;#125;&lt;/code&gt; 是一个有效的对象字面量。代码将创建一个属性名为 &lt;code&gt;thetop&lt;/code&gt; 且值为 &lt;code&gt;10&lt;/code&gt; 的对象。与以下内容相同：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;obj = &amp;#123;&lt;span class=&quot;attr&quot;&gt;thetop&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = &amp;#123;&lt;span class=&quot;string&quot;&gt;&amp;quot;thetop&amp;quot;&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;在 ES5 及更早版本中，你&lt;mark class=&quot;label info&quot;&gt;不能直接在对象字面量中使用变量作为属性名称&lt;/mark&gt;。唯一的选择是执行以下操作：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自定义浏览器横向滚动条</title>
+    <link href="http://www.kingmui.cn/2018/06/03/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
+    <id>http://www.kingmui.cn/2018/06/03/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/</id>
+    <published>2018-06-03T03:07:20.000Z</published>
+    <updated>2022-04-15T03:43:21.851Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;a href=&quot;#自定义浏览器滚动条样式&quot; class=&quot;headerlink&quot; title=&quot;自定义浏览器滚动条样式&quot;&gt;&lt;/a&gt;自定义浏览器滚动条样式&lt;/h3&gt;&lt;h4 id=&quot;IE浏览器&quot;&gt;&lt;a href=&quot;#IE浏览器&quot; class=&quot;headerlink&quot; title=&quot;IE浏览器&quot;&gt;&lt;/a&gt;IE浏览器&lt;/h4&gt;&lt;p&gt;追溯浏览器对滚动条的自定义，恐怕最早的就是IE浏览器了（好像最开始支持的版本是IE5.5）。下面列出了多个版本的支持性：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="CSS3" scheme="http://www.kingmui.cn/tags/CSS3/"/>
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+    <category term="HTML5" scheme="http://www.kingmui.cn/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习Javascript闭包（Closure）</title>
+    <link href="http://www.kingmui.cn/2018/05/05/learning_javascript_closures/"/>
+    <id>http://www.kingmui.cn/2018/05/05/learning_javascript_closures/</id>
+    <published>2018-05-05T07:52:28.000Z</published>
+    <updated>2022-04-15T03:43:21.845Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包是由&lt;strong&gt;函数&lt;/strong&gt;以及&lt;strong&gt;创建该函数的词法环境&lt;/strong&gt;组合而成。&lt;strong&gt;这个环境包含了这个闭包创建时所能访问的所有局部变量&lt;/strong&gt;。 – MDN&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包是有权访问另一个函数作用域的函数。 – 《JavaScript 高级程序设计(第 3 版)》&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;函数对象可以通过作用域链相互关联起来，函数体内部的变量都可以保存在函数作用域内，这种特性在计算机科学文献中称为闭包。 – 《JavaScript 权威指南(第 6 版)》&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;当函数可以&lt;strong&gt;记住并访问所在的词法作用域&lt;/strong&gt;时，就产生了闭包，即使函数是在当前词法作用域之外执行。 – 《你不知道的 JavaScript(上卷)》&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包是个函数，而它「记住了周围发生了什么」。表现为由「一个函数」体中定义了「另个函数」。 – &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cuZ3JhY2Vjb2RlLmNvbS9wb3N0cy8yMzg1Lmh0bWw=&quot;&gt;闭包的秘密&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;闭包就是能够读取其他函数内部变量的函数。 – &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMDkvMDgvbGVhcm5pbmdfamF2YXNjcmlwdF9jbG9zdXJlcy5odG1s&quot;&gt;阮一峰&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;要使用闭包，只需要简单地将一个函数定义在另一个函数内部，并将它暴露出来。要暴露一个函数，可以将它返回或者传给其他函数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内部函数将能够访问到外部函数作用域中的变量&lt;/strong&gt;，即使外部函数已经执行完毕。&lt;/p&gt;
+&lt;p&gt;由于在 Javascript 语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成&lt;strong&gt;定义在一个函数内部的函数&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;所以，在本质上，闭包就是&lt;strong&gt;将函数内部和函数外部连接起来的一座桥梁&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;闭包很有用，因为它允许将函数与其所操作的某些数据（环境）关联起来。这显然类似于面向对象编程。在面向对象编程中，对象允许我们将某些数据（对象的属性）与一个或者多个方法相关联。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="http://www.kingmui.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>起风了</title>
+    <link href="http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
+    <id>http://www.kingmui.cn/2018/03/31/%E8%B5%B7%E9%A3%8E%E4%BA%86/</id>
+    <published>2018-03-31T07:32:37.000Z</published>
+    <updated>2022-04-15T03:43:21.852Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;aplayer-DdTyTXXb&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+				&lt;pre class=&quot;aplayer-lrc-content&quot;&gt;[00:20.03]
+[00:25.53]君が前に付き合っていた人のこと 当你向我坦白
+[00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
+[00:37.83]素直に聴いてあげられずに 我不肯好好听下去
+[00:43.21]寂しい思いをさせてしまったね 让你觉得难过了吧
+[00:48.12]
+[00:48.78]すぐにヤキモチ焼くのが僕の悪い癖だって 我明明知道动不动就会吃醋
+[00:56.59]分かっていた筈なのに 是自己的坏习惯
+[01:01.20]自分勝手な想いが残酷な言葉になって 但还是会胡思乱想
+[01:09.06]君を傷付けてた 说出过分的话来，令你伤心
+[01:13.97]
+[01:14.54]一緒に居られるだけで 只要让我和你在一起就好啊
+[01:18.79]手と手を重ね合えるだけで良かったね 只要可以牵着你的手就好啊
+[01:26.87]大切な事ほど見慣れた場所で輝くのかもしれない 最珍贵的东西，也许正闪耀在那些习以为常的地方
+[01:39.08]君を強く抱きしめたい 我好想紧紧拥抱你
+[01:46.00]
+[01:55.80]自分のためだけに生きている人が 在这个城市里
+[02:01.84]集められたようなこの街で 每个人都好像只为自己而活
+[02:08.39]誰かを心から想える幸せをいつまでも忘れたくない 能有人牵挂着我 这种幸福永难忘怀
+[02:18.73]
+[02:19.25]すぐにヤキモチ焼くとこも好きだよって 你嘲笑说“我也中意你爱吃醋这点呀”
+[02:25.28]からかって笑う君に甘えていた 我对你撒娇抗议
+[02:31.64]愛していることを言葉以外の方法で 好想现在就用语言之外的方式
+[02:39.02]今すぐに伝えたい 表达我对你的爱恋
+[02:44.29]
+[02:44.95]微笑んでくれた顔も 怒った顔も 无论微笑也好，生气也好
+[02:51.47]愛しくて仕方なかったよ 你可爱的脸庞都令我着迷
+[02:57.40]打ち明けてくれた過去も 你告诉我的往事也好
+[03:01.56]二人が見た青空も忘れない 一起看过的天空也好，我怎么会忘掉
+[03:09.98]
+[03:34.99]一緒に居られるだけで 只要让我和你在一起就好啊
+[03:39.00]手と手を重ね合えるだけで良かったね 只要可以牵着你的手就好啊
+[03:47.15]大切な事ほど見慣れた場所で輝くのかもしれない 最珍贵的东西，也许正闪耀在那些习以为常的地方
+[03:59.35]
+[03:59.88]微笑んでくれた顔も 怒った顔も 无论微笑也好，生气也好
+[04:06.31]愛しくて仕方なかったよ 你可爱的脸庞都令我着迷
+[04:12.06]君の事が好きだよ 我喜欢你
+[04:15.99]これからもずっと君を抱きしめたい 从今往后也想一直拥抱着你
+[04:24.51]君を強く抱きしめたい 我好想紧紧拥抱你&lt;/pre&gt;
+			&lt;/div&gt;
+			&lt;script&gt;
+				var ap = new APlayer({
+					element: document.getElementById(&quot;aplayer-DdTyTXXb&quot;),
+					narrow: false,
+					autoplay: false,
+					showlrc: 2,
+					music: {
+						title: &quot;ヤキモチ&quot;,
+						author: &quot;たかはし ゆう&quot;,
+						url: &quot;http://cdn.kingmui.cn/%E3%83%A4%E3%82%AD%E3%83%A2%E3%83%81.mp3&quot;,
+						pic: &quot;http://cdn.kingmui.cn/takahashiyuu.jpg&quot;,
+					}
+				});
+				window.aplayers || (window.aplayers = []);
+				window.aplayers.push(ap);
+			&lt;/script&gt;
+
+&lt;p&gt;君が前に付き合っていた人のこと&lt;br&gt;当你向我坦白&lt;/p&gt;
+&lt;p&gt;僕に打ち明けてくれたとき&lt;br&gt;你与前任的往事时&lt;/p&gt;
+&lt;p&gt;素直に聴いてあげられずに&lt;br&gt;我不肯好好听下去&lt;/p&gt;
+&lt;p&gt;寂しい思いをさせてしまったね&lt;br&gt;让你觉得难过了吧</summary>
+    
+    
+    
+    
+    <category term="Music" scheme="http://www.kingmui.cn/tags/Music/"/>
+    
+  </entry>
+  
+</feed>
