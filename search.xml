@@ -435,62 +435,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 的 Async/Await</title>
-    <url>/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在过去很长的时间里，JavaScript 开发人员在处理异步代码时不得不依赖回调函数来解决。结果，我们中的很多人都经历过回调地域。</p>
-<p>然后我们迎来了 Promise。他们为回调提供了更有组织的替代方案，并且大多数社区很快也都转而使用它们。</p>
-<p>现在，随着最新添加的 Async / Await，我们终于可以编写更高质量的 JavaScript 代码！</p>
-<h3 id="什么是-Async-Await？"><a href="#什么是-Async-Await？" class="headerlink" title="什么是 Async/Await？"></a>什么是 Async/Await？</h3><p>Async / Await 是一个备受期待的 JavaScript 功能，它使异步函数的使用更加愉快和易于理解。它构建在 Promise 之上，并与所有现有的基于 Promise 的 API 兼容。</p>
-<p><strong>Async - 定义异步函数</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">someName</span>(<span class="params"></span>)</span>&#123;...&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>自动把函数转换为 <code>Promise</code></li>
-<li>当调用异步函数时，函数返回值会被 <code>resolve</code> 处理</li>
-<li>异步函数内部可以使用 <code>await</code></li>
-</ul>
-<span id="more"></span>
-
-<p><strong>Await - 暂停异步函数的执行</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> result = <span class="keyword">await</span> someAsyncCall();</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>当使用在 <code>Promise</code> 前面时，<code>await</code> 等待 <code>Promise</code> 完成，并返回 <code>Promise</code> 的结果</li>
-<li><code>await</code> 只能和 <code>Promise</code> 一起使用，不能和 <code>callback</code> 一起使用</li>
-<li><code>await</code> 只能用在 <code>async</code> 函数中</li>
-</ul>
-<p>假设我们想从服务器获取一些 JSON 文件。我们将编写一个使用 axios 库的函数，并将 HTTP GET 请求发送到 <code>https://tutorialzine.com/misc/files/example.json</code>。我们必须等待服务器响应，因此这个 HTTP 请求必然是异步的。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Promise approach</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getJSON</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// To make the function blocking we manually create a Promise.</span></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>) </span>&#123;</span><br><span class="line">    axios.get(<span class="string">&#x27;https://tutorialzine.com/misc/files/example.json&#x27;</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line">      <span class="comment">// The data from the request is available in a .then block</span></span><br><span class="line">      <span class="comment">// We return the result using resolve.</span></span><br><span class="line">      resolve(json);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Async/Await approach</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// async 关键字将自动创建一个新的 Promise 并返回它</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getJSONAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// await 关键字使我们不必编写 .then() 语句块。</span></span><br><span class="line">  <span class="keyword">let</span> json = <span class="keyword">await</span> axios.get(<span class="string">&#x27;https://tutorialzine.com/misc/files/example.json&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// The result of the GET request is available in the json variable.</span></span><br><span class="line">  <span class="comment">// 我们就像在普通的同步函数中一样返回它</span></span><br><span class="line">  <span class="keyword">return</span> json;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>很明显，使用 Async / Await 版本的代码更短，更容易阅读。除了使用的语法不同之外，两个函数功能完全相同，它们都返回 Promises 并使用 axios 的 JSON 响应来解析。我们可以这样调用我们的异步函数：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">getJSONAsync().then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Do something with result.</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="Async-Await-是否会取代-Promise"><a href="#Async-Await-是否会取代-Promise" class="headerlink" title="Async/Await 是否会取代 Promise"></a>Async/Await 是否会取代 Promise</h3><p>不会。当我们在使用 Async / Await 时，我们仍在使用 Promise，也就是说 <code>Async/Await</code> 底层依然使用了 <code>Promise</code>。从长远来看，对 Promises 的良好理解实际上对您很有帮助。</p>
-<p>甚至有一些 Async / Await 用例并没有削减它，我们不得不回到 Promises 寻求帮助。 一个使用场景是当我们需要进行多个独立的异步调用并等待所有这些调用完成时。</p>
-<p>如果我们尝试使用 async 和 await 执行此操作，将发生以下情况：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getABC</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> A = <span class="keyword">await</span> getValueA(); <span class="comment">// getValueA 花费 2 秒</span></span><br><span class="line">  <span class="keyword">let</span> B = <span class="keyword">await</span> getValueB(); <span class="comment">// getValueB 花费 4 秒</span></span><br><span class="line">  <span class="keyword">let</span> C = <span class="keyword">await</span> getValueC(); <span class="comment">// getValueC 花费 3 秒</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> A * B * C;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>每次遇到 <code>await</code> 关键字时，<code>Promise</code> 都会停下，一直到运行结束，所以总共花费是 2+4+3 = 9 秒。<code>await</code> 把异步变成了同步。</p>
-<p>这不是最佳的解决方案，因为三个变量 A，B 和 C 不相互依赖。换句话说，在我们得到 B 之前，我们不需要知道 A 的值。所以我们可以并行得到它们并且等待几秒钟。</p>
-<p>多个异步函数同时执行时，需要借助 <code>Promise.all</code>。这将确保在继续之前我们仍然拥有所有结果，但异步调用将并行触发，而不是一个接一个地触发。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getABC</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Promise.all() 允许同时执行所有的异步函数</span></span><br><span class="line">  <span class="keyword">let</span> results = <span class="keyword">await</span> <span class="built_in">Promise</span>.all([getValueA, getValueB, getValueC]);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> results.reduce(<span class="function">(<span class="params">total, value</span>) =&gt;</span> total * value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这种方式将花费更少的时间。<code>getValueA</code> 和 <code>getValueC</code> 调用将在 <code>getValueB</code> 结束时完成。我们将有效地将执行时间减少到最慢请求的时间 4 秒（<code>getValueB</code> 的耗时），而不是时间的总和。</p>
-<h3 id="Async-Await-的错误处理"><a href="#Async-Await-的错误处理" class="headerlink" title="Async/Await 的错误处理"></a>Async/Await 的错误处理</h3><p>在 Async/Await 语法中，我们可以使用 <code>try/catch</code> 进行错误处理。在 Promise 中的 <code>.catch()</code> 分支会进入 <code>catch</code> 语句。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">doSomethingAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// This async call may fail.</span></span><br><span class="line">    <span class="keyword">let</span> result = <span class="keyword">await</span> someAsyncCall();</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="comment">// If it does we will catch the error here.</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>catch</code> 子句将处理由等待的异步调用或我们可能在 <code>try</code> 块内写入的任何其他失败代码所引发的错误。</p>
-<p>如果有必要，我们也可以在执行异步函数时捕获错误。由于所有异步函数都返回 Promise，因此我们可以在调用它们时简单地包含一个 <code>.catch()</code> 事件处理程序。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Async function without a try/catch block.</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">doSomethingAsync</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// This async call may fail.</span></span><br><span class="line">    <span class="keyword">let</span> result = <span class="keyword">await</span> someAsyncCall();</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// We catch the error upon calling the function.</span></span><br><span class="line">doSomethingAsync().</span><br><span class="line">    .then(successHandler)</span><br><span class="line">    .catch(errorHandler);</span><br></pre></td></tr></table></figure>
-
-<p>选择您喜欢的错误处理方法并坚持下去非常重要。同时使用 <code>try / catch</code> 和 <code>.catch()</code> 很可能会导致未知的问题。</p>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p><span class="exturl" data-url="aHR0cHM6Ly90dXRvcmlhbHppbmUuY29tLzIwMTcvMDcvamF2YXNjcmlwdC1hc3luYy1hd2FpdC1leHBsYWluZWQ=">JavaScript Async/Await Explained in 10 Minutes<i class="fa fa-external-link-alt"></i></span></p>
-]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript 函数式编程</title>
     <url>/2019/06/02/JavaScript-Functional-Programming/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>函数式编程风格起源于 20 世纪 30 年代 <code>lambda</code> 演算的发明。函数自 17 世纪诞生以来，一直是作为微积分的一部分而存在的。<strong>函数可以作为函数的参数传递，还可以作为函数的执行结果被返回</strong>。更复杂的函数被称为高阶函数，它可以精确的控制函数，既可以将函数当作参数传递，也可以将函数作为执行结果返回，或者二者兼而有之。在 20 世纪 30 年代，Alonzo Church 在普林斯顿大学用高阶函数做实验时发明了 <code>lambda</code> 演算。</p>
@@ -601,6 +545,62 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> thetop = <span class="string">&quot;top&quot;</span>,</span><br><span class="line">	obj = &#123; [thetop]: <span class="number">10</span> &#125;;</span><br><span class="line"><span class="built_in">console</span>.log(obj.top); <span class="comment">// -&gt; 10</span></span><br></pre></td></tr></table></figure>
 
 <p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjI3NDI0Mi9ob3ctdG8tdXNlLWEtdmFyaWFibGUtZm9yLWEta2V5LWluLWEtamF2YXNjcmlwdC1vYmplY3QtbGl0ZXJhbA==">来源<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 的 Async/Await</title>
+    <url>/2019/04/05/JavaScript%20%E7%9A%84%20Async%E5%92%8CAwait/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在过去很长的时间里，JavaScript 开发人员在处理异步代码时不得不依赖回调函数来解决。结果，我们中的很多人都经历过回调地域。</p>
+<p>然后我们迎来了 Promise。他们为回调提供了更有组织的替代方案，并且大多数社区很快也都转而使用它们。</p>
+<p>现在，随着最新添加的 Async / Await，我们终于可以编写更高质量的 JavaScript 代码！</p>
+<h3 id="什么是-Async-Await？"><a href="#什么是-Async-Await？" class="headerlink" title="什么是 Async/Await？"></a>什么是 Async/Await？</h3><p>Async / Await 是一个备受期待的 JavaScript 功能，它使异步函数的使用更加愉快和易于理解。它构建在 Promise 之上，并与所有现有的基于 Promise 的 API 兼容。</p>
+<p><strong>Async - 定义异步函数</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">someName</span>(<span class="params"></span>)</span>&#123;...&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>自动把函数转换为 <code>Promise</code></li>
+<li>当调用异步函数时，函数返回值会被 <code>resolve</code> 处理</li>
+<li>异步函数内部可以使用 <code>await</code></li>
+</ul>
+<span id="more"></span>
+
+<p><strong>Await - 暂停异步函数的执行</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> result = <span class="keyword">await</span> someAsyncCall();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>当使用在 <code>Promise</code> 前面时，<code>await</code> 等待 <code>Promise</code> 完成，并返回 <code>Promise</code> 的结果</li>
+<li><code>await</code> 只能和 <code>Promise</code> 一起使用，不能和 <code>callback</code> 一起使用</li>
+<li><code>await</code> 只能用在 <code>async</code> 函数中</li>
+</ul>
+<p>假设我们想从服务器获取一些 JSON 文件。我们将编写一个使用 axios 库的函数，并将 HTTP GET 请求发送到 <code>https://tutorialzine.com/misc/files/example.json</code>。我们必须等待服务器响应，因此这个 HTTP 请求必然是异步的。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Promise approach</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getJSON</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// To make the function blocking we manually create a Promise.</span></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>) </span>&#123;</span><br><span class="line">    axios.get(<span class="string">&#x27;https://tutorialzine.com/misc/files/example.json&#x27;</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line">      <span class="comment">// The data from the request is available in a .then block</span></span><br><span class="line">      <span class="comment">// We return the result using resolve.</span></span><br><span class="line">      resolve(json);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Async/Await approach</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// async 关键字将自动创建一个新的 Promise 并返回它</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getJSONAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// await 关键字使我们不必编写 .then() 语句块。</span></span><br><span class="line">  <span class="keyword">let</span> json = <span class="keyword">await</span> axios.get(<span class="string">&#x27;https://tutorialzine.com/misc/files/example.json&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// The result of the GET request is available in the json variable.</span></span><br><span class="line">  <span class="comment">// 我们就像在普通的同步函数中一样返回它</span></span><br><span class="line">  <span class="keyword">return</span> json;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>很明显，使用 Async / Await 版本的代码更短，更容易阅读。除了使用的语法不同之外，两个函数功能完全相同，它们都返回 Promises 并使用 axios 的 JSON 响应来解析。我们可以这样调用我们的异步函数：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">getJSONAsync().then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Do something with result.</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Async-Await-是否会取代-Promise"><a href="#Async-Await-是否会取代-Promise" class="headerlink" title="Async/Await 是否会取代 Promise"></a>Async/Await 是否会取代 Promise</h3><p>不会。当我们在使用 Async / Await 时，我们仍在使用 Promise，也就是说 <code>Async/Await</code> 底层依然使用了 <code>Promise</code>。从长远来看，对 Promises 的良好理解实际上对您很有帮助。</p>
+<p>甚至有一些 Async / Await 用例并没有削减它，我们不得不回到 Promises 寻求帮助。 一个使用场景是当我们需要进行多个独立的异步调用并等待所有这些调用完成时。</p>
+<p>如果我们尝试使用 async 和 await 执行此操作，将发生以下情况：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getABC</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> A = <span class="keyword">await</span> getValueA(); <span class="comment">// getValueA 花费 2 秒</span></span><br><span class="line">  <span class="keyword">let</span> B = <span class="keyword">await</span> getValueB(); <span class="comment">// getValueB 花费 4 秒</span></span><br><span class="line">  <span class="keyword">let</span> C = <span class="keyword">await</span> getValueC(); <span class="comment">// getValueC 花费 3 秒</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> A * B * C;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>每次遇到 <code>await</code> 关键字时，<code>Promise</code> 都会停下，一直到运行结束，所以总共花费是 2+4+3 = 9 秒。<code>await</code> 把异步变成了同步。</p>
+<p>这不是最佳的解决方案，因为三个变量 A，B 和 C 不相互依赖。换句话说，在我们得到 B 之前，我们不需要知道 A 的值。所以我们可以并行得到它们并且等待几秒钟。</p>
+<p>多个异步函数同时执行时，需要借助 <code>Promise.all</code>。这将确保在继续之前我们仍然拥有所有结果，但异步调用将并行触发，而不是一个接一个地触发。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getABC</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Promise.all() 允许同时执行所有的异步函数</span></span><br><span class="line">  <span class="keyword">let</span> results = <span class="keyword">await</span> <span class="built_in">Promise</span>.all([getValueA, getValueB, getValueC]);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> results.reduce(<span class="function">(<span class="params">total, value</span>) =&gt;</span> total * value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这种方式将花费更少的时间。<code>getValueA</code> 和 <code>getValueC</code> 调用将在 <code>getValueB</code> 结束时完成。我们将有效地将执行时间减少到最慢请求的时间 4 秒（<code>getValueB</code> 的耗时），而不是时间的总和。</p>
+<h3 id="Async-Await-的错误处理"><a href="#Async-Await-的错误处理" class="headerlink" title="Async/Await 的错误处理"></a>Async/Await 的错误处理</h3><p>在 Async/Await 语法中，我们可以使用 <code>try/catch</code> 进行错误处理。在 Promise 中的 <code>.catch()</code> 分支会进入 <code>catch</code> 语句。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">doSomethingAsync</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// This async call may fail.</span></span><br><span class="line">    <span class="keyword">let</span> result = <span class="keyword">await</span> someAsyncCall();</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="comment">// If it does we will catch the error here.</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>catch</code> 子句将处理由等待的异步调用或我们可能在 <code>try</code> 块内写入的任何其他失败代码所引发的错误。</p>
+<p>如果有必要，我们也可以在执行异步函数时捕获错误。由于所有异步函数都返回 Promise，因此我们可以在调用它们时简单地包含一个 <code>.catch()</code> 事件处理程序。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Async function without a try/catch block.</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">doSomethingAsync</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// This async call may fail.</span></span><br><span class="line">    <span class="keyword">let</span> result = <span class="keyword">await</span> someAsyncCall();</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// We catch the error upon calling the function.</span></span><br><span class="line">doSomethingAsync().</span><br><span class="line">    .then(successHandler)</span><br><span class="line">    .catch(errorHandler);</span><br></pre></td></tr></table></figure>
+
+<p>选择您喜欢的错误处理方法并坚持下去非常重要。同时使用 <code>try / catch</code> 和 <code>.catch()</code> 很可能会导致未知的问题。</p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p><span class="exturl" data-url="aHR0cHM6Ly90dXRvcmlhbHppbmUuY29tLzIwMTcvMDcvamF2YXNjcmlwdC1hc3luYy1hd2FpdC1leHBsYWluZWQ=">JavaScript Async/Await Explained in 10 Minutes<i class="fa fa-external-link-alt"></i></span></p>
 ]]></content>
       <tags>
         <tag>JavaScript</tag>
@@ -1021,6 +1021,103 @@
 <li>Javascript 是一门单线程语言</li>
 <li><code>Event Loop</code> 是 Javascript 的执行机制</li>
 </ul>
+]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入理解 V8 的垃圾回收原理</title>
+    <url>/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>JS 语言不像 C/C++，让程序员自己去开辟或者释放内存，而是类似 Java，采用自己的一套垃圾回收算法进行自动的内存管理。作为一名资深前端工程师，需要对 JS 的内存回收机制非常清楚，以便在极端的环境下能够分析出系统性能的瓶颈，另一方面，学习这其中的机制，也对我们深入理解 JS 的闭包特性、以及对内存的高效使用，都有很大的帮助。</p>
+</div>
+
+<h3 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h3><p>V8 的垃圾回收策略基于<strong>分代回收</strong>机制，该机制又基于<strong>世代假说</strong>。该假说有两个特点：</p>
+<ol>
+<li>大部分新生对象倾向于早死</li>
+<li>不死的对象，会活得更久</li>
+</ol>
+<p>基于这个理论，现代垃圾回收算法根据<strong>对象的存活时间</strong>将内存进行了分代，并对不同分代的内存采用不同的高效算法进行垃圾回收。</p>
+<span id="more"></span>
+
+<h3 id="V8-的内存分代"><a href="#V8-的内存分代" class="headerlink" title="V8 的内存分代"></a>V8 的内存分代</h3><p>在 V8 中，将内存分为了新生代（new space）和老生代（old space）。它们的特点如下：</p>
+<ul>
+<li>新生代：对象的存活时间较短（新生对象或只经过一次垃圾回收的对象）</li>
+<li>老生代：对象存活时间较长（经历过一次或多次垃圾回收的对象）</li>
+</ul>
+<p>V8 堆的空间等于新生代空间加上老生代空间。我们可以通过 <code>--max-old-space-size</code> 命令设置老生代空间的最大值，<code>--max-new-space-size</code> 命令设置新生代空间的最大值。老生代与新生代的空间大小在程序初始化时设置，一旦生效则不能动态改变。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node --max-old-space-size=2048 test.js // 单位为 MB</span><br><span class="line">node --max-new-space-size=1024 test.js // 单位为 KB</span><br></pre></td></tr></table></figure>
+
+<p>默认设置下，64 位系统的老生代大小为 1400M，32 位系统为 700M。<br>对于新生代，它由两个 <code>reserved_semispace_size</code> 组成。每个 <code>reserved_semispace_size</code> 的大小在不同位数的机器上大小不同。默认设置下，在 64 位与 32 位的系统下分别为 16MB 和 8MB。</p>
+<table>
+<thead>
+<tr>
+<th>类型 / 系统位数</th>
+<th>64位</th>
+<th>32位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>老生代</td>
+<td>1400MB</td>
+<td>700MB</td>
+</tr>
+<tr>
+<td>reserved_semispace_size</td>
+<td>16MB</td>
+<td>8MB</td>
+</tr>
+<tr>
+<td>新生代</td>
+<td>32MB</td>
+<td>16MB</td>
+</tr>
+</tbody></table>
+<h3 id="回收算法"><a href="#回收算法" class="headerlink" title="回收算法"></a>回收算法</h3><h4 id="全停顿（Stop-The-World）"><a href="#全停顿（Stop-The-World）" class="headerlink" title="全停顿（Stop The World）"></a>全停顿（Stop The World）</h4><p>在介绍垃圾回收算法之前，我们先了解一下「全停顿」。垃圾回收算法在执行前，需要将应用逻辑暂停，执行完垃圾回收后再执行应用逻辑，这种行为称为「全停顿」。例如，如果一次 GC 需要 50ms，应用逻辑就会暂停 50ms。</p>
+<p>全停顿的目的，是为了解决应用逻辑与垃圾回收器看到的情况不一致的问题。例如，在自助餐厅吃饭，高高兴兴地取完食物回来时，结果发现自己餐具被服务员收走了。这里，服务员就好比垃圾回收器，餐具就像是分配的对象，我们就是应用逻辑。在我们看来，只是将餐具临时放在桌上，但是在服务员看来觉得你已经不需要使用，因此就收走了。你与服务员对于同一个事物看到的情况不一致，导致服务员做了与我们不期望的事情。因此，为避免应用逻辑与垃圾回收器看到的情况不一致，垃圾回收算法在执行时，需要停止应用逻辑。</p>
+<h4 id="Scavenge-算法"><a href="#Scavenge-算法" class="headerlink" title="Scavenge 算法"></a>Scavenge 算法</h4><p>新生代中的对象主要通过 Scavenge 算法进行垃圾回收。Scavenge 的具体实现，主要采用了 Cheney 算法。</p>
+<p><img data-src="http://cdn.kingmui.cn/gc_1.webp" alt="V8堆内存空间示意图"></p>
+<p>Cheney 算法采用复制的方式进行垃圾回收。它将堆内存一分为二，每一部分空间称为 semispace。这两个空间，只有一个空间处于使用中，另一个则处于闲置状态。使用中的 semispace 称为 「From 空间」，闲置的 semispace 称为 「To 空间」。</p>
+<p>过程如下：</p>
+<ol>
+<li>从 From 空间分配对象，若 semispace 被分配满，则执行 Scavenge 算法进行垃圾回收</li>
+<li>检查 From 空间的存活对象，若对象存活，则检查对象是否符合晋升条件，若符合条件则晋升到老生代，否则将对象从 From 空间复制到 To 空间</li>
+<li>若对象不存活，则释放不存活对象的空间</li>
+<li>完成复制后，将 From 空间与 To 空间进行角色翻转</li>
+</ol>
+<h4 id="对象晋升"><a href="#对象晋升" class="headerlink" title="对象晋升"></a>对象晋升</h4><p>对象晋升的条件有两个：</p>
+<ol>
+<li><strong>对象是否经历过 Scavenge 回收</strong>。对象从 From 空间复制到 To 空间时，会检查对象的内存地址来判断对象是否已经经过一次 Scavenge 回收。若经历过，则将对象从 From 空间复制到老生代中；若没有经历，则复制到 To 空间。</li>
+<li><strong>To 空间的内存使用占比是否超过限制</strong>。当对象从 From 空间复制到 To 空间时，若 To 空间使用超过 25%，则对象直接晋升到老生代中。设置为 25% 比例的原因是，当完成 Scavenge 回收后，To 空间将翻转成 From 空间，继续进行对象内存的分配。若占比过大，将影响后续内存分配。</li>
+</ol>
+<p>对象晋升到老生代后，将接受新的垃圾回收算法处理。下图为 Scavenge 算法中，对象晋升流程图。</p>
+<p><img data-src="http://cdn.kingmui.cn/gc_2.webp" alt="晋升流程图"></p>
+<p>Scavenge 算法的缺点是，它的算法机制决定了只能利用一半的内存空间。但是新生代中的对象生存周期短、存活对象少，进行对象复制的成本不是很高，因而非常适合这种场景。</p>
+<h4 id="Mark-Sweep-amp-Mark-Compact"><a href="#Mark-Sweep-amp-Mark-Compact" class="headerlink" title="Mark-Sweep &amp; Mark-Compact"></a>Mark-Sweep &amp; Mark-Compact</h4><p>老生代中的对象有两个特点，第一是存活对象多，第二个存活时间长。若在老生代中使用 Scavenge 算法进行垃圾回收，将会导致复制存活对象的效率不高，且还会浪费一半的空间。因而，V8 在老生代采用 Mark-Sweep 和 Mark-Compact 算法进行垃圾回收。</p>
+<h4 id="标记清除（Mark-Sweep）"><a href="#标记清除（Mark-Sweep）" class="headerlink" title="标记清除（Mark-Sweep）"></a>标记清除（Mark-Sweep）</h4><p>Mark-Sweep，是标记清除的意思。它主要分为标记和清除两个阶段。</p>
+<ul>
+<li>标记阶段，它将遍历堆中所有对象，并对存活的对象进行标记</li>
+<li>清除阶段，对未标记对象的空间进行回收</li>
+</ul>
+<p>与 Scavenge 算法不同，Mark-Sweep 不会对内存一分为二，因此不会浪费空间。但是，经历过一次 Mark-Sweep 之后，内存的空间将会变得不连续，这样会对后续内存分配造成影响。例如，当需要分配一个比较大的对象时，没有任何一个碎片内支持分配，这将提前触发一次垃圾回收，尽管这次垃圾回收是没有必要的。</p>
+<p><img data-src="http://cdn.kingmui.cn/gc_3.webp" alt="Mark-Sweep标记与清理的示意图"></p>
+<h4 id="标记压缩（Mark-Compact）"><a href="#标记压缩（Mark-Compact）" class="headerlink" title="标记压缩（Mark-Compact）"></a>标记压缩（Mark-Compact）</h4><p>为了解决内存碎片的问题，提高内存的利用率，引入了 Mark-Compact 算法。Mark-Compact 在 Mark-Sweep 算法上进行了改进，标记阶段与 Mark-Sweep 相同，但是对未标记的对象处理方式不同。与 Mark-Sweep 是对未标记的对象立即进行回收，Mark-Compact 则是将存活的对象移动到一边，然后再清理端边界外的内存。</p>
+<p><img data-src="http://cdn.kingmui.cn/gc_4.webp" alt="Mark-Compact算法"></p>
+<p>由于 Mark-Compact 需要移动对象，所以执行速度上，比 Mark-Sweep 要慢。所以，V8 主要使用 Mark-Sweep 算法，然后在当空间内存分配不足时，采用 Mark-Compact 算法。</p>
+<h4 id="增量标记（Incremental-Marking）"><a href="#增量标记（Incremental-Marking）" class="headerlink" title="增量标记（Incremental Marking）"></a>增量标记（Incremental Marking）</h4><p>在新生代中，由于存活对象少，垃圾回收效率高，全停顿时间短，造成的影响小。但是老生代中，存活对象多，垃圾回收时间长，全停顿造成的影响大。为了减少全停顿的时间，V8 对标记进行了优化，将一次停顿进行的标记过程，分成了很多小步。每执行完一小步就让应用逻辑执行一会儿，这样交替多次后完成标记。如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">          GC         JS         GC         JS</span><br><span class="line">主进程 ---------&gt; ---------&gt; ---------&gt; ---------&gt;</span><br></pre></td></tr></table></figure>
+
+<p>长时间的 GC，会导致应用暂停和无响应，将会导致糟糕的用户体验。从 2011 年起，V8 就将「全暂停」标记换成了增量标记。改进后的标记方式，最大停顿时间减少到原来的 1/6。</p>
+<h4 id="延迟清理（lazy-sweeping）"><a href="#延迟清理（lazy-sweeping）" class="headerlink" title="延迟清理（lazy sweeping）"></a>延迟清理（lazy sweeping）</h4><ul>
+<li>发生在增量标记之后</li>
+<li>堆确切地知道有多少空间能被释放</li>
+<li>延迟清理是被允许的，因此页面的清理可以根据需要进行清理</li>
+<li>当延迟清理完成后，增量标记将重新开始</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>了解 GC 原理，有助于我们对 NodeJS 项目进行性能瓶颈定位与调优。文章所描述的算法为 V8 中使用的基础算法，现代 V8 引擎已经对垃圾回收进行了很多改进。例如，在 Chrome 64 和 NodeJS V10 中 V8 启用了「并行标记」技术，将标记时间缩短了 <code>60%~70%</code>。还有「Parallel Scavenger」技术，它将新生代的垃圾回收时间缩短了 <code>20%~50%</code>。</p>
+<p>垃圾回收是影响服务性能的因素之一，为了提高服务性能，应尽量减少垃圾回收的次数。</p>
+<p>V8 堆内存最大值在 64 位系统上为 1464MB，在 32 位系统上为 732MB。计算公式如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">V8 堆内存最大保留空间 = 4 * reserved_semispace_size_ + max_old_generation_size_</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>JavaScript</tag>
@@ -1598,103 +1695,6 @@
 ]]></content>
       <tags>
         <tag>安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 V8 的垃圾回收原理</title>
-    <url>/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>JS 语言不像 C/C++，让程序员自己去开辟或者释放内存，而是类似 Java，采用自己的一套垃圾回收算法进行自动的内存管理。作为一名资深前端工程师，需要对 JS 的内存回收机制非常清楚，以便在极端的环境下能够分析出系统性能的瓶颈，另一方面，学习这其中的机制，也对我们深入理解 JS 的闭包特性、以及对内存的高效使用，都有很大的帮助。</p>
-</div>
-
-<h3 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h3><p>V8 的垃圾回收策略基于<strong>分代回收</strong>机制，该机制又基于<strong>世代假说</strong>。该假说有两个特点：</p>
-<ol>
-<li>大部分新生对象倾向于早死</li>
-<li>不死的对象，会活得更久</li>
-</ol>
-<p>基于这个理论，现代垃圾回收算法根据<strong>对象的存活时间</strong>将内存进行了分代，并对不同分代的内存采用不同的高效算法进行垃圾回收。</p>
-<span id="more"></span>
-
-<h3 id="V8-的内存分代"><a href="#V8-的内存分代" class="headerlink" title="V8 的内存分代"></a>V8 的内存分代</h3><p>在 V8 中，将内存分为了新生代（new space）和老生代（old space）。它们的特点如下：</p>
-<ul>
-<li>新生代：对象的存活时间较短（新生对象或只经过一次垃圾回收的对象）</li>
-<li>老生代：对象存活时间较长（经历过一次或多次垃圾回收的对象）</li>
-</ul>
-<p>V8 堆的空间等于新生代空间加上老生代空间。我们可以通过 <code>--max-old-space-size</code> 命令设置老生代空间的最大值，<code>--max-new-space-size</code> 命令设置新生代空间的最大值。老生代与新生代的空间大小在程序初始化时设置，一旦生效则不能动态改变。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node --max-old-space-size=2048 test.js // 单位为 MB</span><br><span class="line">node --max-new-space-size=1024 test.js // 单位为 KB</span><br></pre></td></tr></table></figure>
-
-<p>默认设置下，64 位系统的老生代大小为 1400M，32 位系统为 700M。<br>对于新生代，它由两个 <code>reserved_semispace_size</code> 组成。每个 <code>reserved_semispace_size</code> 的大小在不同位数的机器上大小不同。默认设置下，在 64 位与 32 位的系统下分别为 16MB 和 8MB。</p>
-<table>
-<thead>
-<tr>
-<th>类型 / 系统位数</th>
-<th>64位</th>
-<th>32位</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>老生代</td>
-<td>1400MB</td>
-<td>700MB</td>
-</tr>
-<tr>
-<td>reserved_semispace_size</td>
-<td>16MB</td>
-<td>8MB</td>
-</tr>
-<tr>
-<td>新生代</td>
-<td>32MB</td>
-<td>16MB</td>
-</tr>
-</tbody></table>
-<h3 id="回收算法"><a href="#回收算法" class="headerlink" title="回收算法"></a>回收算法</h3><h4 id="全停顿（Stop-The-World）"><a href="#全停顿（Stop-The-World）" class="headerlink" title="全停顿（Stop The World）"></a>全停顿（Stop The World）</h4><p>在介绍垃圾回收算法之前，我们先了解一下「全停顿」。垃圾回收算法在执行前，需要将应用逻辑暂停，执行完垃圾回收后再执行应用逻辑，这种行为称为「全停顿」。例如，如果一次 GC 需要 50ms，应用逻辑就会暂停 50ms。</p>
-<p>全停顿的目的，是为了解决应用逻辑与垃圾回收器看到的情况不一致的问题。例如，在自助餐厅吃饭，高高兴兴地取完食物回来时，结果发现自己餐具被服务员收走了。这里，服务员就好比垃圾回收器，餐具就像是分配的对象，我们就是应用逻辑。在我们看来，只是将餐具临时放在桌上，但是在服务员看来觉得你已经不需要使用，因此就收走了。你与服务员对于同一个事物看到的情况不一致，导致服务员做了与我们不期望的事情。因此，为避免应用逻辑与垃圾回收器看到的情况不一致，垃圾回收算法在执行时，需要停止应用逻辑。</p>
-<h4 id="Scavenge-算法"><a href="#Scavenge-算法" class="headerlink" title="Scavenge 算法"></a>Scavenge 算法</h4><p>新生代中的对象主要通过 Scavenge 算法进行垃圾回收。Scavenge 的具体实现，主要采用了 Cheney 算法。</p>
-<p><img data-src="http://cdn.kingmui.cn/gc_1.webp" alt="V8堆内存空间示意图"></p>
-<p>Cheney 算法采用复制的方式进行垃圾回收。它将堆内存一分为二，每一部分空间称为 semispace。这两个空间，只有一个空间处于使用中，另一个则处于闲置状态。使用中的 semispace 称为 「From 空间」，闲置的 semispace 称为 「To 空间」。</p>
-<p>过程如下：</p>
-<ol>
-<li>从 From 空间分配对象，若 semispace 被分配满，则执行 Scavenge 算法进行垃圾回收</li>
-<li>检查 From 空间的存活对象，若对象存活，则检查对象是否符合晋升条件，若符合条件则晋升到老生代，否则将对象从 From 空间复制到 To 空间</li>
-<li>若对象不存活，则释放不存活对象的空间</li>
-<li>完成复制后，将 From 空间与 To 空间进行角色翻转</li>
-</ol>
-<h4 id="对象晋升"><a href="#对象晋升" class="headerlink" title="对象晋升"></a>对象晋升</h4><p>对象晋升的条件有两个：</p>
-<ol>
-<li><strong>对象是否经历过 Scavenge 回收</strong>。对象从 From 空间复制到 To 空间时，会检查对象的内存地址来判断对象是否已经经过一次 Scavenge 回收。若经历过，则将对象从 From 空间复制到老生代中；若没有经历，则复制到 To 空间。</li>
-<li><strong>To 空间的内存使用占比是否超过限制</strong>。当对象从 From 空间复制到 To 空间时，若 To 空间使用超过 25%，则对象直接晋升到老生代中。设置为 25% 比例的原因是，当完成 Scavenge 回收后，To 空间将翻转成 From 空间，继续进行对象内存的分配。若占比过大，将影响后续内存分配。</li>
-</ol>
-<p>对象晋升到老生代后，将接受新的垃圾回收算法处理。下图为 Scavenge 算法中，对象晋升流程图。</p>
-<p><img data-src="http://cdn.kingmui.cn/gc_2.webp" alt="晋升流程图"></p>
-<p>Scavenge 算法的缺点是，它的算法机制决定了只能利用一半的内存空间。但是新生代中的对象生存周期短、存活对象少，进行对象复制的成本不是很高，因而非常适合这种场景。</p>
-<h4 id="Mark-Sweep-amp-Mark-Compact"><a href="#Mark-Sweep-amp-Mark-Compact" class="headerlink" title="Mark-Sweep &amp; Mark-Compact"></a>Mark-Sweep &amp; Mark-Compact</h4><p>老生代中的对象有两个特点，第一是存活对象多，第二个存活时间长。若在老生代中使用 Scavenge 算法进行垃圾回收，将会导致复制存活对象的效率不高，且还会浪费一半的空间。因而，V8 在老生代采用 Mark-Sweep 和 Mark-Compact 算法进行垃圾回收。</p>
-<h4 id="标记清除（Mark-Sweep）"><a href="#标记清除（Mark-Sweep）" class="headerlink" title="标记清除（Mark-Sweep）"></a>标记清除（Mark-Sweep）</h4><p>Mark-Sweep，是标记清除的意思。它主要分为标记和清除两个阶段。</p>
-<ul>
-<li>标记阶段，它将遍历堆中所有对象，并对存活的对象进行标记</li>
-<li>清除阶段，对未标记对象的空间进行回收</li>
-</ul>
-<p>与 Scavenge 算法不同，Mark-Sweep 不会对内存一分为二，因此不会浪费空间。但是，经历过一次 Mark-Sweep 之后，内存的空间将会变得不连续，这样会对后续内存分配造成影响。例如，当需要分配一个比较大的对象时，没有任何一个碎片内支持分配，这将提前触发一次垃圾回收，尽管这次垃圾回收是没有必要的。</p>
-<p><img data-src="http://cdn.kingmui.cn/gc_3.webp" alt="Mark-Sweep标记与清理的示意图"></p>
-<h4 id="标记压缩（Mark-Compact）"><a href="#标记压缩（Mark-Compact）" class="headerlink" title="标记压缩（Mark-Compact）"></a>标记压缩（Mark-Compact）</h4><p>为了解决内存碎片的问题，提高内存的利用率，引入了 Mark-Compact 算法。Mark-Compact 在 Mark-Sweep 算法上进行了改进，标记阶段与 Mark-Sweep 相同，但是对未标记的对象处理方式不同。与 Mark-Sweep 是对未标记的对象立即进行回收，Mark-Compact 则是将存活的对象移动到一边，然后再清理端边界外的内存。</p>
-<p><img data-src="http://cdn.kingmui.cn/gc_4.webp" alt="Mark-Compact算法"></p>
-<p>由于 Mark-Compact 需要移动对象，所以执行速度上，比 Mark-Sweep 要慢。所以，V8 主要使用 Mark-Sweep 算法，然后在当空间内存分配不足时，采用 Mark-Compact 算法。</p>
-<h4 id="增量标记（Incremental-Marking）"><a href="#增量标记（Incremental-Marking）" class="headerlink" title="增量标记（Incremental Marking）"></a>增量标记（Incremental Marking）</h4><p>在新生代中，由于存活对象少，垃圾回收效率高，全停顿时间短，造成的影响小。但是老生代中，存活对象多，垃圾回收时间长，全停顿造成的影响大。为了减少全停顿的时间，V8 对标记进行了优化，将一次停顿进行的标记过程，分成了很多小步。每执行完一小步就让应用逻辑执行一会儿，这样交替多次后完成标记。如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">          GC         JS         GC         JS</span><br><span class="line">主进程 ---------&gt; ---------&gt; ---------&gt; ---------&gt;</span><br></pre></td></tr></table></figure>
-
-<p>长时间的 GC，会导致应用暂停和无响应，将会导致糟糕的用户体验。从 2011 年起，V8 就将「全暂停」标记换成了增量标记。改进后的标记方式，最大停顿时间减少到原来的 1/6。</p>
-<h4 id="延迟清理（lazy-sweeping）"><a href="#延迟清理（lazy-sweeping）" class="headerlink" title="延迟清理（lazy sweeping）"></a>延迟清理（lazy sweeping）</h4><ul>
-<li>发生在增量标记之后</li>
-<li>堆确切地知道有多少空间能被释放</li>
-<li>延迟清理是被允许的，因此页面的清理可以根据需要进行清理</li>
-<li>当延迟清理完成后，增量标记将重新开始</li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>了解 GC 原理，有助于我们对 NodeJS 项目进行性能瓶颈定位与调优。文章所描述的算法为 V8 中使用的基础算法，现代 V8 引擎已经对垃圾回收进行了很多改进。例如，在 Chrome 64 和 NodeJS V10 中 V8 启用了「并行标记」技术，将标记时间缩短了 <code>60%~70%</code>。还有「Parallel Scavenger」技术，它将新生代的垃圾回收时间缩短了 <code>20%~50%</code>。</p>
-<p>垃圾回收是影响服务性能的因素之一，为了提高服务性能，应尽量减少垃圾回收的次数。</p>
-<p>V8 堆内存最大值在 64 位系统上为 1464MB，在 32 位系统上为 732MB。计算公式如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">V8 堆内存最大保留空间 = 4 * reserved_semispace_size_ + max_old_generation_size_</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -2629,7 +2629,7 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>我是个俗气至顶的人，见山是山，见海是海，见花便是花。唯独见了你，云海开始翻涌，江潮开始澎湃，昆虫的小触须挠着全世界的痒。你无需开口，我和天地万物便通通奔向你。</p>
 </div>
 
-<div id="aplayer-DdTyTXXb" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+<div id="aplayer-gOwCSWTo" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
 				<pre class="aplayer-lrc-content">[00:20.03]
 [00:25.53]君が前に付き合っていた人のこと 当你向我坦白
 [00:31.44]僕に打ち明けてくれたとき 你与前任的往事时
@@ -2672,7 +2672,7 @@
 			</div>
 			<script>
 				var ap = new APlayer({
-					element: document.getElementById("aplayer-DdTyTXXb"),
+					element: document.getElementById("aplayer-gOwCSWTo"),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
