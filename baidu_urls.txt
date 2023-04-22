@@ -1,3 +1,4 @@
+http://www.kingmui.cn/2023/03/01/TypeScript%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/
 http://www.kingmui.cn/2020/09/13/deeply-understand-the-principle-of-V8-garbage-collection/
 http://www.kingmui.cn/2020/08/04/the-difference-between-commonjs-mdule-and-es6-module/
 http://www.kingmui.cn/2020/05/24/deno-1-0-what-you-need-to-know/
